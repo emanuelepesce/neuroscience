@@ -32,18 +32,28 @@ smallWorldProperties <- function(graph){
 #' Currently it take into account only the average path lenght
 #' 
 #' @param graph
-#' @return TRUE if graph is a small world
+#' @return 1 if graph is a small world
 #' @examples
 #' isSmallWorld(g)
 isSmallWorld <- function(graph){
   
-  sw <- FALSE # if graph is a smallworld
+  sw <- 1 # if graph is a smallworld
   
   sp <- smallWorldProperties(graph)
   
   #if the average of path lenght is approximately log(N), where N is the number of vertices
   if (sp$averagePath <= 1.5*(log10(vcount(graph)))){
-    sw <- TRUE
+    sw <- sw * 1
+  }
+  else{
+    sw <- 0
+  }
+  #if the max component of graph includes at least N/2 vertices
+  if (sp$maxComponent$csize > (vcount(graph)/2)){
+    sw <- sw * 1
+  }
+  else{
+    sw <- 0
   }
   
   #return
