@@ -1,0 +1,113 @@
+\documentclass[10pt, compress]{beamer}
+
+
+\usetheme[usetitleprogressbar]{m}
+
+
+\usepackage{booktabs}
+\usepackage[scale=2]{ccicons}
+\usepackage{minted}
+\usepgfplotslibrary{dateplot}
+
+\usemintedstyle{trac}
+\usepackage{verbatim}
+
+% % %for using default theme comment above lines and decomment following lines
+%\usetheme{default}
+%\usepackage[utf8]{inputenc}
+%\usepackage[T1]{fontenc}
+
+%\AtBeginSection[]
+%{
+%	\begin{frame}<beamer>
+%		\frametitle{Plan}
+%		\tableofcontents[currentsection]
+%	\end{frame}
+%}
+
+
+\begin{document}
+	\title{Neuroscience and network effects}
+	\subtitle{Project plan}
+	\date{ \vspace{1cm} \hspace{0.1cm}  Giugno 2015}
+
+	\author{\begin{tabular}{l@{ }l} 
+			Studenti:      & Emanuele Pesce\\
+			& Alessandro Merola \\[1ex]
+		\end{tabular}}
+		\institute{\small \begin{tabular}{l@{}l}
+			\emph{Corso di Reti Neurali e Knowledge discovery} & \\
+				  \footnotesize Università degli studi di Salerno, Dipartimento di Informatica & \\
+				 & \\
+%				\footnotesize Giugno 2015 & \\
+			\end{tabular}
+			
+%			\hspace{0.1cm} Corso di Automi, Linguaggi e Complessità \newline
+%					\hspace{0.5cm} Università degli studi di Salerno, Dipartimento di Informatica\\
+					}
+		
+		\begin{frame}
+			\titlepage
+		\end{frame}
+		
+%		\begin{frame}{Outline}
+%			\tableofcontents
+%		\end{frame}
+%		
+		%**************************************************************************
+		
+		\section{Definizione obiettivo}
+			\begin{frame}{Definizione obiettivo}
+				\begin{itemize}
+					\item \textbf{Input}: i grafi delle connettività delle regioni di interesse.
+					\item \textbf{Obiettivo}: ricavare informazioni strutturali delle reti al fine di discriminare controlli da pazienti.
+				\end{itemize}
+			\end{frame}
+		
+		
+		\begin{frame}{Thresholding}
+			\begin{block}{\textbf{Preprocessing}}
+				\begin{itemize}
+					\item Attualmente i grafi sono completamente connessi
+					\item Come tagliare gli archi meno rilevanti?
+				\end{itemize}
+			\end{block}
+		\end{frame}
+		
+		%**************************************************************************
+		\section{Proposte}
+			\begin{frame}{Proposte}
+				\begin{block}{\textbf{1. Misure di centralità}}
+					Individuare quali sono le regioni più \emph{centrali} in base a diversi criteri. \newline
+					\begin{itemize}
+						\item Degree
+						\item Betweenness
+						\item PageRank
+						\item Closeness
+						\item etc \dots
+					\end{itemize}
+				\end{block}
+			\end{frame}
+			
+			\begin{frame}{Proposte}
+				\begin{block}{\textbf{2. Analisi strutturale del grafo}}
+					\begin{itemize}
+						\item Distribuzione dei gradi (power low, etc..)
+						\item Smallworld
+						\item \textbf{community detection}
+					\end{itemize}
+				\end{block}
+			\end{frame}
+			
+			\begin{frame}{Proposte}
+				\begin{block}{\textbf{3. Epidemics models}}
+					\begin{itemize}
+						\item Simulazione di modelli di diffusione delle epidemie per studiare informazioni sul flusso di informazione
+						\item Individuazione delle regioni  che permettono una maggiore diffusione di informazioni
+					\end{itemize}
+				\end{block}
+			\end{frame}
+			
+\plain{Fine}
+			
+\end{document}
