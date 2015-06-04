@@ -21,13 +21,13 @@ centralities <- function(graph){
   #eigenvector
   suppressWarnings(ei.v <- evcent(graph, directed = TRUE))
   
-  #degree
+  #indegree
   in.v <- degree(graph, mode = "in") 
   
   #closeness
   cl.v <- closeness(graph)
   
-  #page rank
+  #PageRank
   pr.v <- page.rank(graph, directed = TRUE)
   
   #betweenness
