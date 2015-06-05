@@ -41,7 +41,7 @@ centralities <- function(graph){
 
 if(interactive()){
   #path of the dataset
-  path <- "./../../data/sampleNetworks/CTRL_amore.txt";
+  path <- "./../../data/toyData/controls/CTRL_amore.txt";
   
   #read graph
   dat <- read.csv(path, header = FALSE, sep = " ");
