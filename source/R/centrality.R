@@ -18,32 +18,32 @@ library(igraph)
 #' print(cts$pr.v) # print the pagerank values of each node
 centralities <- function(graph){
   
-  #eigenvector
+  # eigenvector
   suppressWarnings(ei.v <- evcent(graph, directed = TRUE))
   
-  #indegree
+  # indegree
   in.v <- degree(graph, mode = "in") 
   
-  #closeness
+  # closeness
   cl.v <- closeness(graph)
   
-  #PageRank
+  # PageRank
   pr.v <- page.rank(graph, directed = TRUE)
   
-  #betweenness
+  # betweenness
   betw.v <- betweenness(graph, v=V(graph), directed = TRUE);
   betw.e <- edge.betweenness(graph, e=E(graph), directed = TRUE);
   
-  #return
+  # return
   cts <- list("betw.v" = betw.v, "betw.e" = betw.e, "ei.v" = ei.v, "in.v" = in.v, "cl.v" = cl.v, "pr.v" = pr.v);
   return(cts);
 }
 
 if(interactive()){
-  #path of the dataset
+  # path of the dataset
   path <- "./../../data/toyData/controls/CTRL_amore.txt";
   
-  #read graph
+  # read graph
   dat <- read.csv(path, header = FALSE, sep = " ");
   m <- as.matrix(dat);
   g <- graph.adjacency(m, mode = "directed", weighted = TRUE);

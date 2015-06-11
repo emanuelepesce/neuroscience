@@ -16,13 +16,13 @@ library(igraph)
 #' p$maxComponent$csize
 smallWorldProperties <- function(graph){
   
-  #max component
+  # max component
   maxComponent <- clusters(g, mode = "strong") # attributes: membership, csize, no 
   
-  #average path length (this function doesn't consider weighted edges)
+  # average path length (this function doesn't consider weighted edges)
   averagePath <- average.path.length(g, directed=TRUE, unconnected=TRUE)
   
-  #return
+  # return
   sp <- list("maxComponent" = maxComponent, "averagePath" = averagePath);
   return(sp);
 }
@@ -41,14 +41,14 @@ isSmallWorld <- function(graph){
   
   sp <- smallWorldProperties(graph)
   
-  #if the average of path lenght is approximately log(N), where N is the number of vertices
+  # if the average of path lenght is approximately log(N), where N is the number of vertices
   if (sp$averagePath <= 1.5*(log10(vcount(graph)))){
     sw <- sw * 1
   }
   else{
     sw <- 0
   }
-  #if the max component of graph includes at least N/2 vertices
+  # if the max component of graph includes at least N/2 vertices
   if (sp$maxComponent$csize > (vcount(graph)/2)){
     sw <- sw * 1
   }
@@ -56,15 +56,15 @@ isSmallWorld <- function(graph){
     sw <- 0
   }
   
-  #return
+  # return
   return(sw)
 }
 
 if(interactive()){
-  #path of the dataset
+  # path of the dataset
   path <- "./../../data/toyData/controls/CTRL_amore.txt";
   
-  #read graph
+  # read graph
   dat <- read.csv(path, header = FALSE, sep = " ");
   m <- as.matrix(dat);
   g <- graph.adjacency(m, mode = "directed", weighted = TRUE);
