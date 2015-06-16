@@ -3,6 +3,8 @@
 #' Author: Emanuele Pesce
 library(TopKLists)
 
+source("./graphUtils.R")
+
 #' Aggregates matrices
 #' Get all matrix in 'path' and merge them all in a matrix in which each 
 #' row is a sujbect (file) and each column is a value
@@ -46,21 +48,31 @@ genMatrix <- function(path = "./../../data/toyData/controls/"){
 }
 
 
+
 if(interactive()){
   mControls <- genMatrix("./../../data/toyData/controls/")
   mPatients <- genMatrix("./../../data/toyData/patients/")
   
-  outBorda=Borda(mControls,space = mControls)
+  kv <- 8000
+  outBorda=Borda(mControls,space = mControls, k =  kv)
   
-#   #path of the dataset
-#   path <- "./../../data/toyData/controls/CTRL_amore.txt";
-#   
-#   #read graph
-#   dat <- read.csv(path, header = FALSE, sep = " ");
-#   m <- as.matrix(dat);
-#   v <- as.vector(t(m));
-#   
-#   l <- list()
-#   l[[1]] <- v
-#   l[[2]] <- v
+  # screeplot
+  v <- outBorda$Scores$mean[1:kv]
+  e <- outBorda$TopK$mean
+  
+  nv <- (v-min(v))/(max(v)-min(v))
+  nv <- 1-nv 
+  
+  #plot(rey = v[1:10], x = outBorda$TopK , type='b', main = 'screeplot', xlab = 'edges', ylab = 'mean')
+  plot(y = nv, x = seq(1:kv), type='b', main = 'screeplot', xlab = 'edges', ylab = 'mean')
+  
+  nv <- outBorda$Scores$mean[1:8000]
+  nv <- (nv-min(nv))/(max(nv)-min(nv))
+  nv <- 1-nv
+  plot(y = nv, x = seq(1:8000), type='b', main = 'screeplot', xlab = 'edges', ylab = 'mean')
+  
+  # edges
+  graph <- getMatrixFromFile("./../../data/toyData/controls/CTRL_amore.txt")
+  edges <- getEdgesAsVector(graph, e)
+  plot(y = as.numeric(sort(unlist(edges)[1:300], decreasing = TRUE)), x = seq(1:300), type='b', main = 'screeplot', xlab = 'edges', ylab = 'mean')
 }
