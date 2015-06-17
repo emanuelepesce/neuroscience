@@ -49,6 +49,20 @@ genMatrix <- function(path = "./../../data/toyData/controls/"){
   return(M)
 }
 
+writeBordaMatrix <- function(filename, bordaTop, bordaScores, n=90){
+  vec <- bordaScores
+  names(vec) <- bordaTop
+  
+  M <- matrix(nrow = 90, ncol = 90)
+  for(i in 1:n){
+    for(j in 1:n){
+      idx <- paste(toString(i), toString(j), sep = "_")
+      M[i,j] <- vec[idx]
+    }
+  }
+  
+  write.table(M, file = filename, row.names = FALSE, col.names=FALSE )
+}
 
 
 if(interactive()){
@@ -56,25 +70,30 @@ if(interactive()){
   mPatients <- genMatrix("./../../data/toyData/patients/")
   
   kv <- 8000
-  outBorda=Borda(mControls,space = mControls, k =  kv)
+  outBorda=Borda(mControls,space = mControls)
+  
+  writeBordaMatrix(filename = "./../../data/toyData/extract/bordaMatrix.txt", outBorda$TopK$mean, 
+                   outBorda$Scores$mean)
   
   # screeplot
-  v <- outBorda$Scores$mean[1:kv]
-  e <- outBorda$TopK$mean
+#   v <- outBorda$Scores$mean[1:kv]
+#   e <- outBorda$TopK$mean
+#   
+#   nv <- (v-min(v))/(max(v)-min(v))
+#   nv <- 1-nv 
+#   
+#   #plot(rey = v[1:10], x = outBorda$TopK , type='b', main = 'screeplot', xlab = 'edges', ylab = 'mean')
+#   plot(y = nv, x = seq(1:kv), type='b', main = 'screeplot', xlab = 'edges', ylab = 'mean')
+#   
+#   nv <- outBorda$Scores$mean[1:8000]
+#   nv <- (nv-min(nv))/(max(nv)-min(nv))
+#   nv <- 1-nv
+#   plot(y = nv, x = seq(1:8000), type='b', main = 'screeplot', xlab = 'edges', ylab = 'mean')
+#   
+#   # edges
+#   graph <- getMatrixFromFile("./../../data/toyData/controls/CTRL_amore.txt")
+#   edges <- getEdgesAsVector(graph, e)
+#   plot(y = as.numeric(sort(unlist(edges)[1:300], decreasing = TRUE)), x = seq(1:300), type='b', main = 'screeplot', xlab = 'edges', ylab = 'mean')
+
   
-  nv <- (v-min(v))/(max(v)-min(v))
-  nv <- 1-nv 
-  
-  #plot(rey = v[1:10], x = outBorda$TopK , type='b', main = 'screeplot', xlab = 'edges', ylab = 'mean')
-  plot(y = nv, x = seq(1:kv), type='b', main = 'screeplot', xlab = 'edges', ylab = 'mean')
-  
-  nv <- outBorda$Scores$mean[1:8000]
-  nv <- (nv-min(nv))/(max(nv)-min(nv))
-  nv <- 1-nv
-  plot(y = nv, x = seq(1:8000), type='b', main = 'screeplot', xlab = 'edges', ylab = 'mean')
-  
-  # edges
-  graph <- getMatrixFromFile("./../../data/toyData/controls/CTRL_amore.txt")
-  edges <- getEdgesAsVector(graph, e)
-  plot(y = as.numeric(sort(unlist(edges)[1:300], decreasing = TRUE)), x = seq(1:300), type='b', main = 'screeplot', xlab = 'edges', ylab = 'mean')
 }

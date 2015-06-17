@@ -1,9 +1,33 @@
-
+#' pruningEdges
+#' 
+#' algorithm for pruning edges from a graph with shortest paths method
+#' 
+#' Author: Emanuele Pesce
 library(igraph)
 source("./graphUtils.R")
 
-# massimizzare il flusso normalizzando
-#rimuovere il nodo stesso dalle liste
+#' Prunes edges from a graph using min flow method.
+#' The idea is: 
+#' 1. Computes all shortest path among all vertices
+#' 2. Put edges which are part of a shortest path in a set (util)
+#' 3. For each edge not in util check if the fraction of its util neighbors
+#'    edges is greater than threshold. If yes remove the edge (this means that 
+#'    in this area there are a lot of util edges)  
+#' 
+#' @param graph a graph in format igraph
+#' @param threshold a threshold
+#' @return toReturn a list of things:
+#'         -v_util : set of util vertices
+#'         -toRemove : set of vertices to remove
+#'         -g_cut : graph cutted
+#'         -n_cut: number of cutted vertices 
+#'        
+#' @examples
+#' R <- minFlowPruning(g, threshold = 0.1)
+#' gc <- R$g_cut
+#' util <- R$v_util
+#' r <- R$toRemove
+#' nc <- R$n_cut
 minFlowPruning <- function(graph, threshold=0.5){
   
   ### normalization and invert the values in order to calculate max flow with
@@ -46,23 +70,24 @@ minFlowPruning <- function(graph, threshold=0.5){
     toRemove[[i]] <- i 
   }
   
-  for (i in 1:(vcount(graph)-1)){
+
+  for (i in 1:vcount(graph)){
     for (j in 1:vcount(graph)){
       # check if ij is in v_util
       if (!(j %in% v_util[[i]])){ # if i-j is not in util
         # number of neighbors of i and j
-        ni <- length(v_util[[i]]) 
-        nj <- length(v_util[[j]])
+        ni <- length(v_util[[i]]-1) 
+        nj <- length(v_util[[j]]-1)
         f <- (ni+nj)/(2*vcount(graph)) # fraction of neighbors in util
-        if (f > threshold){ # add i-j to the list of edges to remove
-          if (!( i %in% toRemove[[j]] )){ 
+        if (f >= threshold){ # add i-j to the list of edges to remove
+          if (!( j %in% toRemove[[i]] )){  # add vertex j only once
             toRemove[[i]] <- c(toRemove[[i]],j)
           }
         }
       }
     } #j
   } #i
-    
+  
   ### remove edges
   g_cut <- graph
   for(i in 1:length(toRemove)){ # for each vertex i
@@ -76,8 +101,12 @@ minFlowPruning <- function(graph, threshold=0.5){
     
   } # end i
   
+  ### number of cutted edges
+  n_cut <- length(E(graph)) - length(E(g_cut))
+  
   # return
-  toReturn <- list("v_util" = v_util, "toRemove" = toRemove, "g_cut" = g_cut)
+  toReturn <- list("v_util" = v_util, "toRemove" = toRemove, "g_cut" = g_cut, 
+                   "n_cut" = n_cut)
   return(toReturn)
 }
 
@@ -85,22 +114,32 @@ minFlowPruning <- function(graph, threshold=0.5){
 if(interactive()){
   
   g <- i_adjacencyFromFile("./../../data/toyData/controls/CTRL_amore.txt")
-  R <- minFlowPruning(g, threshold = 0)
+#   g <- i_adjacencyFromFile("./../../data/toyData/extract/bordaMatrix.txt")
+  R <- minFlowPruning(g, threshold = 0.01)
+
   gc <- R$g_cut
   util <- R$v_util
   r <- R$toRemove
+  nc <- R$n_cut
   
-  print(E(gc))
   
+  print("Number of edges before cutting")
+  print(length(E(g)))
+  
+  print("Number of edges after cutting:")
+  lgc <- length(E(gc))
+  print(lgc)
+  
+  print("Number of cutted edges:")
+  print(nc)
+  
+  print("Number of utils edges:") 
   n_util <- 0
   for (i in 1:length(util)){
     n_util <- n_util + length(util[[i]])
   }
-  print(n_util)
+  print(n_util-90)
   
-  nr <- 0
-  for (i in 1:length(util)){
-    nr <- nr + length(r[[i]])
-  }
-  print(nr)
+  print("Number of cutted edges:")
+  print(nc)
 }
