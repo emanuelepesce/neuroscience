@@ -1,4 +1,6 @@
-#' aggregation
+#' aggregationBorda
+#' 
+#' functions for pruning and aggregating edges of graphs
 #' 
 #' Author: Emanuele Pesce
 library(TopKLists)
