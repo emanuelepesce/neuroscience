@@ -54,6 +54,21 @@ i_adjacencyFromFile <- function(filename){
   return(g)
 }
 
+#' Removes an edge from vertex v1 to vertex v2
+#' @param v1 vertex
+#' @param v2 vertex
+#' @return g igraph without edge v1 -> v2
+#' @examples
+#' g1 <- removeEdge(g, 90, 89)
+removeEdge <- function(graph, v1, v2){
+  sv1 <- toString(v1)
+  sv2 <- toString(v2)
+  sv1 <- paste("V", sv1, sep = "")
+  sv2 <- paste("V", sv2, sep = "")
+  graph[sv1, sv2] <- FALSE
+  
+  return(graph)
+}
 
 if(interactive()){
   graph <- getMatrixFromFile("./../../data/toyData/controls/CTRL_amore.txt")
@@ -62,6 +77,8 @@ if(interactive()){
   edges <- getEdgesAsVector(graph, listNames)
   
   g <- i_adjacencyFromFile("./../../data/toyData/controls/CTRL_amore.txt")
+  
+  g1 <- removeEdge(g, 90, 89)
 }
 
 
