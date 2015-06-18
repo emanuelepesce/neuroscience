@@ -70,10 +70,14 @@ if(interactive()){
   mPatients <- genMatrix("./../../data/toyData/patients/")
   
   kv <- 8000
-  outBorda=Borda(mControls,space = mControls)
+  c_outBorda=Borda(mControls,space = mControls)
+  p_outBorda=Borda(mPatients,space = mPatients)
   
-  writeBordaMatrix(filename = "./../../data/toyData/extract/bordaMatrix.txt", outBorda$TopK$mean, 
-                   outBorda$Scores$mean)
+  writeBordaMatrix(filename = "./../../data/toyData/extract/bordaMatrixControls.txt",
+                   c_outBorda$TopK$mean, c_outBorda$Scores$mean)
+  
+  writeBordaMatrix(filename = "./../../data/toyData/extract/bordaMatrixPatients.txt",
+                   p_outBorda$TopK$mean, p_outBorda$Scores$mean)
   
   # screeplot
 #   v <- outBorda$Scores$mean[1:kv]
