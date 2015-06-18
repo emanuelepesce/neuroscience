@@ -4,7 +4,7 @@
 #' 
 #' Author: Emanuele Pesce
 library(igraph)
-source("./graphUtils.R")
+source("./graphUtils.R", chdir = T)
 
 #' Prunes edges from a graph using min flow method.
 #' The idea is: 
@@ -16,6 +16,8 @@ source("./graphUtils.R")
 #' 
 #' @param graph a graph in format igraph
 #' @param threshold a threshold
+#' @param invert, if TRUE normalize all weights and do 1-weights in order to 
+#'        turn the max value in min and so work with shortest paths.
 #' @return toReturn a list of things:
 #'         -v_util : set of util vertices
 #'         -toRemove : set of vertices to remove
@@ -28,13 +30,16 @@ source("./graphUtils.R")
 #' util <- R$v_util
 #' r <- R$toRemove
 #' nc <- R$n_cut
-minFlowPruning <- function(graph, threshold=0.5){
+minFlowPruning <- function(graph, threshold=0.5, invert = FALSE){
   
   ### normalization and invert the values in order to calculate max flow with
   ### shortest path
-  e_weights <- E(graph)$weight 
-  ne_weights <- (e_weights-min(e_weights))/(max(e_weights)-min(e_weights))
-  ne_weights <- 1-ne_weights 
+  ### it only works if invert is equal to FALSE
+  if(invert==TRUE){
+    e_weights <- E(graph)$weight 
+    ne_weights <- (e_weights-min(e_weights))/(max(e_weights)-min(e_weights))
+    E(graph)$weight  <- 1 - ne_weights
+  }
   
   
   ### inizialize list of edges
@@ -113,9 +118,9 @@ minFlowPruning <- function(graph, threshold=0.5){
 
 if(interactive()){
   
-  g <- i_adjacencyFromFile("./../../data/toyData/controls/CTRL_amore.txt")
-#   g <- i_adjacencyFromFile("./../../data/toyData/extract/bordaMatrix.txt")
-  R <- minFlowPruning(g, threshold = 0.01)
+#   g <- i_adjacencyFromFile("./../../data/toyData/controls/CTRL_amore.txt")
+  g <- i_adjacencyFromFile("./../../data/toyData/extract/bordaMatrix.txt")
+  R <- minFlowPruning(g, threshold = 0.001)
 
   gc <- R$g_cut
   util <- R$v_util
@@ -139,7 +144,4 @@ if(interactive()){
     n_util <- n_util + length(util[[i]])
   }
   print(n_util-90)
-  
-  print("Number of cutted edges:")
-  print(nc)
 }
