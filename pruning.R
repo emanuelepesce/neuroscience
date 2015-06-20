@@ -18,9 +18,6 @@ source("./graphUtils.R", chdir = T)
 #' @param threshold a threshold
 #' @param invert, if TRUE normalize all weights and do 1-weights in order to 
 #'        turn the max value in min and so work with shortest paths.
-#' @param flow if is equal to 0 means that algorithm works ignoring the flow else
-#'        it consider the flow when threshold are computed for deciding if a 
-#'        not util edge should be cutted or don't.
 #' @return toReturn a list of things:
 #'         -v_util : set of util vertices
 #'         -toRemove : set of vertices to remove
@@ -33,7 +30,7 @@ source("./graphUtils.R", chdir = T)
 #' util <- R$v_util
 #' r <- R$toRemove
 #' nc <- R$n_cut
-minFlowPruning <- function(graph, threshold=0.5, invert = FALSE, flow=0){
+minFlowPruning <- function(graph, threshold=0.5, invert = FALSE){
   
   ### normalization and invert the values in order to calculate max flow with
   ### shortest path
@@ -43,14 +40,13 @@ minFlowPruning <- function(graph, threshold=0.5, invert = FALSE, flow=0){
     ne_weights <- (e_weights-min(e_weights))/(max(e_weights)-min(e_weights))
     E(graph)$weight  <- 1 - ne_weights
   }
-    
+  
+  
   ### inizialize list of edges
   v_util <- list()
   for (i in 1:vcount(graph)){
     v_util[[i]] <- i
   }
-  
-
   
   ### put in v_util all edges which are part of a shortest path
   for (v in V(graph)){ #for each vertex v
@@ -64,9 +60,9 @@ minFlowPruning <- function(graph, threshold=0.5, invert = FALSE, flow=0){
             # edge vj-vk is to add to the list
             vj <- sp$res[[i]][j]
             vk <- sp$res[[i]][j+1]
-              if (!( vk %in% v_util[[vj]] )){ # check if vk is the list of vj
-                v_util[[vj]] <- c(v_util[[vj]], vk)
-              }
+            if (!( vk %in% v_util[[vj]] )){ # check if vk is the list of vj
+              v_util[[vj]] <- c(v_util[[vj]], vk)
+            }
           }
         } # end j
       } 
@@ -79,69 +75,24 @@ minFlowPruning <- function(graph, threshold=0.5, invert = FALSE, flow=0){
     toRemove[[i]] <- i 
   }
   
-  ### Algorithm with no flow
-  if(flow == 0){
-    for (i in 1:vcount(graph)){
-      for (j in 1:vcount(graph)){
-        # check if ij is in v_util
-        if (!(j %in% v_util[[i]])){ # if i-j is not in util
-          # number of neighbors of i and j
-          ni <- length(v_util[[i]]-1) 
-          nj <- length(v_util[[j]]-1)
-          f <- (ni+nj)/(2*vcount(graph)) # fraction of neighbors in util
-          if (f >= threshold){ # add i-j to the list of edges to remove
-            if (!( j %in% toRemove[[i]] )){  # add vertex j only once
-              toRemove[[i]] <- c(toRemove[[i]],j)
-            }
+  
+  for (i in 1:vcount(graph)){
+    for (j in 1:vcount(graph)){
+      # check if ij is in v_util
+      if (!(j %in% v_util[[i]])){ # if i-j is not in util
+        # number of neighbors of i and j
+        ni <- length(v_util[[i]]-1) 
+        nj <- length(v_util[[j]]-1)
+        f <- (ni+nj)/(2*vcount(graph)) # fraction of neighbors in util
+        if (f >= threshold){ # add i-j to the list of edges to remove
+          if (!( j %in% toRemove[[i]] )){  # add vertex j only once
+            toRemove[[i]] <- c(toRemove[[i]],j)
           }
         }
-      } #j
-    } #i
-  }
-  ### Algorithm with no flow
-  else{
-    for (i in 1:vcount(graph)){
-      for (j in 1:vcount(graph)){
-        # check if ij is in v_util
-        if (!(j %in% v_util[[i]])){ # if i-j is not in util
-          # number of neighbors of i and j
-          #         ni <- length(v_util[[i]]-1) 
-          #         nj <- length(v_util[[j]]-1)
-          ni <- length(v_util[[i]]) 
-          nj <- length(v_util[[j]])
-          #get weights
-          sum_weights_util = 0
-          for(k in 1:ni){
-            ids <- get.edge.ids(g, c(i,v_util[[i]][k]))
-            sum_weights_util <- sum_weights_util + get.edge.attribute(g, ids, name = "weight")
-          }
-          for(k in 1:nj){
-            ids <- get.edge.ids(g, c(j,v_util[[j]][k]))
-            sum_weights_util <- sum_weights_util + get.edge.attribute(g, ids, name = "weight")
-          }
-          sum_weights_tot = 0
-          inc <- incident(g, i, mode = "all")
-          for(k in 1:length(inc)){
-            ids <- inc[k]
-            sum_weights_tot <- sum_weights_tot + get.edge.attribute(g, ids, name = "weight")
-          }
-          inc <- incident(g, i, mode = "all")
-          for(k in 1:length(inc)){
-            ids <- inc[k]
-            sum_weights_tot <- sum_weights_tot + get.edge.attribute(g, ids, name = "weight")
-          }
-          f <- sum_weights_util / sum_weights_tot
-          #         f <- (ni+nj)/(2*vcount(graph)) # fraction of neighbors in util
-          if (f >= threshold){ # add i-j to the list of edges to remove
-            if (!( j %in% toRemove[[i]] )){  # add vertex j only once
-              toRemove[[i]] <- c(toRemove[[i]],j)
-            }
-          }
-        }
-      } #j
-    } #i
-  }
- 
+      }
+    } #j
+  } #i
+  
   ### remove edges
   g_cut <- graph
   for(i in 1:length(toRemove)){ # for each vertex i
@@ -166,12 +117,11 @@ minFlowPruning <- function(graph, threshold=0.5, invert = FALSE, flow=0){
 
 
 if(interactive()){
-  ptm <- proc.time()
   
-#   g <- i_adjacencyFromFile("./../../data/toyData/controls/CTRL_amore.txt")
+  #   g <- i_adjacencyFromFile("./../../data/toyData/controls/CTRL_amore.txt")
   g <- i_adjacencyFromFile("./../../data/toyData/extract/bordaMatrix.txt")
-  R <- minFlowPruning(g, threshold = 0.001, flow = 1)
-
+  R <- minFlowPruning(g, threshold = 0.001)
+  
   gc <- R$g_cut
   util <- R$v_util
   r <- R$toRemove
@@ -194,7 +144,4 @@ if(interactive()){
     n_util <- n_util + length(util[[i]])
   }
   print(n_util-90)
-
-  time  <- proc.time() - ptm
-  print(time)
 }
