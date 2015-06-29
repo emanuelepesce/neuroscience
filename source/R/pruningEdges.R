@@ -22,17 +22,15 @@ source("./graphUtils.R", chdir = T)
 #'        it consider the flow when threshold are computed for deciding if a 
 #'        not util edge should be cutted or don't.
 #' @return toReturn a list of things:
-#'         -v_util : set of util vertices
+#'         -v_util : set of util vertices (shortest paths)
+#'         -n_util: number of edges in v_util
+#'         -residualGraph: graph after cutting (igraph format)
+#'         -n_residualEdges: number of residual edges
 #'         -toRemove : set of vertices to remove
-#'         -g_cut : graph cutted
-#'         -n_cut: number of cutted vertices 
-#'        
+#'         -n_cuttedEdges: number of cutted edges      
 #' @examples
 #' R <- minFlowPruning(g, threshold = 0.1)
-#' gc <- R$g_cut
-#' util <- R$v_util
-#' r <- R$toRemove
-#' nc <- R$n_cut
+#' gc <- R$v_util
 minFlowPruning <- function(graph, threshold=0.5, invert = FALSE, flow=0){
   
   ### normalization and invert the values in order to calculate max flow with
@@ -98,7 +96,7 @@ minFlowPruning <- function(graph, threshold=0.5, invert = FALSE, flow=0){
       } #j
     } #i
   }
-  ### Algorithm with no flow
+  ### Algorithm with flow
   else{
     for (i in 1:vcount(graph)){
       for (j in 1:vcount(graph)){
@@ -155,45 +153,47 @@ minFlowPruning <- function(graph, threshold=0.5, invert = FALSE, flow=0){
     
   } # end i
   
-  ### number of cutted edges
-  n_cut <- length(E(graph)) - length(E(g_cut))
+  residualGraph <- g_cut
   
+  ### number of cutted edges
+  n_cuttedEdges <- length(E(graph)) - length(E(residualGraph))
+  
+  ### number of edges in v_util
+  n_util <- 0
+  for (i in 1:length(v_util)){
+    n_util <- n_util + length(v_util[[i]])
+  }
+  n_util <- n_util - 90
+  
+  ### number of residual edges
+  n_residualEdges <- length(E(residualGraph))
+
   # return
-  toReturn <- list("v_util" = v_util, "toRemove" = toRemove, "g_cut" = g_cut, 
-                   "n_cut" = n_cut)
+  toReturn <- list("v_util" = v_util, "n_util" = n_util, 
+                   "residualGraph" = residualGraph, "n_residualEdges" = n_residualEdges,
+                   "toRemove" = toRemove,  "n_cuttedEdges" = n_cuttedEdges)
   return(toReturn)
 }
 
 
 if(interactive()){
   ptm <- proc.time()
-  
+  g <- i_adjacencyFromFile("./../../data/toyData/extract/bordaMatrixControls.txt")
 #   g <- i_adjacencyFromFile("./../../data/toyData/controls/CTRL_amore.txt")
-  g <- i_adjacencyFromFile("./../../data/toyData/extract/bordaMatrix.txt")
-  R <- minFlowPruning(g, threshold = 0.001, flow = 1)
-
-  gc <- R$g_cut
-  util <- R$v_util
-  r <- R$toRemove
-  nc <- R$n_cut
-  
+#   g <- i_adjacencyFromFile("./../../data/toyData/extract/bordaMatrix.txt")
+  R <- minFlowPruning(g, threshold = 0.1, flow = 0)
   
   print("Number of edges before cutting")
   print(length(E(g)))
   
   print("Number of edges after cutting:")
-  lgc <- length(E(gc))
-  print(lgc)
+  print(R$n_residualEdges)
   
   print("Number of cutted edges:")
-  print(nc)
+  print(R$n_cuttedEdges)
   
   print("Number of utils edges:") 
-  n_util <- 0
-  for (i in 1:length(util)){
-    n_util <- n_util + length(util[[i]])
-  }
-  print(n_util-90)
+  print(R$n_util)
 
   time  <- proc.time() - ptm
   print(time)
