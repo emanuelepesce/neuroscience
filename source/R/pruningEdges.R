@@ -181,7 +181,7 @@ if(interactive()){
   g <- i_adjacencyFromFile("./../../data/toyData/extract/bordaMatrixControls.txt")
 #   g <- i_adjacencyFromFile("./../../data/toyData/controls/CTRL_amore.txt")
 #   g <- i_adjacencyFromFile("./../../data/toyData/extract/bordaMatrix.txt")
-  R <- minFlowPruning(g, threshold = 0.1, flow = 0)
+  R <- minFlowPruning(g, threshold = 0.05, flow = 0)
   
   print("Number of edges before cutting")
   print(length(E(g)))
