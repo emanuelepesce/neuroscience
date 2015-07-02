@@ -70,6 +70,9 @@ removeEdge <- function(graph, v1, v2){
   return(graph)
 }
 
+
+
+
 if(interactive()){
   graph <- getMatrixFromFile("./../../data/toyData/controls/CTRL_amore.txt")
   

@@ -1,6 +1,6 @@
 #' extractMask
 #' 
-#' 
+#' generate mask to apply to graphs
 #' 
 #' Author: Emanuele Pesce
 library(igraph)
@@ -112,4 +112,5 @@ if(interactive()){
               "e_union" =dim(r)[1], "e_union_m_controls" =  dim(r)[1] - RC$n_residualEdges,
               "e_union_m_patients" = dim(r)[1] - RP$n_residualEdges)
   write.csv(out, file = "info_maskUnion.csv")
+  write.table(r,file="edgesMask.csv",sep="\t", col.names = F, row.names = F)
 }
