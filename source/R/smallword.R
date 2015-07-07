@@ -7,7 +7,7 @@ library(igraph)
 
 #' Calculates properties which a smallworld should possess
 #' It uses igraph functions.
-#' Properties: maxComponent, averagePath(currently not weighted)
+#' Properties: maxComponent, averagePath(currently not weighted), clustering coefficient
 #' 
 #' @param graph
 #' @return A list of properties
@@ -22,9 +22,14 @@ smallWorldProperties <- function(graph){
   # average path length (this function doesn't consider weighted edges)
   averagePath <- average.path.length(g, directed=TRUE, unconnected=TRUE)
   
+  # clustering coefficient
+  clust_coeff <- transitivity(graph = g)
+  
+  
   # return
-  sp <- list("maxComponent" = maxComponent, "averagePath" = averagePath);
-  return(sp);
+  sp <- list("maxComponent" = maxComponent, "averagePath" = averagePath,
+             "clust_coeff" = clust_coeff);
+  return(sp);  
 }
 
 #' Check if a graph is a small world
@@ -56,6 +61,7 @@ isSmallWorld <- function(graph){
     sw <- 0
   }
   
+  
   # return
   return(sw)
 }
@@ -71,5 +77,10 @@ if(interactive()){
   
   sp <- smallWorldProperties(g)
   
+  isSmallWorld(g)
+  
+  path <- "./../../data/toyData/cutted_controls/CTRL_amore.gml"
+  g <- read.graph(path, format = "gml")
+  sp <- smallWorldProperties(g)
   isSmallWorld(g)
 }
