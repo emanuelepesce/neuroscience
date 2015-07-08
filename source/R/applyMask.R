@@ -31,11 +31,19 @@ applyMask <- function(graph, mask){
     g[v1, v2] <- FALSE
   }
   
-  # add weights in the mask
+  # add weights of edges in the mask
   for(i in 1:m_edges){
     v1 <- mask[i,1]
     v2 <- mask[i,2]
-    g[v1, v2, attr="weight"] <- graph[v1, v2]
+    w <- graph[v1, v2]
+    if (is.finite(w)){
+      if (w <= 0){
+        g[v1, v2, attr = "weight"] <- 1e-05
+      }
+    }
+    else{
+      g[v1, v2, attr="weight"] <- graph[v1, v2]
+    }
     g[v1, v2, attr="inverse"] <- 1 - graph[v1, v2]
   }
   
@@ -75,7 +83,6 @@ addNoise <- function(g){
 #' @param pathIn path where there are graphs which needs tobe applied a mask 
 #' @param pathOut path where graph after mask application will be saved
 #' @param path path of the mask
-#' @return g a graph where there are only edges of the mask    
 #' @examples
 #'  applyMaskDirectory("./../../data/toyData/controls/", "./../../data/toyData/cutted_controls/")
 applyMaskDirectory <- function(pathIn, pathOut, pathMask = "./../../data/toyData/results/1_maskUnion/edgesMask.csv"){
@@ -90,7 +97,7 @@ applyMaskDirectory <- function(pathIn, pathOut, pathMask = "./../../data/toyData
     if(grepl(cfile, pattern = "*.txt")){
       print(cfile)
       g <- i_adjacencyFromFile(cfile)
-      g <- addNoise(g) # add noise to the adges with weight = 0
+#       g <- addNoise(g) # add noise to the adges with weight = 0
       gm <- applyMask(g,mask)
       # write the output
       outfile <- paste(pathOut, files[i], sep="")

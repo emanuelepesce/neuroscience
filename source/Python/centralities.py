@@ -44,7 +44,7 @@ def centralities(g):
         @return: a matrix where each columns is a centrality and each row is a 
                 node
     """
-    bet = nx.betweenness_centrality(g)
+    bet = nx.betweenness_centrality(g, weight="weight")
     ind = nx.in_degree_centrality(g)
     cls = nx.closeness_centrality(g)
     prk = nx.pagerank(g)
@@ -73,10 +73,10 @@ if __name__ ==  "__main__":
 #        f.writerows(n)
 #        f.writerows(C)
     
-#    pathIn = "./../../data/toyData/cutted_controls/"
-#    pathOut = "./../../data/toyData/cutted_controls/centralities/"
-#    applyCentralities(pathIn, pathOut)
-#    
+    pathIn = "./../../data/toyData/cutted_controls/"
+    pathOut = "./../../data/toyData/cutted_controls/centralities/"
+    applyCentralities(pathIn, pathOut)
+    
     pathIn = "./../../data/toyData/cutted_patients/"
     pathOut = "./../../data/toyData/cutted_patients/centralities/"
     applyCentralities(pathIn, pathOut) 

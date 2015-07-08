@@ -20,7 +20,7 @@ def applyAnalysis(pathIn, filename = "analysis.csv"):
         @type pathOut: string
         @param graph: directory where to save all files
     """
-    n = [("ID","average_path","weighted_average_path","average_clust","largest_component")]    
+    n = [("ID","average_path", "average_clust","largest_component")]    
     with open(filename, 'w') as fp:
         f = csv.writer(fp, delimiter=',')
         f.writerows(n)
@@ -30,26 +30,21 @@ def applyAnalysis(pathIn, filename = "analysis.csv"):
                 p_in = pathIn + fl
                 print p_in
                 g=nx.read_gml(p_in)
-                C = g_analysis(g, fl.replace(".gml",""))                
-                
+                C = g_analysis(g, fl.replace(".gml",""))     
+                print C                          
                 f.writerow(C)
                 
     
 def g_analysis(graph, name):
-    """ Computes graph centrality (betweenneess, indegree, closeness, pageRank)
-            
-        @type graph: networkx graph
-        @param graph: graph
-        
-        @return: a matrix where each columns is a centrality and each row is a 
-                node
+    """ 
+        Return average length, average clustering, largest component dimenson
     """
     avg_len = nx.average_shortest_path_length(graph)
-    avg_len_w = nx.average_shortest_path_length(g, weight = "weight")
+#    avg_len_w = nx.average_shortest_path_length(g, weight = "inverse")
     avg_clust = nx.transitivity(graph)
     largest_component = len(nx.strongly_connected_components(graph)[0])
     
-    M = [name,avg_len, avg_len_w, avg_clust, largest_component]
+    M = [name,avg_len, avg_clust, largest_component]
     
     return M
 
@@ -65,9 +60,9 @@ if __name__ ==  "__main__":
 #    a = g_analysis(g, "a")
     
     pathIn = "./../../data/toyData/cutted_controls/"
-    pathOut = "./../../data/toyData/cutted_controls/centralities/"
-    applyAnalysis(pathIn)
+    pathOut = "./../../data/toyData/cutted_controls/centralities/analysis/structural.csv"
+    applyAnalysis(pathIn, pathOut)
     
-#    pathIn = "./../../data/toyData/cutted_patients/"
-#    pathOut = "./../../data/toyData/cutted_patients/centralities/"
-#    applyCentralities(pathIn, pathOut)
+    pathIn = "./../../data/toyData/cutted_patients/"
+    pathOut = "./../../data/toyData/cutted_patients/centralities/analysis/structural.csv"
+    applyAnalysis(pathIn, pathOut)

@@ -1,4 +1,4 @@
-Creator "igraph version @VERSION@ Mon Jul  6 17:47:57 2015"
+Creator "igraph version @VERSION@ Tue Jul  7 19:56:08 2015"
 Version 1
 graph
 [
@@ -457,11536 +457,11536 @@ graph
   [
     source 0
     target 6
-    weight 0.13298
+    weight NaN
     inverse 0.86702
   ]
   edge
   [
     source 0
     target 10
-    weight 0.079132
+    weight NaN
     inverse 0.920868
   ]
   edge
   [
     source 0
     target 56
-    weight 0.16998
+    weight NaN
     inverse 0.83002
   ]
   edge
   [
     source 0
     target 68
-    weight 0.02501
+    weight NaN
     inverse 0.97499
   ]
   edge
   [
     source 0
     target 76
-    weight 0.015514
+    weight NaN
     inverse 0.984486
   ]
   edge
   [
     source 1
     target 7
-    weight 0.10527
+    weight NaN
     inverse 0.89473
   ]
   edge
   [
     source 1
     target 11
-    weight 0.085305
+    weight NaN
     inverse 0.914695
   ]
   edge
   [
     source 1
     target 39
-    weight 4.5501e-05
+    weight NaN
     inverse 0.999954499
   ]
   edge
   [
     source 1
     target 47
-    weight 0.00052733
+    weight NaN
     inverse 0.99947267
   ]
   edge
   [
     source 1
     target 57
-    weight 0.12783
+    weight NaN
     inverse 0.87217
   ]
   edge
   [
     source 1
     target 74
-    weight 0.00035246
+    weight NaN
     inverse 0.99964754
   ]
   edge
   [
     source 1
     target 77
-    weight 0.020312
+    weight NaN
     inverse 0.979688
   ]
   edge
   [
     source 1
     target 79
-    weight 2.0374e-05
+    weight NaN
     inverse 0.999979626
   ]
   edge
   [
     source 1
     target 87
-    weight 0.00028149
+    weight NaN
     inverse 0.99971851
   ]
   edge
   [
     source 2
     target 4
-    weight 0.033691
+    weight NaN
     inverse 0.966309
   ]
   edge
   [
     source 2
     target 6
-    weight 0.16327
+    weight NaN
     inverse 0.83673
   ]
   edge
   [
     source 2
     target 18
-    weight 0.016319
+    weight NaN
     inverse 0.983681
   ]
   edge
   [
     source 2
     target 22
-    weight 0.0901
+    weight NaN
     inverse 0.9099
   ]
   edge
   [
     source 2
     target 70
-    weight 0.0061406
+    weight NaN
     inverse 0.9938594
   ]
   edge
   [
     source 2
     target 72
-    weight 0.025778
+    weight NaN
     inverse 0.974222
   ]
   edge
   [
     source 2
     target 76
-    weight 0.0093282
+    weight NaN
     inverse 0.9906718
   ]
   edge
   [
     source 3
     target 7
-    weight 0.17733
+    weight NaN
     inverse 0.82267
   ]
   edge
   [
     source 3
     target 19
-    weight 0.017292
+    weight NaN
     inverse 0.982708
   ]
   edge
   [
     source 3
     target 23
-    weight 0.066753
+    weight NaN
     inverse 0.933247
   ]
   edge
   [
     source 3
     target 71
-    weight 0.012735
+    weight NaN
     inverse 0.987265
   ]
   edge
   [
     source 3
     target 73
-    weight 0.030197
+    weight NaN
     inverse 0.969803
   ]
   edge
   [
     source 4
     target 2
-    weight 0.042573
+    weight NaN
     inverse 0.957427
   ]
   edge
   [
     source 4
     target 8
-    weight 0.091734
+    weight NaN
     inverse 0.908266
   ]
   edge
   [
     source 4
     target 26
-    weight 0.078406
+    weight NaN
     inverse 0.921594
   ]
   edge
   [
     source 4
     target 70
-    weight 0.051017
+    weight NaN
     inverse 0.948983
   ]
   edge
   [
     source 4
     target 72
-    weight 0.061158
+    weight NaN
     inverse 0.938842
   ]
   edge
   [
     source 5
     target 3
-    weight 0.060429
+    weight NaN
     inverse 0.939571
   ]
   edge
   [
     source 5
     target 9
-    weight 0.080431
+    weight NaN
     inverse 0.919569
   ]
   edge
   [
     source 5
     target 25
-    weight 0.07554
+    weight NaN
     inverse 0.92446
   ]
   edge
   [
     source 5
     target 27
-    weight 0.08121
+    weight NaN
     inverse 0.91879
   ]
   edge
   [
     source 5
     target 71
-    weight 0.048436
+    weight NaN
     inverse 0.951564
   ]
   edge
   [
     source 5
     target 73
-    weight 0.033307
+    weight NaN
     inverse 0.966693
   ]
   edge
   [
     source 6
     target 0
-    weight 0.027836
+    weight NaN
     inverse 0.972164
   ]
   edge
   [
     source 6
     target 2
-    weight 0.13583
+    weight NaN
     inverse 0.86417
   ]
   edge
   [
     source 6
     target 7
-    weight 0.00091082
+    weight NaN
     inverse 0.99908918
   ]
   edge
   [
     source 6
     target 8
-    weight 0.017467
+    weight NaN
     inverse 0.982533
   ]
   edge
   [
     source 6
     target 12
-    weight 0.11236
+    weight NaN
     inverse 0.88764
   ]
   edge
   [
     source 6
     target 37
-    weight 0.00010417
+    weight NaN
     inverse 0.99989583
   ]
   edge
   [
     source 6
     target 38
-    weight 0.00010588
+    weight NaN
     inverse 0.99989412
   ]
   edge
   [
     source 6
     target 39
-    weight 7.0209e-06
+    weight NaN
     inverse 0.9999929791
   ]
   edge
   [
     source 6
     target 41
-    weight 7.2106e-06
+    weight NaN
     inverse 0.9999927894
   ]
   edge
   [
     source 6
     target 47
-    weight 7.7799e-05
+    weight NaN
     inverse 0.999922201
   ]
   edge
   [
     source 6
     target 49
-    weight 3.3776e-05
+    weight NaN
     inverse 0.999966224
   ]
   edge
   [
     source 6
     target 53
-    weight 3.9848e-06
+    weight NaN
     inverse 0.9999960152
   ]
   edge
   [
     source 6
     target 61
-    weight 2.9222e-05
+    weight NaN
     inverse 0.999970778
   ]
   edge
   [
     source 6
     target 62
-    weight 0.00025256
+    weight NaN
     inverse 0.99974744
   ]
   edge
   [
     source 6
     target 64
-    weight 0.00024004
+    weight NaN
     inverse 0.99975996
   ]
   edge
   [
     source 6
     target 65
-    weight 1.1954e-05
+    weight NaN
     inverse 0.999988046
   ]
   edge
   [
     source 6
     target 74
-    weight 0.0016173
+    weight NaN
     inverse 0.9983827
   ]
   edge
   [
     source 6
     target 75
-    weight 0.00072068
+    weight NaN
     inverse 0.99927932
   ]
   edge
   [
     source 6
     target 78
-    weight 8.1594e-06
+    weight NaN
     inverse 0.9999918406
   ]
   edge
   [
     source 6
     target 79
-    weight 0
+    weight 1e-05
     inverse 1
   ]
   edge
   [
     source 6
     target 87
-    weight 1.556e-05
+    weight NaN
     inverse 0.99998444
   ]
   edge
   [
     source 6
     target 88
-    weight 0.00036793
+    weight NaN
     inverse 0.99963207
   ]
   edge
   [
     source 6
     target 89
-    weight 7.6091e-05
+    weight NaN
     inverse 0.999923909
   ]
   edge
   [
     source 7
     target 1
-    weight 0.043352
+    weight NaN
     inverse 0.956648
   ]
   edge
   [
     source 7
     target 3
-    weight 0.12116
+    weight NaN
     inverse 0.87884
   ]
   edge
   [
     source 7
     target 6
-    weight 0.0010422
+    weight NaN
     inverse 0.9989578
   ]
   edge
   [
     source 7
     target 8
-    weight 0.00054753
+    weight NaN
     inverse 0.99945247
   ]
   edge
   [
     source 7
     target 13
-    weight 0.118
+    weight NaN
     inverse 0.882
   ]
   edge
   [
     source 7
     target 37
-    weight 0.0013341
+    weight NaN
     inverse 0.9986659
   ]
   edge
   [
     source 7
     target 38
-    weight 7.3763e-05
+    weight NaN
     inverse 0.999926237
   ]
   edge
   [
     source 7
     target 39
-    weight 4.986e-05
+    weight NaN
     inverse 0.99995014
   ]
   edge
   [
     source 7
     target 41
-    weight 3.6041e-05
+    weight NaN
     inverse 0.999963959
   ]
   edge
   [
     source 7
     target 47
-    weight 0.00066293
+    weight NaN
     inverse 0.99933707
   ]
   edge
   [
     source 7
     target 49
-    weight 0.00012045
+    weight NaN
     inverse 0.99987955
   ]
   edge
   [
     source 7
     target 53
-    weight 4.071e-05
+    weight NaN
     inverse 0.99995929
   ]
   edge
   [
     source 7
     target 61
-    weight 3.6788e-05
+    weight NaN
     inverse 0.999963212
   ]
   edge
   [
     source 7
     target 62
-    weight 3.1933e-05
+    weight NaN
     inverse 0.999968067
   ]
   edge
   [
     source 7
     target 64
-    weight 4.4818e-05
+    weight NaN
     inverse 0.999955182
   ]
   edge
   [
     source 7
     target 65
-    weight 9.0943e-05
+    weight NaN
     inverse 0.999909057
   ]
   edge
   [
     source 7
     target 74
-    weight 0.0012926
+    weight NaN
     inverse 0.9987074
   ]
   edge
   [
     source 7
     target 75
-    weight 0.0032362
+    weight NaN
     inverse 0.9967638
   ]
   edge
   [
     source 7
     target 78
-    weight 9.3371e-07
+    weight NaN
     inverse 0.99999906629
   ]
   edge
   [
     source 7
     target 79
-    weight 5.6022e-07
+    weight NaN
     inverse 0.99999943978
   ]
   edge
   [
     source 7
     target 87
-    weight 0.00015481
+    weight NaN
     inverse 0.99984519
   ]
   edge
   [
     source 7
     target 88
-    weight 0.00018413
+    weight NaN
     inverse 0.99981587
   ]
   edge
   [
     source 7
     target 89
-    weight 0.00052082
+    weight NaN
     inverse 0.99947918
   ]
   edge
   [
     source 8
     target 4
-    weight 0.17738
+    weight NaN
     inverse 0.82262
   ]
   edge
   [
     source 8
     target 6
-    weight 0.057089
+    weight NaN
     inverse 0.942911
   ]
   edge
   [
     source 8
     target 7
-    weight 0.0032163
+    weight NaN
     inverse 0.9967837
   ]
   edge
   [
     source 8
     target 14
-    weight 0.21586
+    weight NaN
     inverse 0.78414
   ]
   edge
   [
     source 8
     target 37
-    weight 0.00066148
+    weight NaN
     inverse 0.99933852
   ]
   edge
   [
     source 8
     target 38
-    weight 0.0013074
+    weight NaN
     inverse 0.9986926
   ]
   edge
   [
     source 8
     target 39
-    weight 9.4942e-05
+    weight NaN
     inverse 0.999905058
   ]
   edge
   [
     source 8
     target 41
-    weight 7.7043e-05
+    weight NaN
     inverse 0.999922957
   ]
   edge
   [
     source 8
     target 47
-    weight 0.00037588
+    weight NaN
     inverse 0.99962412
   ]
   edge
   [
     source 8
     target 49
-    weight 0.00024125
+    weight NaN
     inverse 0.99975875
   ]
   edge
   [
     source 8
     target 53
-    weight 1.4008e-05
+    weight NaN
     inverse 0.999985992
   ]
   edge
   [
     source 8
     target 61
-    weight 0.00054086
+    weight NaN
     inverse 0.99945914
   ]
   edge
   [
     source 8
     target 62
-    weight 0.00042335
+    weight NaN
     inverse 0.99957665
   ]
   edge
   [
     source 8
     target 64
-    weight 0.00073541
+    weight NaN
     inverse 0.99926459
   ]
   edge
   [
     source 8
     target 65
-    weight 7.9377e-05
+    weight NaN
     inverse 0.999920623
   ]
   edge
   [
     source 8
     target 72
-    weight 0.14314
+    weight NaN
     inverse 0.85686
   ]
   edge
   [
     source 8
     target 74
-    weight 0.0278
+    weight NaN
     inverse 0.9722
   ]
   edge
   [
     source 8
     target 75
-    weight 0.00099922
+    weight NaN
     inverse 0.99900078
   ]
   edge
   [
     source 8
     target 78
-    weight 4.6693e-05
+    weight NaN
     inverse 0.999953307
   ]
   edge
   [
     source 8
     target 79
-    weight 1.5564e-06
+    weight NaN
     inverse 0.9999984436
   ]
   edge
   [
     source 8
     target 87
-    weight 0.00014864
+    weight NaN
     inverse 0.99985136
   ]
   edge
   [
     source 8
     target 88
-    weight 0.0063082
+    weight NaN
     inverse 0.9936918
   ]
   edge
   [
     source 8
     target 89
-    weight 0.00066148
+    weight NaN
     inverse 0.99933852
   ]
   edge
   [
     source 9
     target 5
-    weight 0.083776
+    weight NaN
     inverse 0.916224
   ]
   edge
   [
     source 9
     target 7
-    weight 0.082842
+    weight NaN
     inverse 0.917158
   ]
   edge
   [
     source 9
     target 15
-    weight 0.11588
+    weight NaN
     inverse 0.88412
   ]
   edge
   [
     source 9
     target 39
-    weight 0.00030685
+    weight NaN
     inverse 0.99969315
   ]
   edge
   [
     source 9
     target 47
-    weight 0.0064911
+    weight NaN
     inverse 0.9935089
   ]
   edge
   [
     source 9
     target 73
-    weight 0.091817
+    weight NaN
     inverse 0.908183
   ]
   edge
   [
     source 9
     target 74
-    weight 0.0015623
+    weight NaN
     inverse 0.9984377
   ]
   edge
   [
     source 9
     target 79
-    weight 6.1644e-06
+    weight NaN
     inverse 0.9999938356
   ]
   edge
   [
     source 9
     target 87
-    weight 0.011329
+    weight NaN
     inverse 0.988671
   ]
   edge
   [
     source 10
     target 0
-    weight 0.12614
+    weight NaN
     inverse 0.87386
   ]
   edge
   [
     source 10
     target 12
-    weight 0.22536
+    weight NaN
     inverse 0.77464
   ]
   edge
   [
     source 10
     target 16
-    weight 0.09167
+    weight NaN
     inverse 0.90833
   ]
   edge
   [
     source 10
     target 18
-    weight 0.028172
+    weight NaN
     inverse 0.971828
   ]
   edge
   [
     source 10
     target 39
-    weight 9.0909e-06
+    weight NaN
     inverse 0.9999909091
   ]
   edge
   [
     source 10
     target 47
-    weight 9.0083e-05
+    weight NaN
     inverse 0.999909917
   ]
   edge
   [
     source 10
     target 74
-    weight 0.0017851
+    weight NaN
     inverse 0.9982149
   ]
   edge
   [
     source 10
     target 79
-    weight 0
+    weight 1e-05
     inverse 1
   ]
   edge
   [
     source 10
     target 87
-    weight 1.9835e-05
+    weight NaN
     inverse 0.999980165
   ]
   edge
   [
     source 11
     target 1
-    weight 0.14607
+    weight NaN
     inverse 0.85393
   ]
   edge
   [
     source 11
     target 13
-    weight 0.23087
+    weight NaN
     inverse 0.76913
   ]
   edge
   [
     source 11
     target 17
-    weight 0.067733
+    weight NaN
     inverse 0.932267
   ]
   edge
   [
     source 11
     target 29
-    weight 0.10447
+    weight NaN
     inverse 0.89553
   ]
   edge
   [
     source 11
     target 39
-    weight 1.9048e-05
+    weight NaN
     inverse 0.999980952
   ]
   edge
   [
     source 11
     target 47
-    weight 0.00036889
+    weight NaN
     inverse 0.99963111
   ]
   edge
   [
     source 11
     target 74
-    weight 0.00017397
+    weight NaN
     inverse 0.99982603
   ]
   edge
   [
     source 11
     target 79
-    weight 1.9683e-05
+    weight NaN
     inverse 0.999980317
   ]
   edge
   [
     source 11
     target 87
-    weight 0.00023365
+    weight NaN
     inverse 0.99976635
   ]
   edge
   [
     source 12
     target 6
-    weight 0.14726
+    weight NaN
     inverse 0.85274
   ]
   edge
   [
     source 12
     target 10
-    weight 0.11748
+    weight NaN
     inverse 0.88252
   ]
   edge
   [
     source 12
     target 28
-    weight 0.093463
+    weight NaN
     inverse 0.906537
   ]
   edge
   [
     source 12
     target 39
-    weight 2.233e-05
+    weight NaN
     inverse 0.99997767
   ]
   edge
   [
     source 12
     target 47
-    weight 0.00013528
+    weight NaN
     inverse 0.99986472
   ]
   edge
   [
     source 12
     target 72
-    weight 0.040605
+    weight NaN
     inverse 0.959395
   ]
   edge
   [
     source 12
     target 74
-    weight 0.0052722
+    weight NaN
     inverse 0.9947278
   ]
   edge
   [
     source 12
     target 79
-    weight 3.2362e-07
+    weight NaN
     inverse 0.99999967638
   ]
   edge
   [
     source 12
     target 87
-    weight 3.7864e-05
+    weight NaN
     inverse 0.999962136
   ]
   edge
   [
     source 13
     target 7
-    weight 0.11472
+    weight NaN
     inverse 0.88528
   ]
   edge
   [
     source 13
     target 11
-    weight 0.12621
+    weight NaN
     inverse 0.87379
   ]
   edge
   [
     source 13
     target 15
-    weight 0.088483
+    weight NaN
     inverse 0.911517
   ]
   edge
   [
     source 13
     target 29
-    weight 0.070846
+    weight NaN
     inverse 0.929154
   ]
   edge
   [
     source 13
     target 73
-    weight 0.06575
+    weight NaN
     inverse 0.93425
   ]
   edge
   [
     source 14
     target 8
-    weight 0.11072
+    weight NaN
     inverse 0.88928
   ]
   edge
   [
     source 14
     target 12
-    weight 0.095512
+    weight NaN
     inverse 0.904488
   ]
   edge
   [
     source 14
     target 28
-    weight 0.18418
+    weight NaN
     inverse 0.81582
   ]
   edge
   [
     source 14
     target 72
-    weight 0.083741
+    weight NaN
     inverse 0.916259
   ]
   edge
   [
     source 14
     target 82
-    weight 0.068385
+    weight NaN
     inverse 0.931615
   ]
   edge
   [
     source 15
     target 9
-    weight 0.078004
+    weight NaN
     inverse 0.921996
   ]
   edge
   [
     source 15
     target 13
-    weight 0.090087
+    weight NaN
     inverse 0.909913
   ]
   edge
   [
     source 15
     target 29
-    weight 0.13867
+    weight NaN
     inverse 0.86133
   ]
   edge
   [
     source 15
     target 37
-    weight 0.022712
+    weight NaN
     inverse 0.977288
   ]
   edge
   [
     source 15
     target 73
-    weight 0.11463
+    weight NaN
     inverse 0.88537
   ]
   edge
   [
     source 15
     target 83
-    weight 0.031467
+    weight NaN
     inverse 0.968533
   ]
   edge
   [
     source 16
     target 10
-    weight 0.061196
+    weight NaN
     inverse 0.938804
   ]
   edge
   [
     source 16
     target 28
-    weight 0.18674
+    weight NaN
     inverse 0.81326
   ]
   edge
   [
     source 16
     target 56
-    weight 0.12981
+    weight NaN
     inverse 0.87019
   ]
   edge
   [
     source 16
     target 78
-    weight 0.040084
+    weight NaN
     inverse 0.959916
   ]
   edge
   [
     source 16
     target 80
-    weight 0.089997
+    weight NaN
     inverse 0.910003
   ]
   edge
   [
     source 17
     target 29
-    weight 0.22493
+    weight NaN
     inverse 0.77507
   ]
   edge
   [
     source 17
     target 57
-    weight 0.076561
+    weight NaN
     inverse 0.923439
   ]
   edge
   [
     source 17
     target 63
-    weight 0.029988
+    weight NaN
     inverse 0.970012
   ]
   edge
   [
     source 17
     target 79
-    weight 0.073672
+    weight NaN
     inverse 0.926328
   ]
   edge
   [
     source 17
     target 81
-    weight 0.16651
+    weight NaN
     inverse 0.83349
   ]
   edge
   [
     source 18
     target 2
-    weight 0.050731
+    weight NaN
     inverse 0.949269
   ]
   edge
   [
     source 18
     target 19
-    weight 0.045887
+    weight NaN
     inverse 0.954113
   ]
   edge
   [
     source 18
     target 22
-    weight 0.0093018
+    weight NaN
     inverse 0.9906982
   ]
   edge
   [
     source 18
     target 32
-    weight 0.077892
+    weight NaN
     inverse 0.922108
   ]
   edge
   [
     source 18
     target 68
-    weight 0.071983
+    weight NaN
     inverse 0.928017
   ]
   edge
   [
     source 18
     target 76
-    weight 0.046499
+    weight NaN
     inverse 0.953501
   ]
   edge
   [
     source 19
     target 3
-    weight 0.054371
+    weight NaN
     inverse 0.945629
   ]
   edge
   [
     source 19
     target 18
-    weight 0.01903
+    weight NaN
     inverse 0.98097
   ]
   edge
   [
     source 19
     target 33
-    weight 0.11137
+    weight NaN
     inverse 0.88863
   ]
   edge
   [
     source 19
     target 68
-    weight 0.025896
+    weight NaN
     inverse 0.974104
   ]
   edge
   [
     source 19
     target 69
-    weight 0.035808
+    weight NaN
     inverse 0.964192
   ]
   edge
   [
     source 20
     target 21
-    weight 0.0652
+    weight NaN
     inverse 0.9348
   ]
   edge
   [
     source 20
     target 26
-    weight 0.2036
+    weight NaN
     inverse 0.7964
   ]
   edge
   [
     source 20
     target 30
-    weight 0.057458
+    weight NaN
     inverse 0.942542
   ]
   edge
   [
     source 20
     target 40
-    weight 0.043911
+    weight NaN
     inverse 0.956089
   ]
   edge
   [
     source 20
     target 70
-    weight 0.14641
+    weight NaN
     inverse 0.85359
   ]
   edge
   [
     source 20
     target 82
-    weight 0.034529
+    weight NaN
     inverse 0.965471
   ]
   edge
   [
     source 21
     target 20
-    weight 0.06443
+    weight NaN
     inverse 0.93557
   ]
   edge
   [
     source 21
     target 27
-    weight 0.21051
+    weight NaN
     inverse 0.78949
   ]
   edge
   [
     source 21
     target 31
-    weight 0.0062625
+    weight NaN
     inverse 0.9937375
   ]
   edge
   [
     source 21
     target 41
-    weight 0.030115
+    weight NaN
     inverse 0.969885
   ]
   edge
   [
     source 21
     target 71
-    weight 0.09625
+    weight NaN
     inverse 0.90375
   ]
   edge
   [
     source 21
     target 83
-    weight 0.070045
+    weight NaN
     inverse 0.929955
   ]
   edge
   [
     source 22
     target 2
-    weight 0.1358
+    weight NaN
     inverse 0.8642
   ]
   edge
   [
     source 22
     target 18
-    weight 0.013503
+    weight NaN
     inverse 0.986497
   ]
   edge
   [
     source 22
     target 23
-    weight 0.019073
+    weight NaN
     inverse 0.980927
   ]
   edge
   [
     source 22
     target 30
-    weight 0.099377
+    weight NaN
     inverse 0.900623
   ]
   edge
   [
     source 22
     target 39
-    weight 1.2095e-05
+    weight NaN
     inverse 0.999987905
   ]
   edge
   [
     source 22
     target 47
-    weight 0.00012268
+    weight NaN
     inverse 0.99987732
   ]
   edge
   [
     source 22
     target 74
-    weight 0.0020104
+    weight NaN
     inverse 0.9979896
   ]
   edge
   [
     source 22
     target 79
-    weight 4.3197e-07
+    weight NaN
     inverse 0.99999956803
   ]
   edge
   [
     source 22
     target 87
-    weight 3.0238e-05
+    weight NaN
     inverse 0.999969762
   ]
   edge
   [
     source 23
     target 3
-    weight 0.24005
+    weight NaN
     inverse 0.75995
   ]
   edge
   [
     source 23
     target 22
-    weight 0.10061
+    weight NaN
     inverse 0.89939
   ]
   edge
   [
     source 23
     target 25
-    weight 0.064732
+    weight NaN
     inverse 0.935268
   ]
   edge
   [
     source 23
     target 31
-    weight 0.14732
+    weight NaN
     inverse 0.85268
   ]
   edge
   [
     source 23
     target 39
-    weight 2.7799e-05
+    weight NaN
     inverse 0.999972201
   ]
   edge
   [
     source 23
     target 47
-    weight 0.0013158
+    weight NaN
     inverse 0.9986842
   ]
   edge
   [
     source 23
     target 74
-    weight 0.0025452
+    weight NaN
     inverse 0.9974548
   ]
   edge
   [
     source 23
     target 79
-    weight 0
+    weight 1e-05
     inverse 1
   ]
   edge
   [
     source 23
     target 87
-    weight 0.00056988
+    weight NaN
     inverse 0.99943012
   ]
   edge
   [
     source 24
     target 4
-    weight 0.096278
+    weight NaN
     inverse 0.903722
   ]
   edge
   [
     source 24
     target 5
-    weight 0.016638
+    weight NaN
     inverse 0.983362
   ]
   edge
   [
     source 24
     target 22
-    weight 0.12363
+    weight NaN
     inverse 0.87637
   ]
   edge
   [
     source 24
     target 25
-    weight 0.039577
+    weight NaN
     inverse 0.960423
   ]
   edge
   [
     source 24
     target 26
-    weight 0.10384
+    weight NaN
     inverse 0.89616
   ]
   edge
   [
     source 24
     target 30
-    weight 0.1757
+    weight NaN
     inverse 0.8243
   ]
   edge
   [
     source 25
     target 5
-    weight 0.095747
+    weight NaN
     inverse 0.904253
   ]
   edge
   [
     source 25
     target 23
-    weight 0.11213
+    weight NaN
     inverse 0.88787
   ]
   edge
   [
     source 25
     target 24
-    weight 0.066848
+    weight NaN
     inverse 0.933152
   ]
   edge
   [
     source 25
     target 27
-    weight 0.063546
+    weight NaN
     inverse 0.936454
   ]
   edge
   [
     source 25
     target 31
-    weight 0.15202
+    weight NaN
     inverse 0.84798
   ]
   edge
   [
     source 25
     target 71
-    weight 0.011519
+    weight NaN
     inverse 0.988481
   ]
   edge
   [
     source 26
     target 4
-    weight 0.10838
+    weight NaN
     inverse 0.89162
   ]
   edge
   [
     source 26
     target 20
-    weight 0.091352
+    weight NaN
     inverse 0.908648
   ]
   edge
   [
     source 26
     target 24
-    weight 0.13312
+    weight NaN
     inverse 0.86688
   ]
   edge
   [
     source 26
     target 27
-    weight 0.088237
+    weight NaN
     inverse 0.911763
   ]
   edge
   [
     source 26
     target 39
-    weight 8.0583e-05
+    weight NaN
     inverse 0.999919417
   ]
   edge
   [
     source 26
     target 47
-    weight 8.932e-05
+    weight NaN
     inverse 0.99991068
   ]
   edge
   [
     source 26
     target 74
-    weight 0.00094466
+    weight NaN
     inverse 0.99905534
   ]
   edge
   [
     source 26
     target 79
-    weight 0
+    weight 1e-05
     inverse 1
   ]
   edge
   [
     source 26
     target 87
-    weight 0.0021301
+    weight NaN
     inverse 0.9978699
   ]
   edge
   [
     source 27
     target 5
-    weight 0.17521
+    weight NaN
     inverse 0.82479
   ]
   edge
   [
     source 27
     target 21
-    weight 0.166
+    weight NaN
     inverse 0.834
   ]
   edge
   [
     source 27
     target 25
-    weight 0.079594
+    weight NaN
     inverse 0.920406
   ]
   edge
   [
     source 27
     target 26
-    weight 0.12909
+    weight NaN
     inverse 0.87091
   ]
   edge
   [
     source 27
     target 39
-    weight 0.0031047
+    weight NaN
     inverse 0.9968953
   ]
   edge
   [
     source 27
     target 47
-    weight 0.00046706
+    weight NaN
     inverse 0.99953294
   ]
   edge
   [
     source 27
     target 74
-    weight 0.00067059
+    weight NaN
     inverse 0.99932941
   ]
   edge
   [
     source 27
     target 79
-    weight 1.1765e-06
+    weight NaN
     inverse 0.9999988235
   ]
   edge
   [
     source 27
     target 87
-    weight 0.024285
+    weight NaN
     inverse 0.975715
   ]
   edge
   [
     source 28
     target 12
-    weight 0.064738
+    weight NaN
     inverse 0.935262
   ]
   edge
   [
     source 28
     target 14
-    weight 0.082079
+    weight NaN
     inverse 0.917921
   ]
   edge
   [
     source 28
     target 16
-    weight 0.069929
+    weight NaN
     inverse 0.930071
   ]
   edge
   [
     source 28
     target 72
-    weight 0.023509
+    weight NaN
     inverse 0.976491
   ]
   edge
   [
     source 28
     target 82
-    weight 0.049381
+    weight NaN
     inverse 0.950619
   ]
   edge
   [
     source 29
     target 11
-    weight 0.063346
+    weight NaN
     inverse 0.936654
   ]
   edge
   [
     source 29
     target 13
-    weight 0.04938
+    weight NaN
     inverse 0.95062
   ]
   edge
   [
     source 29
     target 15
-    weight 0.097146
+    weight NaN
     inverse 0.902854
   ]
   edge
   [
     source 29
     target 17
-    weight 0.11781
+    weight NaN
     inverse 0.88219
   ]
   edge
   [
     source 29
     target 73
-    weight 0.023603
+    weight NaN
     inverse 0.976397
   ]
   edge
   [
     source 29
     target 83
-    weight 0.022066
+    weight NaN
     inverse 0.977934
   ]
   edge
   [
     source 30
     target 20
-    weight 0.0116
+    weight NaN
     inverse 0.9884
   ]
   edge
   [
     source 30
     target 22
-    weight 0.12365
+    weight NaN
     inverse 0.87635
   ]
   edge
   [
     source 30
     target 24
-    weight 0.12148
+    weight NaN
     inverse 0.87852
   ]
   edge
   [
     source 30
     target 31
-    weight 0.093219
+    weight NaN
     inverse 0.906781
   ]
   edge
   [
     source 30
     target 32
-    weight 0.094786
+    weight NaN
     inverse 0.905214
   ]
   edge
   [
     source 31
     target 21
-    weight 0.0010238
+    weight NaN
     inverse 0.9989762
   ]
   edge
   [
     source 31
     target 23
-    weight 0.0867
+    weight NaN
     inverse 0.9133
   ]
   edge
   [
     source 31
     target 25
-    weight 0.054973
+    weight NaN
     inverse 0.945027
   ]
   edge
   [
     source 31
     target 30
-    weight 0.073153
+    weight NaN
     inverse 0.926847
   ]
   edge
   [
     source 31
     target 33
-    weight 0.089014
+    weight NaN
     inverse 0.910986
   ]
   edge
   [
     source 32
     target 18
-    weight 0.076135
+    weight NaN
     inverse 0.923865
   ]
   edge
   [
     source 32
     target 30
-    weight 0.043494
+    weight NaN
     inverse 0.956506
   ]
   edge
   [
     source 32
     target 33
-    weight 0.07414
+    weight NaN
     inverse 0.92586
   ]
   edge
   [
     source 32
     target 66
-    weight 0.18688
+    weight NaN
     inverse 0.81312
   ]
   edge
   [
     source 32
     target 68
-    weight 0.07375
+    weight NaN
     inverse 0.92625
   ]
   edge
   [
     source 33
     target 19
-    weight 0.059178
+    weight NaN
     inverse 0.940822
   ]
   edge
   [
     source 33
     target 31
-    weight 0.036015
+    weight NaN
     inverse 0.963985
   ]
   edge
   [
     source 33
     target 32
-    weight 0.06699
+    weight NaN
     inverse 0.93301
   ]
   edge
   [
     source 33
     target 67
-    weight 0.059767
+    weight NaN
     inverse 0.940233
   ]
   edge
   [
     source 33
     target 69
-    weight 0.032948
+    weight NaN
     inverse 0.967052
   ]
   edge
   [
     source 34
     target 32
-    weight 0.16293
+    weight NaN
     inverse 0.83707
   ]
   edge
   [
     source 34
     target 35
-    weight 0.23266
+    weight NaN
     inverse 0.76734
   ]
   edge
   [
     source 34
     target 36
-    weight 0.017242
+    weight NaN
     inverse 0.982758
   ]
   edge
   [
     source 34
     target 42
-    weight 0.078062
+    weight NaN
     inverse 0.921938
   ]
   edge
   [
     source 34
     target 66
-    weight 0.26087
+    weight NaN
     inverse 0.73913
   ]
   edge
   [
     source 35
     target 33
-    weight 0.080368
+    weight NaN
     inverse 0.919632
   ]
   edge
   [
     source 35
     target 34
-    weight 0.33175
+    weight NaN
     inverse 0.66825
   ]
   edge
   [
     source 35
     target 37
-    weight 0.01793
+    weight NaN
     inverse 0.98207
   ]
   edge
   [
     source 35
     target 43
-    weight 0.14424
+    weight NaN
     inverse 0.85576
   ]
   edge
   [
     source 35
     target 48
-    weight 0.12217
+    weight NaN
     inverse 0.87783
   ]
   edge
   [
     source 35
     target 50
-    weight 0.092505
+    weight NaN
     inverse 0.907495
   ]
   edge
   [
     source 35
     target 67
-    weight 0.37925
+    weight NaN
     inverse 0.62075
   ]
   edge
   [
     source 35
     target 73
-    weight 0.009793
+    weight NaN
     inverse 0.990207
   ]
   edge
   [
     source 36
     target 38
-    weight 0.24641
+    weight NaN
     inverse 0.75359
   ]
   edge
   [
     source 36
     target 40
-    weight 0.094516
+    weight NaN
     inverse 0.905484
   ]
   edge
   [
     source 36
     target 46
-    weight 0.07834
+    weight NaN
     inverse 0.92166
   ]
   edge
   [
     source 36
     target 76
-    weight 0.073884
+    weight NaN
     inverse 0.926116
   ]
   edge
   [
     source 36
     target 86
-    weight 0.12511
+    weight NaN
     inverse 0.87489
   ]
   edge
   [
     source 37
     target 6
-    weight 7.5789e-05
+    weight NaN
     inverse 0.999924211
   ]
   edge
   [
     source 37
     target 7
-    weight 0.00077825
+    weight NaN
     inverse 0.99922175
   ]
   edge
   [
     source 37
     target 8
-    weight 0.0002
+    weight NaN
     inverse 0.9998
   ]
   edge
   [
     source 37
     target 38
-    weight 0.00044491
+    weight NaN
     inverse 0.99955509
   ]
   edge
   [
     source 37
     target 39
-    weight 0.30523
+    weight NaN
     inverse 0.69477
   ]
   edge
   [
     source 37
     target 41
-    weight 0.069342
+    weight NaN
     inverse 0.930658
   ]
   edge
   [
     source 37
     target 47
-    weight 0.046445
+    weight NaN
     inverse 0.953555
   ]
   edge
   [
     source 37
     target 49
-    weight 0.0039839
+    weight NaN
     inverse 0.9960161
   ]
   edge
   [
     source 37
     target 53
-    weight 0.003513
+    weight NaN
     inverse 0.996487
   ]
   edge
   [
     source 37
     target 61
-    weight 0.00013754
+    weight NaN
     inverse 0.99986246
   ]
   edge
   [
     source 37
     target 62
-    weight 0.00023368
+    weight NaN
     inverse 0.99976632
   ]
   edge
   [
     source 37
     target 64
-    weight 0.00026246
+    weight NaN
     inverse 0.99973754
   ]
   edge
   [
     source 37
     target 65
-    weight 0.00024561
+    weight NaN
     inverse 0.99975439
   ]
   edge
   [
     source 37
     target 74
-    weight 0.00082807
+    weight NaN
     inverse 0.99917193
   ]
   edge
   [
     source 37
     target 75
-    weight 0.0060232
+    weight NaN
     inverse 0.9939768
   ]
   edge
   [
     source 37
     target 77
-    weight 0.044297
+    weight NaN
     inverse 0.955703
   ]
   edge
   [
     source 37
     target 78
-    weight 7.0175e-07
+    weight NaN
     inverse 0.99999929825
   ]
   edge
   [
     source 37
     target 79
-    weight 7.0175e-07
+    weight NaN
     inverse 0.99999929825
   ]
   edge
   [
     source 37
     target 87
-    weight 0.13644
+    weight NaN
     inverse 0.86356
   ]
   edge
   [
     source 37
     target 88
-    weight 0.0021958
+    weight NaN
     inverse 0.9978042
   ]
   edge
   [
     source 37
     target 89
-    weight 0.098377
+    weight NaN
     inverse 0.901623
   ]
   edge
   [
     source 38
     target 6
-    weight 1.8398e-05
+    weight NaN
     inverse 0.999981602
   ]
   edge
   [
     source 38
     target 7
-    weight 4.0356e-05
+    weight NaN
     inverse 0.999959644
   ]
   edge
   [
     source 38
     target 8
-    weight 0.00017982
+    weight NaN
     inverse 0.99982018
   ]
   edge
   [
     source 38
     target 36
-    weight 0.1591
+    weight NaN
     inverse 0.8409
   ]
   edge
   [
     source 38
     target 37
-    weight 0.00065519
+    weight NaN
     inverse 0.99934481
   ]
   edge
   [
     source 38
     target 39
-    weight 0.00043264
+    weight NaN
     inverse 0.99956736
   ]
   edge
   [
     source 38
     target 41
-    weight 8.2493e-05
+    weight NaN
     inverse 0.999917507
   ]
   edge
   [
     source 38
     target 46
-    weight 0.089859
+    weight NaN
     inverse 0.910141
   ]
   edge
   [
     source 38
     target 47
-    weight 0.0016908
+    weight NaN
     inverse 0.9983092
   ]
   edge
   [
     source 38
     target 49
-    weight 0.00016439
+    weight NaN
     inverse 0.99983561
   ]
   edge
   [
     source 38
     target 53
-    weight 2.5519e-05
+    weight NaN
     inverse 0.999974481
   ]
   edge
   [
     source 38
     target 54
-    weight 0.13233
+    weight NaN
     inverse 0.86767
   ]
   edge
   [
     source 38
     target 61
-    weight 4.8071e-05
+    weight NaN
     inverse 0.999951929
   ]
   edge
   [
     source 38
     target 62
-    weight 2.3145e-05
+    weight NaN
     inverse 0.999976855
   ]
   edge
   [
     source 38
     target 64
-    weight 7.4777e-05
+    weight NaN
     inverse 0.999925223
   ]
   edge
   [
     source 38
     target 65
-    weight 1.6024e-05
+    weight NaN
     inverse 0.999983976
   ]
   edge
   [
     source 38
     target 74
-    weight 0.00020119
+    weight NaN
     inverse 0.99979881
   ]
   edge
   [
     source 38
     target 75
-    weight 0.00092522
+    weight NaN
     inverse 0.99907478
   ]
   edge
   [
     source 38
     target 78
-    weight 0
+    weight 1e-05
     inverse 1
   ]
   edge
   [
     source 38
     target 79
-    weight 0
+    weight 1e-05
     inverse 1
   ]
   edge
   [
     source 38
     target 87
-    weight 7.7745e-05
+    weight NaN
     inverse 0.999922255
   ]
   edge
   [
     source 38
     target 88
-    weight 0.01977
+    weight NaN
     inverse 0.98023
   ]
   edge
   [
     source 38
     target 89
-    weight 0.00018813
+    weight NaN
     inverse 0.99981187
   ]
   edge
   [
     source 39
     target 1
-    weight 5.7471e-05
+    weight NaN
     inverse 0.999942529
   ]
   edge
   [
     source 39
     target 6
-    weight 1.092e-05
+    weight NaN
     inverse 0.99998908
   ]
   edge
   [
     source 39
     target 7
-    weight 4.3103e-05
+    weight NaN
     inverse 0.999956897
   ]
   edge
   [
     source 39
     target 8
-    weight 2.8736e-05
+    weight NaN
     inverse 0.999971264
   ]
   edge
   [
     source 39
     target 9
-    weight 0.00018908
+    weight NaN
     inverse 0.99981092
   ]
   edge
   [
     source 39
     target 10
-    weight 5.1724e-06
+    weight NaN
     inverse 0.9999948276
   ]
   edge
   [
     source 39
     target 11
-    weight 4.5977e-06
+    weight NaN
     inverse 0.9999954023
   ]
   edge
   [
     source 39
     target 12
-    weight 1.3218e-05
+    weight NaN
     inverse 0.999986782
   ]
   edge
   [
     source 39
     target 22
-    weight 2.1264e-05
+    weight NaN
     inverse 0.999978736
   ]
   edge
   [
     source 39
     target 23
-    weight 3.2759e-05
+    weight NaN
     inverse 0.999967241
   ]
   edge
   [
     source 39
     target 26
-    weight 0.00053218
+    weight NaN
     inverse 0.99946782
   ]
   edge
   [
     source 39
     target 27
-    weight 0.0059431
+    weight NaN
     inverse 0.9940569
   ]
   edge
   [
     source 39
     target 37
-    weight 0.21862
+    weight NaN
     inverse 0.78138
   ]
   edge
   [
     source 39
     target 38
-    weight 0.00039368
+    weight NaN
     inverse 0.99960632
   ]
   edge
   [
     source 39
     target 40
-    weight 0.00024483
+    weight NaN
     inverse 0.99975517
   ]
   edge
   [
     source 39
     target 41
-    weight 0.046668
+    weight NaN
     inverse 0.953332
   ]
   edge
   [
     source 39
     target 42
-    weight 0.001258
+    weight NaN
     inverse 0.998742
   ]
   edge
   [
     source 39
     target 43
-    weight 0.0087897
+    weight NaN
     inverse 0.9912103
   ]
   edge
   [
     source 39
     target 44
-    weight 0.00074655
+    weight NaN
     inverse 0.99925345
   ]
   edge
   [
     source 39
     target 45
-    weight 0.0017943
+    weight NaN
     inverse 0.9982057
   ]
   edge
   [
     source 39
     target 46
-    weight 0.00125
+    weight NaN
     inverse 0.99875
   ]
   edge
   [
     source 39
     target 47
-    weight 0.046944
+    weight NaN
     inverse 0.953056
   ]
   edge
   [
     source 39
     target 48
-    weight 0.0010236
+    weight NaN
     inverse 0.9989764
   ]
   edge
   [
     source 39
     target 49
-    weight 0.0024259
+    weight NaN
     inverse 0.9975741
   ]
   edge
   [
     source 39
     target 51
-    weight 0.0010914
+    weight NaN
     inverse 0.9989086
   ]
   edge
   [
     source 39
     target 52
-    weight 3.9655e-05
+    weight NaN
     inverse 0.999960345
   ]
   edge
   [
     source 39
     target 53
-    weight 0.00050287
+    weight NaN
     inverse 0.99949713
   ]
   edge
   [
     source 39
     target 54
-    weight 0.00077816
+    weight NaN
     inverse 0.99922184
   ]
   edge
   [
     source 39
     target 55
-    weight 0.15939
+    weight NaN
     inverse 0.84061
   ]
   edge
   [
     source 39
     target 58
-    weight 0.00023046
+    weight NaN
     inverse 0.99976954
   ]
   edge
   [
     source 39
     target 60
-    weight 4.3103e-05
+    weight NaN
     inverse 0.999956897
   ]
   edge
   [
     source 39
     target 61
-    weight 3.5632e-05
+    weight NaN
     inverse 0.999964368
   ]
   edge
   [
     source 39
     target 62
-    weight 2.7586e-05
+    weight NaN
     inverse 0.999972414
   ]
   edge
   [
     source 39
     target 63
-    weight 6.8966e-06
+    weight NaN
     inverse 0.9999931034
   ]
   edge
   [
     source 39
     target 64
-    weight 5.1724e-05
+    weight NaN
     inverse 0.999948276
   ]
   edge
   [
     source 39
     target 65
-    weight 0.00016724
+    weight NaN
     inverse 0.99983276
   ]
   edge
   [
     source 39
     target 71
-    weight 0.00069598
+    weight NaN
     inverse 0.99930402
   ]
   edge
   [
     source 39
     target 74
-    weight 0.00011034
+    weight NaN
     inverse 0.99988966
   ]
   edge
   [
     source 39
     target 75
-    weight 0.00063736
+    weight NaN
     inverse 0.99936264
   ]
   edge
   [
     source 39
     target 78
-    weight 0
+    weight 1e-05
     inverse 1
   ]
   edge
   [
     source 39
     target 79
-    weight 0
+    weight 1e-05
     inverse 1
   ]
   edge
   [
     source 39
     target 84
-    weight 0.0007546
+    weight NaN
     inverse 0.9992454
   ]
   edge
   [
     source 39
     target 85
-    weight 0.0041971
+    weight NaN
     inverse 0.9958029
   ]
   edge
   [
     source 39
     target 87
-    weight 0.05985
+    weight NaN
     inverse 0.94015
   ]
   edge
   [
     source 39
     target 88
-    weight 0.00045402
+    weight NaN
     inverse 0.99954598
   ]
   edge
   [
     source 39
     target 89
-    weight 0.041301
+    weight NaN
     inverse 0.958699
   ]
   edge
   [
     source 40
     target 20
-    weight 0.038023
+    weight NaN
     inverse 0.961977
   ]
   edge
   [
     source 40
     target 36
-    weight 0.37428
+    weight NaN
     inverse 0.62572
   ]
   edge
   [
     source 40
     target 38
-    weight 0.21535
+    weight NaN
     inverse 0.78465
   ]
   edge
   [
     source 40
     target 39
-    weight 0.00027547
+    weight NaN
     inverse 0.99972453
   ]
   edge
   [
     source 40
     target 47
-    weight 0.0048679
+    weight NaN
     inverse 0.9951321
   ]
   edge
   [
     source 40
     target 74
-    weight 0.0016189
+    weight NaN
     inverse 0.9983811
   ]
   edge
   [
     source 40
     target 79
-    weight 3.7736e-06
+    weight NaN
     inverse 0.9999962264
   ]
   edge
   [
     source 40
     target 82
-    weight 0.14063
+    weight NaN
     inverse 0.85937
   ]
   edge
   [
     source 40
     target 87
-    weight 0.0010642
+    weight NaN
     inverse 0.9989358
   ]
   edge
   [
     source 41
     target 6
-    weight 6e-05
+    weight NaN
     inverse 0.99994
   ]
   edge
   [
     source 41
     target 7
-    weight 0.00031667
+    weight NaN
     inverse 0.99968333
   ]
   edge
   [
     source 41
     target 8
-    weight 0.00016
+    weight NaN
     inverse 0.99984
   ]
   edge
   [
     source 41
     target 21
-    weight 0.02017
+    weight NaN
     inverse 0.97983
   ]
   edge
   [
     source 41
     target 37
-    weight 0.29785
+    weight NaN
     inverse 0.70215
   ]
   edge
   [
     source 41
     target 38
-    weight 0.00034
+    weight NaN
     inverse 0.99966
   ]
   edge
   [
     source 41
     target 39
-    weight 0.21808
+    weight NaN
     inverse 0.78192
   ]
   edge
   [
     source 41
     target 47
-    weight 0.018613
+    weight NaN
     inverse 0.981387
   ]
   edge
   [
     source 41
     target 49
-    weight 0.0083233
+    weight NaN
     inverse 0.9916767
   ]
   edge
   [
     source 41
     target 53
-    weight 0.00298
+    weight NaN
     inverse 0.99702
   ]
   edge
   [
     source 41
     target 61
-    weight 0.00039333
+    weight NaN
     inverse 0.99960667
   ]
   edge
   [
     source 41
     target 62
-    weight 0.00024
+    weight NaN
     inverse 0.99976
   ]
   edge
   [
     source 41
     target 64
-    weight 0.00041
+    weight NaN
     inverse 0.99959
   ]
   edge
   [
     source 41
     target 65
-    weight 0.00040333
+    weight NaN
     inverse 0.99959667
   ]
   edge
   [
     source 41
     target 74
-    weight 0.00058667
+    weight NaN
     inverse 0.99941333
   ]
   edge
   [
     source 41
     target 75
-    weight 0.0053167
+    weight NaN
     inverse 0.9946833
   ]
   edge
   [
     source 41
     target 78
-    weight 3.3333e-06
+    weight NaN
     inverse 0.9999966667
   ]
   edge
   [
     source 41
     target 79
-    weight 3.3333e-06
+    weight NaN
     inverse 0.9999966667
   ]
   edge
   [
     source 41
     target 83
-    weight 0.17358
+    weight NaN
     inverse 0.82642
   ]
   edge
   [
     source 41
     target 87
-    weight 0.13513
+    weight NaN
     inverse 0.86487
   ]
   edge
   [
     source 41
     target 88
-    weight 0.0022333
+    weight NaN
     inverse 0.9977667
   ]
   edge
   [
     source 41
     target 89
-    weight 0.047837
+    weight NaN
     inverse 0.952163
   ]
   edge
   [
     source 42
     target 39
-    weight 0.0017214
+    weight NaN
     inverse 0.9982786
   ]
   edge
   [
     source 42
     target 43
-    weight 0.058038
+    weight NaN
     inverse 0.941962
   ]
   edge
   [
     source 42
     target 44
-    weight 0.22804
+    weight NaN
     inverse 0.77196
   ]
   edge
   [
     source 42
     target 46
-    weight 0.15904
+    weight NaN
     inverse 0.84096
   ]
   edge
   [
     source 42
     target 47
-    weight 0.018921
+    weight NaN
     inverse 0.981079
   ]
   edge
   [
     source 42
     target 66
-    weight 0.13963
+    weight NaN
     inverse 0.86037
   ]
   edge
   [
     source 42
     target 74
-    weight 0.00044688
+    weight NaN
     inverse 0.99955312
   ]
   edge
   [
     source 42
     target 79
-    weight 7.5614e-07
+    weight NaN
     inverse 0.99999924386
   ]
   edge
   [
     source 42
     target 87
-    weight 0.00045671
+    weight NaN
     inverse 0.99954329
   ]
   edge
   [
     source 43
     target 39
-    weight 0.0090665
+    weight NaN
     inverse 0.9909335
   ]
   edge
   [
     source 43
     target 42
-    weight 0.080249
+    weight NaN
     inverse 0.919751
   ]
   edge
   [
     source 43
     target 45
-    weight 0.21577
+    weight NaN
     inverse 0.78423
   ]
   edge
   [
     source 43
     target 47
-    weight 0.20167
+    weight NaN
     inverse 0.79833
   ]
   edge
   [
     source 43
     target 67
-    weight 0.12187
+    weight NaN
     inverse 0.87813
   ]
   edge
   [
     source 43
     target 74
-    weight 9.8861e-05
+    weight NaN
     inverse 0.999901139
   ]
   edge
   [
     source 43
     target 79
-    weight 0
+    weight 1e-05
     inverse 1
   ]
   edge
   [
     source 43
     target 87
-    weight 0.0030082
+    weight NaN
     inverse 0.9969918
   ]
   edge
   [
     source 44
     target 39
-    weight 0.0015348
+    weight NaN
     inverse 0.9984652
   ]
   edge
   [
     source 44
     target 42
-    weight 0.29908
+    weight NaN
     inverse 0.70092
   ]
   edge
   [
     source 44
     target 45
-    weight 0.040561
+    weight NaN
     inverse 0.959439
   ]
   edge
   [
     source 44
     target 47
-    weight 0.0050337
+    weight NaN
     inverse 0.9949663
   ]
   edge
   [
     source 44
     target 48
-    weight 0.28505
+    weight NaN
     inverse 0.71495
   ]
   edge
   [
     source 44
     target 66
-    weight 0.19446
+    weight NaN
     inverse 0.80554
   ]
   edge
   [
     source 44
     target 74
-    weight 0.00072193
+    weight NaN
     inverse 0.99927807
   ]
   edge
   [
     source 44
     target 79
-    weight 1.6043e-06
+    weight NaN
     inverse 0.9999983957
   ]
   edge
   [
     source 44
     target 87
-    weight 0.00043957
+    weight NaN
     inverse 0.99956043
   ]
   edge
   [
     source 45
     target 39
-    weight 0.0020947
+    weight NaN
     inverse 0.9979053
   ]
   edge
   [
     source 45
     target 43
-    weight 0.24624
+    weight NaN
     inverse 0.75376
   ]
   edge
   [
     source 45
     target 44
-    weight 0.055846
+    weight NaN
     inverse 0.944154
   ]
   edge
   [
     source 45
     target 47
-    weight 0.055474
+    weight NaN
     inverse 0.944526
   ]
   edge
   [
     source 45
     target 49
-    weight 0.19794
+    weight NaN
     inverse 0.80206
   ]
   edge
   [
     source 45
     target 67
-    weight 0.18004
+    weight NaN
     inverse 0.81996
   ]
   edge
   [
     source 45
     target 74
-    weight 0.00013977
+    weight NaN
     inverse 0.99986023
   ]
   edge
   [
     source 45
     target 79
-    weight 5.848e-07
+    weight NaN
     inverse 0.9999994152
   ]
   edge
   [
     source 45
     target 87
-    weight 0.0015444
+    weight NaN
     inverse 0.9984556
   ]
   edge
   [
     source 46
     target 36
-    weight 0.03998
+    weight NaN
     inverse 0.96002
   ]
   edge
   [
     source 46
     target 38
-    weight 0.069299
+    weight NaN
     inverse 0.930701
   ]
   edge
   [
     source 46
     target 39
-    weight 0.00091084
+    weight NaN
     inverse 0.99908916
   ]
   edge
   [
     source 46
     target 42
-    weight 0.16005
+    weight NaN
     inverse 0.83995
   ]
   edge
   [
     source 46
     target 47
-    weight 0.02762
+    weight NaN
     inverse 0.97238
   ]
   edge
   [
     source 46
     target 54
-    weight 0.22529
+    weight NaN
     inverse 0.77471
   ]
   edge
   [
     source 46
     target 74
-    weight 0.00088425
+    weight NaN
     inverse 0.99911575
   ]
   edge
   [
     source 46
     target 79
-    weight 4.09e-07
+    weight NaN
     inverse 0.999999591
   ]
   edge
   [
     source 46
     target 87
-    weight 0.00040777
+    weight NaN
     inverse 0.99959223
   ]
   edge
   [
     source 47
     target 1
-    weight 7.1119e-05
+    weight NaN
     inverse 0.999928881
   ]
   edge
   [
     source 47
     target 6
-    weight 2.852e-05
+    weight NaN
     inverse 0.99997148
   ]
   edge
   [
     source 47
     target 7
-    weight 0.00049314
+    weight NaN
     inverse 0.99950686
   ]
   edge
   [
     source 47
     target 8
-    weight 5.5235e-05
+    weight NaN
     inverse 0.999944765
   ]
   edge
   [
     source 47
     target 9
-    weight 0.00091841
+    weight NaN
     inverse 0.99908159
   ]
   edge
   [
     source 47
     target 10
-    weight 1.3718e-05
+    weight NaN
     inverse 0.999986282
   ]
   edge
   [
     source 47
     target 11
-    weight 2.0217e-05
+    weight NaN
     inverse 0.999979783
   ]
   edge
   [
     source 47
     target 12
-    weight 4.0072e-05
+    weight NaN
     inverse 0.999959928
   ]
   edge
   [
     source 47
     target 22
-    weight 7.0036e-05
+    weight NaN
     inverse 0.999929964
   ]
   edge
   [
     source 47
     target 23
-    weight 0.00033755
+    weight NaN
     inverse 0.99966245
   ]
   edge
   [
     source 47
     target 26
-    weight 8.3394e-05
+    weight NaN
     inverse 0.999916606
   ]
   edge
   [
     source 47
     target 27
-    weight 0.00045596
+    weight NaN
     inverse 0.99954404
   ]
   edge
   [
     source 47
     target 37
-    weight 0.020531
+    weight NaN
     inverse 0.979469
   ]
   edge
   [
     source 47
     target 38
-    weight 0.00070181
+    weight NaN
     inverse 0.99929819
   ]
   edge
   [
     source 47
     target 39
-    weight 0.027071
+    weight NaN
     inverse 0.972929
   ]
   edge
   [
     source 47
     target 40
-    weight 0.0003
+    weight NaN
     inverse 0.9997
   ]
   edge
   [
     source 47
     target 41
-    weight 0.0020329
+    weight NaN
     inverse 0.9979671
   ]
   edge
   [
     source 47
     target 42
-    weight 0.026552
+    weight NaN
     inverse 0.973448
   ]
   edge
   [
     source 47
     target 43
-    weight 0.15368
+    weight NaN
     inverse 0.84632
   ]
   edge
   [
     source 47
     target 44
-    weight 0.0035935
+    weight NaN
     inverse 0.9964065
   ]
   edge
   [
     source 47
     target 45
-    weight 0.026555
+    weight NaN
     inverse 0.973445
   ]
   edge
   [
     source 47
     target 46
-    weight 0.024987
+    weight NaN
     inverse 0.975013
   ]
   edge
   [
     source 47
     target 48
-    weight 0.004643
+    weight NaN
     inverse 0.995357
   ]
   edge
   [
     source 47
     target 49
-    weight 0.016325
+    weight NaN
     inverse 0.983675
   ]
   edge
   [
     source 47
     target 51
-    weight 0.0084173
+    weight NaN
     inverse 0.9915827
   ]
   edge
   [
     source 47
     target 52
-    weight 0.00021552
+    weight NaN
     inverse 0.99978448
   ]
   edge
   [
     source 47
     target 53
-    weight 0.029858
+    weight NaN
     inverse 0.970142
   ]
   edge
   [
     source 47
     target 54
-    weight 0.011416
+    weight NaN
     inverse 0.988584
   ]
   edge
   [
     source 47
     target 55
-    weight 0.095694
+    weight NaN
     inverse 0.904306
   ]
   edge
   [
     source 47
     target 58
-    weight 0.00050469
+    weight NaN
     inverse 0.99949531
   ]
   edge
   [
     source 47
     target 60
-    weight 5.8484e-05
+    weight NaN
     inverse 0.999941516
   ]
   edge
   [
     source 47
     target 61
-    weight 0.00042888
+    weight NaN
     inverse 0.99957112
   ]
   edge
   [
     source 47
     target 62
-    weight 3.2491e-05
+    weight NaN
     inverse 0.999967509
   ]
   edge
   [
     source 47
     target 63
-    weight 3.0686e-05
+    weight NaN
     inverse 0.999969314
   ]
   edge
   [
     source 47
     target 64
-    weight 7.4729e-05
+    weight NaN
     inverse 0.999925271
   ]
   edge
   [
     source 47
     target 65
-    weight 0.001178
+    weight NaN
     inverse 0.998822
   ]
   edge
   [
     source 47
     target 71
-    weight 0.00066498
+    weight NaN
     inverse 0.99933502
   ]
   edge
   [
     source 47
     target 74
-    weight 0.00011155
+    weight NaN
     inverse 0.99988845
   ]
   edge
   [
     source 47
     target 75
-    weight 0.00043285
+    weight NaN
     inverse 0.99956715
   ]
   edge
   [
     source 47
     target 78
-    weight 0
+    weight 1e-05
     inverse 1
   ]
   edge
   [
     source 47
     target 79
-    weight 0
+    weight 1e-05
     inverse 1
   ]
   edge
   [
     source 47
     target 84
-    weight 0.0010148
+    weight NaN
     inverse 0.9989852
   ]
   edge
   [
     source 47
     target 85
-    weight 0.0099527
+    weight NaN
     inverse 0.9900473
   ]
   edge
   [
     source 47
     target 87
-    weight 0.0047787
+    weight NaN
     inverse 0.9952213
   ]
   edge
   [
     source 47
     target 88
-    weight 0.002869
+    weight NaN
     inverse 0.997131
   ]
   edge
   [
     source 47
     target 89
-    weight 0.012194
+    weight NaN
     inverse 0.987806
   ]
   edge
   [
     source 48
     target 39
-    weight 0.0013074
+    weight NaN
     inverse 0.9986926
   ]
   edge
   [
     source 48
     target 43
-    weight 0.064402
+    weight NaN
     inverse 0.935598
   ]
   edge
   [
     source 48
     target 44
-    weight 0.22308
+    weight NaN
     inverse 0.77692
   ]
   edge
   [
     source 48
     target 47
-    weight 0.0088466
+    weight NaN
     inverse 0.9911534
   ]
   edge
   [
     source 48
     target 49
-    weight 0.043646
+    weight NaN
     inverse 0.956354
   ]
   edge
   [
     source 48
     target 50
-    weight 0.24481
+    weight NaN
     inverse 0.75519
   ]
   edge
   [
     source 48
     target 74
-    weight 0.00049903
+    weight NaN
     inverse 0.99950097
   ]
   edge
   [
     source 48
     target 79
-    weight 1.9417e-06
+    weight NaN
     inverse 0.9999980583
   ]
   edge
   [
     source 48
     target 87
-    weight 0.00074757
+    weight NaN
     inverse 0.99925243
   ]
   edge
   [
     source 49
     target 6
-    weight 0.00014754
+    weight NaN
     inverse 0.99985246
   ]
   edge
   [
     source 49
     target 7
-    weight 0.00066475
+    weight NaN
     inverse 0.99933525
   ]
   edge
   [
     source 49
     target 8
-    weight 0.00030902
+    weight NaN
     inverse 0.99969098
   ]
   edge
   [
     source 49
     target 37
-    weight 0.016821
+    weight NaN
     inverse 0.983179
   ]
   edge
   [
     source 49
     target 38
-    weight 0.00050492
+    weight NaN
     inverse 0.99949508
   ]
   edge
   [
     source 49
     target 39
-    weight 0.0034057
+    weight NaN
     inverse 0.9965943
   ]
   edge
   [
     source 49
     target 41
-    weight 0.0017098
+    weight NaN
     inverse 0.9982902
   ]
   edge
   [
     source 49
     target 45
-    weight 0.21615
+    weight NaN
     inverse 0.78385
   ]
   edge
   [
     source 49
     target 47
-    weight 0.026234
+    weight NaN
     inverse 0.973766
   ]
   edge
   [
     source 49
     target 51
-    weight 0.16329
+    weight NaN
     inverse 0.83671
   ]
   edge
   [
     source 49
     target 53
-    weight 0.0082664
+    weight NaN
     inverse 0.9917336
   ]
   edge
   [
     source 49
     target 59
-    weight 0.053557
+    weight NaN
     inverse 0.946443
   ]
   edge
   [
     source 49
     target 61
-    weight 0.00068361
+    weight NaN
     inverse 0.99931639
   ]
   edge
   [
     source 49
     target 62
-    weight 3.4426e-05
+    weight NaN
     inverse 0.999965574
   ]
   edge
   [
     source 49
     target 64
-    weight 0.00018525
+    weight NaN
     inverse 0.99981475
   ]
   edge
   [
     source 49
     target 65
-    weight 0.028618
+    weight NaN
     inverse 0.971382
   ]
   edge
   [
     source 49
     target 74
-    weight 0.00020656
+    weight NaN
     inverse 0.99979344
   ]
   edge
   [
     source 49
     target 75
-    weight 0.00039344
+    weight NaN
     inverse 0.99960656
   ]
   edge
   [
     source 49
     target 78
-    weight 2.459e-06
+    weight NaN
     inverse 0.999997541
   ]
   edge
   [
     source 49
     target 79
-    weight 8.1967e-07
+    weight NaN
     inverse 0.99999918033
   ]
   edge
   [
     source 49
     target 87
-    weight 0.0030016
+    weight NaN
     inverse 0.9969984
   ]
   edge
   [
     source 49
     target 88
-    weight 0.0023049
+    weight NaN
     inverse 0.9976951
   ]
   edge
   [
     source 49
     target 89
-    weight 0.020323
+    weight NaN
     inverse 0.979677
   ]
   edge
   [
     source 50
     target 36
-    weight 0.01566
+    weight NaN
     inverse 0.98434
   ]
   edge
   [
     source 50
     target 48
-    weight 0.10812
+    weight NaN
     inverse 0.89188
   ]
   edge
   [
     source 50
     target 52
-    weight 0.078491
+    weight NaN
     inverse 0.921509
   ]
   edge
   [
     source 50
     target 58
-    weight 0.054829
+    weight NaN
     inverse 0.945171
   ]
   edge
   [
     source 50
     target 60
-    weight 0.036386
+    weight NaN
     inverse 0.963614
   ]
   edge
   [
     source 50
     target 64
-    weight 0.044992
+    weight NaN
     inverse 0.955008
   ]
   edge
   [
     source 50
     target 72
-    weight 0.0051857
+    weight NaN
     inverse 0.9948143
   ]
   edge
   [
     source 50
     target 84
-    weight 0.093674
+    weight NaN
     inverse 0.906326
   ]
   edge
   [
     source 51
     target 39
-    weight 0.0011892
+    weight NaN
     inverse 0.9988108
   ]
   edge
   [
     source 51
     target 47
-    weight 0.008283
+    weight NaN
     inverse 0.991717
   ]
   edge
   [
     source 51
     target 49
-    weight 0.12987
+    weight NaN
     inverse 0.87013
   ]
   edge
   [
     source 51
     target 53
-    weight 0.070541
+    weight NaN
     inverse 0.929459
   ]
   edge
   [
     source 51
     target 65
-    weight 0.043176
+    weight NaN
     inverse 0.956824
   ]
   edge
   [
     source 51
     target 74
-    weight 0.00013396
+    weight NaN
     inverse 0.99986604
   ]
   edge
   [
     source 51
     target 79
-    weight 4.717e-07
+    weight NaN
     inverse 0.9999995283
   ]
   edge
   [
     source 51
     target 85
-    weight 0.10592
+    weight NaN
     inverse 0.89408
   ]
   edge
   [
     source 51
     target 87
-    weight 0.0029675
+    weight NaN
     inverse 0.9970325
   ]
   edge
   [
     source 52
     target 39
-    weight 5.4335e-05
+    weight NaN
     inverse 0.999945665
   ]
   edge
   [
     source 52
     target 46
-    weight 0.013168
+    weight NaN
     inverse 0.986832
   ]
   edge
   [
     source 52
     target 47
-    weight 0.00054335
+    weight NaN
     inverse 0.99945665
   ]
   edge
   [
     source 52
     target 50
-    weight 0.34243
+    weight NaN
     inverse 0.65757
   ]
   edge
   [
     source 52
     target 54
-    weight 0.15572
+    weight NaN
     inverse 0.84428
   ]
   edge
   [
     source 52
     target 74
-    weight 0.00022659
+    weight NaN
     inverse 0.99977341
   ]
   edge
   [
     source 52
     target 79
-    weight 0
+    weight 1e-05
     inverse 1
   ]
   edge
   [
     source 52
     target 87
-    weight 0.00013526
+    weight NaN
     inverse 0.99986474
   ]
   edge
   [
     source 52
     target 88
-    weight 0.17111
+    weight NaN
     inverse 0.82889
   ]
   edge
   [
     source 53
     target 6
-    weight 2.5381e-05
+    weight NaN
     inverse 0.999974619
   ]
   edge
   [
     source 53
     target 7
-    weight 0.00027208
+    weight NaN
     inverse 0.99972792
   ]
   edge
   [
     source 53
     target 8
-    weight 2.5381e-05
+    weight NaN
     inverse 0.999974619
   ]
   edge
   [
     source 53
     target 37
-    weight 0.0059766
+    weight NaN
     inverse 0.9940234
   ]
   edge
   [
     source 53
     target 38
-    weight 4.5685e-05
+    weight NaN
     inverse 0.999954315
   ]
   edge
   [
     source 53
     target 39
-    weight 0.00042437
+    weight NaN
     inverse 0.99957563
   ]
   edge
   [
     source 53
     target 41
-    weight 0.0014305
+    weight NaN
     inverse 0.9985695
   ]
   edge
   [
     source 53
     target 47
-    weight 0.057855
+    weight NaN
     inverse 0.942145
   ]
   edge
   [
     source 53
     target 49
-    weight 0.015505
+    weight NaN
     inverse 0.984495
   ]
   edge
   [
     source 53
     target 51
-    weight 0.1548
+    weight NaN
     inverse 0.8452
   ]
   edge
   [
     source 53
     target 55
-    weight 0.10871
+    weight NaN
     inverse 0.89129
   ]
   edge
   [
     source 53
     target 61
-    weight 0.00013706
+    weight NaN
     inverse 0.99986294
   ]
   edge
   [
     source 53
     target 62
-    weight 6.0914e-06
+    weight NaN
     inverse 0.9999939086
   ]
   edge
   [
     source 53
     target 64
-    weight 1.1168e-05
+    weight NaN
     inverse 0.999988832
   ]
   edge
   [
     source 53
     target 65
-    weight 0.001867
+    weight NaN
     inverse 0.998133
   ]
   edge
   [
     source 53
     target 74
-    weight 4.7716e-05
+    weight NaN
     inverse 0.999952284
   ]
   edge
   [
     source 53
     target 75
-    weight 0.00022843
+    weight NaN
     inverse 0.99977157
   ]
   edge
   [
     source 53
     target 78
-    weight 0
+    weight 1e-05
     inverse 1
   ]
   edge
   [
     source 53
     target 79
-    weight 0
+    weight 1e-05
     inverse 1
   ]
   edge
   [
     source 53
     target 87
-    weight 0.0031036
+    weight NaN
     inverse 0.9968964
   ]
   edge
   [
     source 53
     target 88
-    weight 0.00018274
+    weight NaN
     inverse 0.99981726
   ]
   edge
   [
     source 53
     target 89
-    weight 0.09417
+    weight NaN
     inverse 0.90583
   ]
   edge
   [
     source 54
     target 38
-    weight 0.092061
+    weight NaN
     inverse 0.907939
   ]
   edge
   [
     source 54
     target 39
-    weight 0.00077515
+    weight NaN
     inverse 0.99922485
   ]
   edge
   [
     source 54
     target 46
-    weight 0.19836
+    weight NaN
     inverse 0.80164
   ]
   edge
   [
     source 54
     target 47
-    weight 0.025347
+    weight NaN
     inverse 0.974653
   ]
   edge
   [
     source 54
     target 52
-    weight 0.076164
+    weight NaN
     inverse 0.923836
   ]
   edge
   [
     source 54
     target 74
-    weight 0.00021165
+    weight NaN
     inverse 0.99978835
   ]
   edge
   [
     source 54
     target 79
-    weight 0
+    weight 1e-05
     inverse 1
   ]
   edge
   [
     source 54
     target 87
-    weight 0.00024505
+    weight NaN
     inverse 0.99975495
   ]
   edge
   [
     source 54
     target 88
-    weight 0.25605
+    weight NaN
     inverse 0.74395
   ]
   edge
   [
     source 55
     target 39
-    weight 0.073965
+    weight NaN
     inverse 0.926035
   ]
   edge
   [
     source 55
     target 47
-    weight 0.085443
+    weight NaN
     inverse 0.914557
   ]
   edge
   [
     source 55
     target 53
-    weight 0.080011
+    weight NaN
     inverse 0.919989
   ]
   edge
   [
     source 55
     target 74
-    weight 5.5077e-05
+    weight NaN
     inverse 0.999944923
   ]
   edge
   [
     source 55
     target 79
-    weight 0
+    weight 1e-05
     inverse 1
   ]
   edge
   [
     source 55
     target 87
-    weight 0.040685
+    weight NaN
     inverse 0.959315
   ]
   edge
   [
     source 55
     target 89
-    weight 0.15123
+    weight NaN
     inverse 0.84877
   ]
   edge
   [
     source 56
     target 0
-    weight 0.11321
+    weight NaN
     inverse 0.88679
   ]
   edge
   [
     source 56
     target 16
-    weight 0.041534
+    weight NaN
     inverse 0.958466
   ]
   edge
   [
     source 56
     target 60
-    weight 0.094163
+    weight NaN
     inverse 0.905837
   ]
   edge
   [
     source 56
     target 68
-    weight 0.019779
+    weight NaN
     inverse 0.980221
   ]
   edge
   [
     source 56
     target 72
-    weight 0.009859
+    weight NaN
     inverse 0.990141
   ]
   edge
   [
     source 56
     target 76
-    weight 0.0022581
+    weight NaN
     inverse 0.9977419
   ]
   edge
   [
     source 57
     target 1
-    weight 0.10869
+    weight NaN
     inverse 0.89131
   ]
   edge
   [
     source 57
     target 17
-    weight 0.024958
+    weight NaN
     inverse 0.975042
   ]
   edge
   [
     source 57
     target 29
-    weight 0.010433
+    weight NaN
     inverse 0.989567
   ]
   edge
   [
     source 57
     target 59
-    weight 0.03511
+    weight NaN
     inverse 0.96489
   ]
   edge
   [
     source 57
     target 63
-    weight 0.10355
+    weight NaN
     inverse 0.89645
   ]
   edge
   [
     source 57
     target 69
-    weight 0.01789
+    weight NaN
     inverse 0.98211
   ]
   edge
   [
     source 57
     target 73
-    weight 0.0068282
+    weight NaN
     inverse 0.9931718
   ]
   edge
   [
     source 57
     target 77
-    weight 0.0083838
+    weight NaN
     inverse 0.9916162
   ]
   edge
   [
     source 58
     target 39
-    weight 0.00010396
+    weight NaN
     inverse 0.99989604
   ]
   edge
   [
     source 58
     target 47
-    weight 0.00055792
+    weight NaN
     inverse 0.99944208
   ]
   edge
   [
     source 58
     target 50
-    weight 0.14338
+    weight NaN
     inverse 0.85662
   ]
   edge
   [
     source 58
     target 60
-    weight 0.19497
+    weight NaN
     inverse 0.80503
   ]
   edge
   [
     source 58
     target 66
-    weight 0.087333
+    weight NaN
     inverse 0.912667
   ]
   edge
   [
     source 58
     target 74
-    weight 0.00071139
+    weight NaN
     inverse 0.99928861
   ]
   edge
   [
     source 58
     target 76
-    weight 0.011052
+    weight NaN
     inverse 0.988948
   ]
   edge
   [
     source 58
     target 79
-    weight 1.0891e-05
+    weight NaN
     inverse 0.999989109
   ]
   edge
   [
     source 58
     target 87
-    weight 0.00010891
+    weight NaN
     inverse 0.99989109
   ]
   edge
   [
     source 59
     target 49
-    weight 0.036284
+    weight NaN
     inverse 0.963716
   ]
   edge
   [
     source 59
     target 57
-    weight 0.078277
+    weight NaN
     inverse 0.921723
   ]
   edge
   [
     source 59
     target 61
-    weight 0.12727
+    weight NaN
     inverse 0.87273
   ]
   edge
   [
     source 59
     target 67
-    weight 0.091046
+    weight NaN
     inverse 0.908954
   ]
   edge
   [
     source 59
     target 77
-    weight 0.0058285
+    weight NaN
     inverse 0.9941715
   ]
   edge
   [
     source 60
     target 39
-    weight 5.9181e-05
+    weight NaN
     inverse 0.999940819
   ]
   edge
   [
     source 60
     target 47
-    weight 0.00033232
+    weight NaN
     inverse 0.99966768
   ]
   edge
   [
     source 60
     target 56
-    weight 0.10592
+    weight NaN
     inverse 0.89408
   ]
   edge
   [
     source 60
     target 58
-    weight 0.13712
+    weight NaN
     inverse 0.86288
   ]
   edge
   [
     source 60
     target 62
-    weight 0.064378
+    weight NaN
     inverse 0.935622
   ]
   edge
   [
     source 60
     target 64
-    weight 0.13293
+    weight NaN
     inverse 0.86707
   ]
   edge
   [
     source 60
     target 74
-    weight 0.00048407
+    weight NaN
     inverse 0.99951593
   ]
   edge
   [
     source 60
     target 79
-    weight 2.4583e-05
+    weight NaN
     inverse 0.999975417
   ]
   edge
   [
     source 60
     target 87
-    weight 6.7375e-05
+    weight NaN
     inverse 0.999932625
   ]
   edge
   [
     source 61
     target 6
-    weight 1.7143e-05
+    weight NaN
     inverse 0.999982857
   ]
   edge
   [
     source 61
     target 7
-    weight 0.000795
+    weight NaN
     inverse 0.999205
   ]
   edge
   [
     source 61
     target 8
-    weight 5.3571e-05
+    weight NaN
     inverse 0.999946429
   ]
   edge
   [
     source 61
     target 37
-    weight 0.00020571
+    weight NaN
     inverse 0.99979429
   ]
   edge
   [
     source 61
     target 38
-    weight 5e-05
+    weight NaN
     inverse 0.99995
   ]
   edge
   [
     source 61
     target 39
-    weight 4e-05
+    weight NaN
     inverse 0.99996
   ]
   edge
   [
     source 61
     target 41
-    weight 9.5714e-05
+    weight NaN
     inverse 0.999904286
   ]
   edge
   [
     source 61
     target 47
-    weight 0.00043857
+    weight NaN
     inverse 0.99956143
   ]
   edge
   [
     source 61
     target 49
-    weight 0.00078
+    weight NaN
     inverse 0.99922
   ]
   edge
   [
     source 61
     target 53
-    weight 0.00028571
+    weight NaN
     inverse 0.99971429
   ]
   edge
   [
     source 61
     target 59
-    weight 0.12286
+    weight NaN
     inverse 0.87714
   ]
   edge
   [
     source 61
     target 62
-    weight 3.2143e-05
+    weight NaN
     inverse 0.999967857
   ]
   edge
   [
     source 61
     target 63
-    weight 0.15836
+    weight NaN
     inverse 0.84164
   ]
   edge
   [
     source 61
     target 64
-    weight 0.00015214
+    weight NaN
     inverse 0.99984786
   ]
   edge
   [
     source 61
     target 65
-    weight 0.21128
+    weight NaN
     inverse 0.78872
   ]
   edge
   [
     source 61
     target 74
-    weight 4.5714e-05
+    weight NaN
     inverse 0.999954286
   ]
   edge
   [
     source 61
     target 75
-    weight 0.00013714
+    weight NaN
     inverse 0.99986286
   ]
   edge
   [
     source 61
     target 78
-    weight 0
+    weight 1e-05
     inverse 1
   ]
   edge
   [
     source 61
     target 79
-    weight 6.4286e-06
+    weight NaN
     inverse 0.9999935714
   ]
   edge
   [
     source 61
     target 87
-    weight 5.6429e-05
+    weight NaN
     inverse 0.999943571
   ]
   edge
   [
     source 61
     target 88
-    weight 0.00071429
+    weight NaN
     inverse 0.99928571
   ]
   edge
   [
     source 61
     target 89
-    weight 0.0089864
+    weight NaN
     inverse 0.9910136
   ]
   edge
   [
     source 62
     target 6
-    weight 0.0065302
+    weight NaN
     inverse 0.9934698
   ]
   edge
   [
     source 62
     target 7
-    weight 0.00029921
+    weight NaN
     inverse 0.99970079
   ]
   edge
   [
     source 62
     target 8
-    weight 0.0036381
+    weight NaN
     inverse 0.9963619
   ]
   edge
   [
     source 62
     target 37
-    weight 0.00096508
+    weight NaN
     inverse 0.99903492
   ]
   edge
   [
     source 62
     target 38
-    weight 0.00014683
+    weight NaN
     inverse 0.99985317
   ]
   edge
   [
     source 62
     target 39
-    weight 0.00014444
+    weight NaN
     inverse 0.99985556
   ]
   edge
   [
     source 62
     target 41
-    weight 0.00024286
+    weight NaN
     inverse 0.99975714
   ]
   edge
   [
     source 62
     target 47
-    weight 0.00061032
+    weight NaN
     inverse 0.99938968
   ]
   edge
   [
     source 62
     target 49
-    weight 7.4603e-05
+    weight NaN
     inverse 0.999925397
   ]
   edge
   [
     source 62
     target 53
-    weight 1.0317e-05
+    weight NaN
     inverse 0.999989683
   ]
   edge
   [
     source 62
     target 56
-    weight 0.10549
+    weight NaN
     inverse 0.89451
   ]
   edge
   [
     source 62
     target 60
-    weight 0.10177
+    weight NaN
     inverse 0.89823
   ]
   edge
   [
     source 62
     target 61
-    weight 6.8254e-05
+    weight NaN
     inverse 0.999931746
   ]
   edge
   [
     source 62
     target 64
-    weight 0.067606
+    weight NaN
     inverse 0.932394
   ]
   edge
   [
     source 62
     target 65
-    weight 3.0159e-05
+    weight NaN
     inverse 0.999969841
   ]
   edge
   [
     source 62
     target 74
-    weight 0.0015317
+    weight NaN
     inverse 0.9984683
   ]
   edge
   [
     source 62
     target 75
-    weight 0.00095635
+    weight NaN
     inverse 0.99904365
   ]
   edge
   [
     source 62
     target 78
-    weight 0.0022048
+    weight NaN
     inverse 0.9977952
   ]
   edge
   [
     source 62
     target 79
-    weight 3.9683e-05
+    weight NaN
     inverse 0.999960317
   ]
   edge
   [
     source 62
     target 80
-    weight 0.14688
+    weight NaN
     inverse 0.85312
   ]
   edge
   [
     source 62
     target 87
-    weight 0.0001881
+    weight NaN
     inverse 0.9998119
   ]
   edge
   [
     source 62
     target 88
-    weight 0.0038921
+    weight NaN
     inverse 0.9961079
   ]
   edge
   [
     source 62
     target 89
-    weight 0.00017937
+    weight NaN
     inverse 0.99982063
   ]
   edge
   [
     source 63
     target 17
-    weight 0.030815
+    weight NaN
     inverse 0.969185
   ]
   edge
   [
     source 63
     target 39
-    weight 4.5013e-05
+    weight NaN
     inverse 0.999954987
   ]
   edge
   [
     source 63
     target 47
-    weight 0.0002711
+    weight NaN
     inverse 0.9997289
   ]
   edge
   [
     source 63
     target 57
-    weight 0.20967
+    weight NaN
     inverse 0.79033
   ]
   edge
   [
     source 63
     target 61
-    weight 0.12255
+    weight NaN
     inverse 0.87745
   ]
   edge
   [
     source 63
     target 74
-    weight 6.1893e-05
+    weight NaN
     inverse 0.999938107
   ]
   edge
   [
     source 63
     target 79
-    weight 9.6675e-05
+    weight NaN
     inverse 0.999903325
   ]
   edge
   [
     source 63
     target 81
-    weight 0.09244
+    weight NaN
     inverse 0.90756
   ]
   edge
   [
     source 63
     target 87
-    weight 0.00016573
+    weight NaN
     inverse 0.99983427
   ]
   edge
   [
     source 64
     target 6
-    weight 0.00086829
+    weight NaN
     inverse 0.99913171
   ]
   edge
   [
     source 64
     target 7
-    weight 0.00016159
+    weight NaN
     inverse 0.99983841
   ]
   edge
   [
     source 64
     target 8
-    weight 0.00045
+    weight NaN
     inverse 0.99955
   ]
   edge
   [
     source 64
     target 37
-    weight 0.00088232
+    weight NaN
     inverse 0.99911768
   ]
   edge
   [
     source 64
     target 38
-    weight 0.00019939
+    weight NaN
     inverse 0.99980061
   ]
   edge
   [
     source 64
     target 39
-    weight 0.00014329
+    weight NaN
     inverse 0.99985671
   ]
   edge
   [
     source 64
     target 41
-    weight 0.00014817
+    weight NaN
     inverse 0.99985183
   ]
   edge
   [
     source 64
     target 47
-    weight 0.0007378
+    weight NaN
     inverse 0.9992622
   ]
   edge
   [
     source 64
     target 49
-    weight 0.0002189
+    weight NaN
     inverse 0.9997811
   ]
   edge
   [
     source 64
     target 50
-    weight 0.081766
+    weight NaN
     inverse 0.918234
   ]
   edge
   [
     source 64
     target 53
-    weight 9.7561e-06
+    weight NaN
     inverse 0.9999902439
   ]
   edge
   [
     source 64
     target 60
-    weight 0.127
+    weight NaN
     inverse 0.873
   ]
   edge
   [
     source 64
     target 61
-    weight 0.00070061
+    weight NaN
     inverse 0.99929939
   ]
   edge
   [
     source 64
     target 62
-    weight 0.025165
+    weight NaN
     inverse 0.974835
   ]
   edge
   [
     source 64
     target 65
-    weight 0.00014268
+    weight NaN
     inverse 0.99985732
   ]
   edge
   [
     source 64
     target 74
-    weight 0.0002689
+    weight NaN
     inverse 0.9997311
   ]
   edge
   [
     source 64
     target 75
-    weight 0.00030061
+    weight NaN
     inverse 0.99969939
   ]
   edge
   [
     source 64
     target 78
-    weight 5.4878e-06
+    weight NaN
     inverse 0.9999945122
   ]
   edge
   [
     source 64
     target 79
-    weight 1.8902e-05
+    weight NaN
     inverse 0.999981098
   ]
   edge
   [
     source 64
     target 84
-    weight 0.16553
+    weight NaN
     inverse 0.83447
   ]
   edge
   [
     source 64
     target 87
-    weight 0.00012683
+    weight NaN
     inverse 0.99987317
   ]
   edge
   [
     source 64
     target 88
-    weight 0.010044
+    weight NaN
     inverse 0.989956
   ]
   edge
   [
     source 64
     target 89
-    weight 0.00026646
+    weight NaN
     inverse 0.99973354
   ]
   edge
   [
     source 65
     target 6
-    weight 2.4533e-05
+    weight NaN
     inverse 0.999975467
   ]
   edge
   [
     source 65
     target 7
-    weight 0.0013173
+    weight NaN
     inverse 0.9986827
   ]
   edge
   [
     source 65
     target 8
-    weight 6.9867e-05
+    weight NaN
     inverse 0.999930133
   ]
   edge
   [
     source 65
     target 37
-    weight 0.00052053
+    weight NaN
     inverse 0.99947947
   ]
   edge
   [
     source 65
     target 38
-    weight 0.0001136
+    weight NaN
     inverse 0.9998864
   ]
   edge
   [
     source 65
     target 39
-    weight 0.0001872
+    weight NaN
     inverse 0.9998128
   ]
   edge
   [
     source 65
     target 41
-    weight 5.1733e-05
+    weight NaN
     inverse 0.999948267
   ]
   edge
   [
     source 65
     target 47
-    weight 0.0026432
+    weight NaN
     inverse 0.9973568
   ]
   edge
   [
     source 65
     target 49
-    weight 0.01215
+    weight NaN
     inverse 0.98785
   ]
   edge
   [
     source 65
     target 51
-    weight 0.065269
+    weight NaN
     inverse 0.934731
   ]
   edge
   [
     source 65
     target 53
-    weight 0.00048693
+    weight NaN
     inverse 0.99951307
   ]
   edge
   [
     source 65
     target 61
-    weight 0.11149
+    weight NaN
     inverse 0.88851
   ]
   edge
   [
     source 65
     target 62
-    weight 4.2133e-05
+    weight NaN
     inverse 0.999957867
   ]
   edge
   [
     source 65
     target 64
-    weight 0.00015307
+    weight NaN
     inverse 0.99984693
   ]
   edge
   [
     source 65
     target 74
-    weight 4.96e-05
+    weight NaN
     inverse 0.9999504
   ]
   edge
   [
     source 65
     target 75
-    weight 6.6667e-05
+    weight NaN
     inverse 0.999933333
   ]
   edge
   [
     source 65
     target 78
-    weight 5.3333e-07
+    weight NaN
     inverse 0.99999946667
   ]
   edge
   [
     source 65
     target 79
-    weight 1.0667e-06
+    weight NaN
     inverse 0.9999989333
   ]
   edge
   [
     source 65
     target 85
-    weight 0.10215
+    weight NaN
     inverse 0.89785
   ]
   edge
   [
     source 65
     target 87
-    weight 0.00018347
+    weight NaN
     inverse 0.99981653
   ]
   edge
   [
     source 65
     target 88
-    weight 0.0008752
+    weight NaN
     inverse 0.9991248
   ]
   edge
   [
     source 65
     target 89
-    weight 0.02126
+    weight NaN
     inverse 0.97874
   ]
   edge
   [
     source 66
     target 32
-    weight 0.0666
+    weight NaN
     inverse 0.9334
   ]
   edge
   [
     source 66
     target 34
-    weight 0.061572
+    weight NaN
     inverse 0.938428
   ]
   edge
   [
     source 66
     target 44
-    weight 0.089301
+    weight NaN
     inverse 0.910699
   ]
   edge
   [
     source 66
     target 58
-    weight 0.12456
+    weight NaN
     inverse 0.87544
   ]
   edge
   [
     source 66
     target 67
-    weight 0.095452
+    weight NaN
     inverse 0.904548
   ]
   edge
   [
     source 66
     target 68
-    weight 0.039854
+    weight NaN
     inverse 0.960146
   ]
   edge
   [
     source 66
     target 76
-    weight 0.02293
+    weight NaN
     inverse 0.97707
   ]
   edge
   [
     source 67
     target 33
-    weight 0.058488
+    weight NaN
     inverse 0.941512
   ]
   edge
   [
     source 67
     target 35
-    weight 0.060679
+    weight NaN
     inverse 0.939321
   ]
   edge
   [
     source 67
     target 45
-    weight 0.057594
+    weight NaN
     inverse 0.942406
   ]
   edge
   [
     source 67
     target 59
-    weight 0.062599
+    weight NaN
     inverse 0.937401
   ]
   edge
   [
     source 67
     target 66
-    weight 0.10655
+    weight NaN
     inverse 0.89345
   ]
   edge
   [
     source 67
     target 69
-    weight 0.041705
+    weight NaN
     inverse 0.958295
   ]
   edge
   [
     source 67
     target 77
-    weight 0.0087807
+    weight NaN
     inverse 0.9912193
   ]
   edge
   [
     source 68
     target 0
-    weight 0.020301
+    weight NaN
     inverse 0.979699
   ]
   edge
   [
     source 68
     target 18
-    weight 0.045562
+    weight NaN
     inverse 0.954438
   ]
   edge
   [
     source 68
     target 19
-    weight 0.039608
+    weight NaN
     inverse 0.960392
   ]
   edge
   [
     source 68
     target 32
-    weight 0.072162
+    weight NaN
     inverse 0.927838
   ]
   edge
   [
     source 68
     target 56
-    weight 0.036182
+    weight NaN
     inverse 0.963818
   ]
   edge
   [
     source 68
     target 66
-    weight 0.098649
+    weight NaN
     inverse 0.901351
   ]
   edge
   [
     source 68
     target 69
-    weight 0.020592
+    weight NaN
     inverse 0.979408
   ]
   edge
   [
     source 68
     target 76
-    weight 0.08945
+    weight NaN
     inverse 0.91055
   ]
   edge
   [
     source 69
     target 19
-    weight 0.080707
+    weight NaN
     inverse 0.919293
   ]
   edge
   [
     source 69
     target 33
-    weight 0.098107
+    weight NaN
     inverse 0.901893
   ]
   edge
   [
     source 69
     target 57
-    weight 0.086779
+    weight NaN
     inverse 0.913221
   ]
   edge
   [
     source 69
     target 67
-    weight 0.14973
+    weight NaN
     inverse 0.85027
   ]
   edge
   [
     source 69
     target 68
-    weight 0.010431
+    weight NaN
     inverse 0.989569
   ]
   edge
   [
     source 69
     target 77
-    weight 0.027557
+    weight NaN
     inverse 0.972443
   ]
   edge
   [
     source 70
     target 2
-    weight 0.010695
+    weight NaN
     inverse 0.989305
   ]
   edge
   [
     source 70
     target 4
-    weight 0.15694
+    weight NaN
     inverse 0.84306
   ]
   edge
   [
     source 70
     target 20
-    weight 0.027524
+    weight NaN
     inverse 0.972476
   ]
   edge
   [
     source 70
     target 22
-    weight 0.0070911
+    weight NaN
     inverse 0.9929089
   ]
   edge
   [
     source 70
     target 24
-    weight 0.024215
+    weight NaN
     inverse 0.975785
   ]
   edge
   [
     source 70
     target 76
-    weight 0.10594
+    weight NaN
     inverse 0.89406
   ]
   edge
   [
     source 71
     target 3
-    weight 0.022437
+    weight NaN
     inverse 0.977563
   ]
   edge
   [
     source 71
     target 5
-    weight 0.11542
+    weight NaN
     inverse 0.88458
   ]
   edge
   [
     source 71
     target 21
-    weight 0.021559
+    weight NaN
     inverse 0.978441
   ]
   edge
   [
     source 71
     target 39
-    weight 0.0006125
+    weight NaN
     inverse 0.9993875
   ]
   edge
   [
     source 71
     target 47
-    weight 0.0017506
+    weight NaN
     inverse 0.9982494
   ]
   edge
   [
     source 71
     target 74
-    weight 0.0025356
+    weight NaN
     inverse 0.9974644
   ]
   edge
   [
     source 71
     target 77
-    weight 0.064433
+    weight NaN
     inverse 0.935567
   ]
   edge
   [
     source 71
     target 79
-    weight 6.25e-07
+    weight NaN
     inverse 0.999999375
   ]
   edge
   [
     source 71
     target 87
-    weight 0.0055844
+    weight NaN
     inverse 0.9944156
   ]
   edge
   [
     source 72
     target 2
-    weight 0.099863
+    weight NaN
     inverse 0.900137
   ]
   edge
   [
     source 72
     target 4
-    weight 0.15434
+    weight NaN
     inverse 0.84566
   ]
   edge
   [
     source 72
     target 18
-    weight 0.055675
+    weight NaN
     inverse 0.944325
   ]
   edge
   [
     source 72
     target 28
-    weight 0.090436
+    weight NaN
     inverse 0.909564
   ]
   edge
   [
     source 72
     target 50
-    weight 0.013526
+    weight NaN
     inverse 0.986474
   ]
   edge
   [
     source 72
     target 56
-    weight 0.029602
+    weight NaN
     inverse 0.970398
   ]
   edge
   [
     source 72
     target 58
-    weight 0.0074941
+    weight NaN
     inverse 0.9925059
   ]
   edge
   [
     source 72
     target 70
-    weight 0.084059
+    weight NaN
     inverse 0.915941
   ]
   edge
   [
     source 72
     target 74
-    weight 0.20976
+    weight NaN
     inverse 0.79024
   ]
   edge
   [
     source 72
     target 76
-    weight 0.038892
+    weight NaN
     inverse 0.961108
   ]
   edge
   [
     source 73
     target 3
-    weight 0.12677
+    weight NaN
     inverse 0.87323
   ]
   edge
   [
     source 73
     target 5
-    weight 0.057379
+    weight NaN
     inverse 0.942621
   ]
   edge
   [
     source 73
     target 9
-    weight 0.081294
+    weight NaN
     inverse 0.918706
   ]
   edge
   [
     source 73
     target 29
-    weight 0.053078
+    weight NaN
     inverse 0.946922
   ]
   edge
   [
     source 73
     target 37
-    weight 0.014608
+    weight NaN
     inverse 0.985392
   ]
   edge
   [
     source 73
     target 41
-    weight 0.0020606
+    weight NaN
     inverse 0.9979394
   ]
   edge
   [
     source 73
     target 57
-    weight 0.026316
+    weight NaN
     inverse 0.973684
   ]
   edge
   [
     source 73
     target 67
-    weight 0.0075268
+    weight NaN
     inverse 0.9924732
   ]
   edge
   [
     source 73
     target 71
-    weight 0.068554
+    weight NaN
     inverse 0.931446
   ]
   edge
   [
     source 73
     target 75
-    weight 0.1854
+    weight NaN
     inverse 0.8146
   ]
   edge
   [
     source 73
     target 77
-    weight 0.042464
+    weight NaN
     inverse 0.957536
   ]
   edge
   [
     source 74
     target 1
-    weight 0.001206
+    weight NaN
     inverse 0.998794
   ]
   edge
   [
     source 74
     target 6
-    weight 0.010287
+    weight NaN
     inverse 0.989713
   ]
   edge
   [
     source 74
     target 7
-    weight 0.0020925
+    weight NaN
     inverse 0.9979075
   ]
   edge
   [
     source 74
     target 8
-    weight 0.051752
+    weight NaN
     inverse 0.948248
   ]
   edge
   [
     source 74
     target 9
-    weight 0.0018507
+    weight NaN
     inverse 0.9981493
   ]
   edge
   [
     source 74
     target 10
-    weight 0.0046836
+    weight NaN
     inverse 0.9953164
   ]
   edge
   [
     source 74
     target 11
-    weight 0.00029254
+    weight NaN
     inverse 0.99970746
   ]
   edge
   [
     source 74
     target 12
-    weight 0.0080418
+    weight NaN
     inverse 0.9919582
   ]
   edge
   [
     source 74
     target 22
-    weight 0.017815
+    weight NaN
     inverse 0.982185
   ]
   edge
   [
     source 74
     target 23
-    weight 0.0018836
+    weight NaN
     inverse 0.9981164
   ]
   edge
   [
     source 74
     target 26
-    weight 0.022394
+    weight NaN
     inverse 0.977606
   ]
   edge
   [
     source 74
     target 27
-    weight 0.00078507
+    weight NaN
     inverse 0.99921493
   ]
   edge
   [
     source 74
     target 37
-    weight 0.0014985
+    weight NaN
     inverse 0.9985015
   ]
   edge
   [
     source 74
     target 38
-    weight 0.00051045
+    weight NaN
     inverse 0.99948955
   ]
   edge
   [
     source 74
     target 39
-    weight 8.9552e-05
+    weight NaN
     inverse 0.999910448
   ]
   edge
   [
     source 74
     target 40
-    weight 0.00076119
+    weight NaN
     inverse 0.99923881
   ]
   edge
   [
     source 74
     target 41
-    weight 0.00057015
+    weight NaN
     inverse 0.99942985
   ]
   edge
   [
     source 74
     target 42
-    weight 0.0027881
+    weight NaN
     inverse 0.9972119
   ]
   edge
   [
     source 74
     target 43
-    weight 0.00091642
+    weight NaN
     inverse 0.99908358
   ]
   edge
   [
     source 74
     target 44
-    weight 0.0013164
+    weight NaN
     inverse 0.9986836
   ]
   edge
   [
     source 74
     target 45
-    weight 0.00019403
+    weight NaN
     inverse 0.99980597
   ]
   edge
   [
     source 74
     target 46
-    weight 0.003
+    weight NaN
     inverse 0.997
   ]
   edge
   [
     source 74
     target 47
-    weight 0.00066866
+    weight NaN
     inverse 0.99933134
   ]
   edge
   [
     source 74
     target 48
-    weight 0.0021642
+    weight NaN
     inverse 0.9978358
   ]
   edge
   [
     source 74
     target 49
-    weight 0.00020299
+    weight NaN
     inverse 0.99979701
   ]
   edge
   [
     source 74
     target 51
-    weight 0.00015821
+    weight NaN
     inverse 0.99984179
   ]
   edge
   [
     source 74
     target 52
-    weight 0.00043881
+    weight NaN
     inverse 0.99956119
   ]
   edge
   [
     source 74
     target 53
-    weight 8.9552e-05
+    weight NaN
     inverse 0.999910448
   ]
   edge
   [
     source 74
     target 54
-    weight 0.00048358
+    weight NaN
     inverse 0.99951642
   ]
   edge
   [
     source 74
     target 55
-    weight 0.00053134
+    weight NaN
     inverse 0.99946866
   ]
   edge
   [
     source 74
     target 58
-    weight 0.0057582
+    weight NaN
     inverse 0.9942418
   ]
   edge
   [
     source 74
     target 60
-    weight 0.0068896
+    weight NaN
     inverse 0.9931104
   ]
   edge
   [
     source 74
     target 61
-    weight 0.00013731
+    weight NaN
     inverse 0.99986269
   ]
   edge
   [
     source 74
     target 62
-    weight 0.0046478
+    weight NaN
     inverse 0.9953522
   ]
   edge
   [
     source 74
     target 63
-    weight 2.0896e-05
+    weight NaN
     inverse 0.999979104
   ]
   edge
   [
     source 74
     target 64
-    weight 0.0035463
+    weight NaN
     inverse 0.9964537
   ]
   edge
   [
     source 74
     target 65
-    weight 2.9851e-05
+    weight NaN
     inverse 0.999970149
   ]
   edge
   [
     source 74
     target 70
-    weight 0.12873
+    weight NaN
     inverse 0.87127
   ]
   edge
   [
     source 74
     target 71
-    weight 0.0034567
+    weight NaN
     inverse 0.9965433
   ]
   edge
   [
     source 74
     target 72
-    weight 0.61174
+    weight NaN
     inverse 0.38826
   ]
   edge
   [
     source 74
     target 75
-    weight 0.0039224
+    weight NaN
     inverse 0.9960776
   ]
   edge
   [
     source 74
     target 78
-    weight 3.5821e-05
+    weight NaN
     inverse 0.999964179
   ]
   edge
   [
     source 74
     target 79
-    weight 2.9851e-06
+    weight NaN
     inverse 0.9999970149
   ]
   edge
   [
     source 74
     target 84
-    weight 0.010224
+    weight NaN
     inverse 0.989776
   ]
   edge
   [
     source 74
     target 85
-    weight 0.00057612
+    weight NaN
     inverse 0.99942388
   ]
   edge
   [
     source 74
     target 87
-    weight 0.00044776
+    weight NaN
     inverse 0.99955224
   ]
   edge
   [
     source 74
     target 88
-    weight 0.0043254
+    weight NaN
     inverse 0.9956746
   ]
   edge
   [
     source 74
     target 89
-    weight 0.00044179
+    weight NaN
     inverse 0.99955821
   ]
   edge
   [
     source 75
     target 6
-    weight 0.0016657
+    weight NaN
     inverse 0.9983343
   ]
   edge
   [
     source 75
     target 7
-    weight 0.016494
+    weight NaN
     inverse 0.983506
   ]
   edge
   [
     source 75
     target 8
-    weight 0.0016571
+    weight NaN
     inverse 0.9983429
   ]
   edge
   [
     source 75
     target 37
-    weight 0.0081829
+    weight NaN
     inverse 0.9918171
   ]
   edge
   [
     source 75
     target 38
-    weight 0.00065429
+    weight NaN
     inverse 0.99934571
   ]
   edge
   [
     source 75
     target 39
-    weight 0.00017429
+    weight NaN
     inverse 0.99982571
   ]
   edge
   [
     source 75
     target 41
-    weight 0.006
+    weight NaN
     inverse 0.994
   ]
   edge
   [
     source 75
     target 47
-    weight 0.0028286
+    weight NaN
     inverse 0.9971714
   ]
   edge
   [
     source 75
     target 49
-    weight 0.00085143
+    weight NaN
     inverse 0.99914857
   ]
   edge
   [
     source 75
     target 53
-    weight 0.00025429
+    weight NaN
     inverse 0.99974571
   ]
   edge
   [
     source 75
     target 61
-    weight 0.00096857
+    weight NaN
     inverse 0.99903143
   ]
   edge
   [
     source 75
     target 62
-    weight 0.0007
+    weight NaN
     inverse 0.9993
   ]
   edge
   [
     source 75
     target 64
-    weight 0.00050571
+    weight NaN
     inverse 0.99949429
   ]
   edge
   [
     source 75
     target 65
-    weight 9.1429e-05
+    weight NaN
     inverse 0.999908571
   ]
   edge
   [
     source 75
     target 71
-    weight 0.06518
+    weight NaN
     inverse 0.93482
   ]
   edge
   [
     source 75
     target 73
-    weight 0.52342
+    weight NaN
     inverse 0.47658
   ]
   edge
   [
     source 75
     target 74
-    weight 0.00582
+    weight NaN
     inverse 0.99418
   ]
   edge
   [
     source 75
     target 76
-    weight 0.014003
+    weight NaN
     inverse 0.985997
   ]
   edge
   [
     source 75
     target 78
-    weight 2.8571e-06
+    weight NaN
     inverse 0.9999971429
   ]
   edge
   [
     source 75
     target 79
-    weight 0
+    weight 1e-05
     inverse 1
   ]
   edge
   [
     source 75
     target 87
-    weight 0.00088
+    weight NaN
     inverse 0.99912
   ]
   edge
   [
     source 75
     target 88
-    weight 0.00232
+    weight NaN
     inverse 0.99768
   ]
   edge
   [
     source 75
     target 89
-    weight 0.0010714
+    weight NaN
     inverse 0.9989286
   ]
   edge
   [
     source 76
     target 0
-    weight 0.016645
+    weight NaN
     inverse 0.983355
   ]
   edge
   [
     source 76
     target 2
-    weight 0.038848
+    weight NaN
     inverse 0.961152
   ]
   edge
   [
     source 76
     target 18
-    weight 0.038012
+    weight NaN
     inverse 0.961988
   ]
   edge
   [
     source 76
     target 36
-    weight 0.10657
+    weight NaN
     inverse 0.89343
   ]
   edge
   [
     source 76
     target 56
-    weight 0.009455
+    weight NaN
     inverse 0.990545
   ]
   edge
   [
     source 76
     target 58
-    weight 0.023392
+    weight NaN
     inverse 0.976608
   ]
   edge
   [
     source 76
     target 66
-    weight 0.057718
+    weight NaN
     inverse 0.942282
   ]
   edge
   [
     source 76
     target 68
-    weight 0.081593
+    weight NaN
     inverse 0.918407
   ]
   edge
   [
     source 76
     target 70
-    weight 0.14978
+    weight NaN
     inverse 0.85022
   ]
   edge
   [
     source 76
     target 72
-    weight 0.086327
+    weight NaN
     inverse 0.913673
   ]
   edge
   [
     source 76
     target 77
-    weight 0.055658
+    weight NaN
     inverse 0.944342
   ]
   edge
   [
     source 77
     target 1
-    weight 0.048833
+    weight NaN
     inverse 0.951167
   ]
   edge
   [
     source 77
     target 3
-    weight 0.043857
+    weight NaN
     inverse 0.956143
   ]
   edge
   [
     source 77
     target 19
-    weight 0.045818
+    weight NaN
     inverse 0.954182
   ]
   edge
   [
     source 77
     target 37
-    weight 0.054603
+    weight NaN
     inverse 0.945397
   ]
   edge
   [
     source 77
     target 47
-    weight 0.025061
+    weight NaN
     inverse 0.974939
   ]
   edge
   [
     source 77
     target 57
-    weight 0.034697
+    weight NaN
     inverse 0.965303
   ]
   edge
   [
     source 77
     target 59
-    weight 0.0061336
+    weight NaN
     inverse 0.9938664
   ]
   edge
   [
     source 77
     target 69
-    weight 0.03225
+    weight NaN
     inverse 0.96775
   ]
   edge
   [
     source 77
     target 71
-    weight 0.1069
+    weight NaN
     inverse 0.8931
   ]
   edge
   [
     source 77
     target 73
-    weight 0.094152
+    weight NaN
     inverse 0.905848
   ]
   edge
   [
     source 77
     target 76
-    weight 0.070558
+    weight NaN
     inverse 0.929442
   ]
   edge
   [
     source 78
     target 6
-    weight 1.5686e-05
+    weight NaN
     inverse 0.999984314
   ]
   edge
   [
     source 78
     target 7
-    weight 7.8431e-06
+    weight NaN
     inverse 0.9999921569
   ]
   edge
   [
     source 78
     target 8
-    weight 5.4902e-05
+    weight NaN
     inverse 0.999945098
   ]
   edge
   [
     source 78
     target 16
-    weight 0.15982
+    weight NaN
     inverse 0.84018
   ]
   edge
   [
     source 78
     target 28
-    weight 0.24269
+    weight NaN
     inverse 0.75731
   ]
   edge
   [
     source 78
     target 37
-    weight 7.8431e-06
+    weight NaN
     inverse 0.9999921569
   ]
   edge
   [
     source 78
     target 38
-    weight 3.9216e-06
+    weight NaN
     inverse 0.9999960784
   ]
   edge
   [
     source 78
     target 39
-    weight 0
+    weight 1e-05
     inverse 1
   ]
   edge
   [
     source 78
     target 41
-    weight 0
+    weight 1e-05
     inverse 1
   ]
   edge
   [
     source 78
     target 47
-    weight 3.9216e-06
+    weight NaN
     inverse 0.9999960784
   ]
   edge
   [
     source 78
     target 49
-    weight 0
+    weight 1e-05
     inverse 1
   ]
   edge
   [
     source 78
     target 53
-    weight 0
+    weight 1e-05
     inverse 1
   ]
   edge
   [
     source 78
     target 61
-    weight 0
+    weight 1e-05
     inverse 1
   ]
   edge
   [
     source 78
     target 62
-    weight 0.013216
+    weight NaN
     inverse 0.986784
   ]
   edge
   [
     source 78
     target 64
-    weight 0.00099216
+    weight NaN
     inverse 0.99900784
   ]
   edge
   [
     source 78
     target 65
-    weight 0
+    weight 1e-05
     inverse 1
   ]
   edge
   [
     source 78
     target 74
-    weight 2.7451e-05
+    weight NaN
     inverse 0.999972549
   ]
   edge
   [
     source 78
     target 75
-    weight 7.8431e-06
+    weight NaN
     inverse 0.9999921569
   ]
   edge
   [
     source 78
     target 79
-    weight 0
+    weight 1e-05
     inverse 1
   ]
   edge
   [
     source 78
     target 80
-    weight 0.30431
+    weight NaN
     inverse 0.69569
   ]
   edge
   [
     source 78
     target 87
-    weight 0
+    weight 1e-05
     inverse 1
   ]
   edge
   [
     source 78
     target 88
-    weight 0.0005098
+    weight NaN
     inverse 0.9994902
   ]
   edge
   [
     source 78
     target 89
-    weight 0
+    weight 1e-05
     inverse 1
   ]
   edge
   [
     source 79
     target 1
-    weight 0.00016071
+    weight NaN
     inverse 0.99983929
   ]
   edge
   [
     source 79
     target 6
-    weight 0
+    weight 1e-05
     inverse 1
   ]
   edge
   [
     source 79
     target 7
-    weight 7.1429e-06
+    weight NaN
     inverse 0.9999928571
   ]
   edge
   [
     source 79
     target 8
-    weight 7.1429e-06
+    weight NaN
     inverse 0.9999928571
   ]
   edge
   [
     source 79
     target 9
-    weight 3.5714e-06
+    weight NaN
     inverse 0.9999964286
   ]
   edge
   [
     source 79
     target 10
-    weight 0
+    weight 1e-05
     inverse 1
   ]
   edge
   [
     source 79
     target 11
-    weight 0.00071429
+    weight NaN
     inverse 0.99928571
   ]
   edge
   [
     source 79
     target 12
-    weight 3.5714e-06
+    weight NaN
     inverse 0.9999964286
   ]
   edge
   [
     source 79
     target 17
-    weight 0.26708
+    weight NaN
     inverse 0.73292
   ]
   edge
   [
     source 79
     target 22
-    weight 3.5714e-06
+    weight NaN
     inverse 0.9999964286
   ]
   edge
   [
     source 79
     target 23
-    weight 7.1429e-06
+    weight NaN
     inverse 0.9999928571
   ]
   edge
   [
     source 79
     target 26
-    weight 0
+    weight 1e-05
     inverse 1
   ]
   edge
   [
     source 79
     target 27
-    weight 0
+    weight 1e-05
     inverse 1
   ]
   edge
   [
     source 79
     target 37
-    weight 3.2143e-05
+    weight NaN
     inverse 0.999967857
   ]
   edge
   [
     source 79
     target 38
-    weight 7.1429e-06
+    weight NaN
     inverse 0.9999928571
   ]
   edge
   [
     source 79
     target 39
-    weight 1.0714e-05
+    weight NaN
     inverse 0.999989286
   ]
   edge
   [
     source 79
     target 40
-    weight 3.5714e-06
+    weight NaN
     inverse 0.9999964286
   ]
   edge
   [
     source 79
     target 41
-    weight 3.9286e-05
+    weight NaN
     inverse 0.999960714
   ]
   edge
   [
     source 79
     target 42
-    weight 7.1429e-06
+    weight NaN
     inverse 0.9999928571
   ]
   edge
   [
     source 79
     target 43
-    weight 7.1429e-06
+    weight NaN
     inverse 0.9999928571
   ]
   edge
   [
     source 79
     target 44
-    weight 0
+    weight 1e-05
     inverse 1
   ]
   edge
   [
     source 79
     target 45
-    weight 7.1429e-06
+    weight NaN
     inverse 0.9999928571
   ]
   edge
   [
     source 79
     target 46
-    weight 7.1429e-06
+    weight NaN
     inverse 0.9999928571
   ]
   edge
   [
     source 79
     target 47
-    weight 1.0714e-05
+    weight NaN
     inverse 0.999989286
   ]
   edge
   [
     source 79
     target 48
-    weight 0
+    weight 1e-05
     inverse 1
   ]
   edge
   [
     source 79
     target 49
-    weight 7.1429e-06
+    weight NaN
     inverse 0.9999928571
   ]
   edge
   [
     source 79
     target 51
-    weight 3.5714e-06
+    weight NaN
     inverse 0.9999964286
   ]
   edge
   [
     source 79
     target 52
-    weight 0
+    weight 1e-05
     inverse 1
   ]
   edge
   [
     source 79
     target 53
-    weight 0
+    weight 1e-05
     inverse 1
   ]
   edge
   [
     source 79
     target 54
-    weight 7.1429e-06
+    weight NaN
     inverse 0.9999928571
   ]
   edge
   [
     source 79
     target 55
-    weight 3.5714e-06
+    weight NaN
     inverse 0.9999964286
   ]
   edge
   [
     source 79
     target 58
-    weight 0.00011071
+    weight NaN
     inverse 0.99988929
   ]
   edge
   [
     source 79
     target 60
-    weight 2.8571e-05
+    weight NaN
     inverse 0.999971429
   ]
   edge
   [
     source 79
     target 61
-    weight 0.00011786
+    weight NaN
     inverse 0.99988214
   ]
   edge
   [
     source 79
     target 62
-    weight 1.7857e-05
+    weight NaN
     inverse 0.999982143
   ]
   edge
   [
     source 79
     target 63
-    weight 0.016393
+    weight NaN
     inverse 0.983607
   ]
   edge
   [
     source 79
     target 64
-    weight 3.5714e-05
+    weight NaN
     inverse 0.999964286
   ]
   edge
   [
     source 79
     target 65
-    weight 3.5714e-06
+    weight NaN
     inverse 0.9999964286
   ]
   edge
   [
     source 79
     target 71
-    weight 3.5714e-06
+    weight NaN
     inverse 0.9999964286
   ]
   edge
   [
     source 79
     target 74
-    weight 7.1429e-06
+    weight NaN
     inverse 0.9999928571
   ]
   edge
   [
     source 79
     target 75
-    weight 3.9286e-05
+    weight NaN
     inverse 0.999960714
   ]
   edge
   [
     source 79
     target 78
-    weight 0
+    weight 1e-05
     inverse 1
   ]
   edge
   [
     source 79
     target 81
-    weight 0.32055
+    weight NaN
     inverse 0.67945
   ]
   edge
   [
     source 79
     target 84
-    weight 6.7857e-05
+    weight NaN
     inverse 0.999932143
   ]
   edge
   [
     source 79
     target 85
-    weight 5e-05
+    weight NaN
     inverse 0.99995
   ]
   edge
   [
     source 79
     target 87
-    weight 2.5e-05
+    weight NaN
     inverse 0.999975
   ]
   edge
   [
     source 79
     target 88
-    weight 1.0714e-05
+    weight NaN
     inverse 0.999989286
   ]
   edge
   [
     source 79
     target 89
-    weight 1.4286e-05
+    weight NaN
     inverse 0.999985714
   ]
   edge
   [
     source 80
     target 16
-    weight 0.045758
+    weight NaN
     inverse 0.954242
   ]
   edge
   [
     source 80
     target 62
-    weight 0.062214
+    weight NaN
     inverse 0.937786
   ]
   edge
   [
     source 80
     target 78
-    weight 0.04034
+    weight NaN
     inverse 0.95966
   ]
   edge
   [
     source 80
     target 82
-    weight 0.094512
+    weight NaN
     inverse 0.905488
   ]
   edge
   [
     source 80
     target 84
-    weight 0.14159
+    weight NaN
     inverse 0.85841
   ]
   edge
   [
     source 81
     target 17
-    weight 0.062005
+    weight NaN
     inverse 0.937995
   ]
   edge
   [
     source 81
     target 63
-    weight 0.044999
+    weight NaN
     inverse 0.955001
   ]
   edge
   [
     source 81
     target 67
-    weight 0.015298
+    weight NaN
     inverse 0.984702
   ]
   edge
   [
     source 81
     target 79
-    weight 0.033083
+    weight NaN
     inverse 0.966917
   ]
   edge
   [
     source 81
     target 83
-    weight 0.069204
+    weight NaN
     inverse 0.930796
   ]
   edge
   [
     source 81
     target 85
-    weight 0.12718
+    weight NaN
     inverse 0.87282
   ]
   edge
   [
     source 82
     target 14
-    weight 0.058735
+    weight NaN
     inverse 0.941265
   ]
   edge
   [
     source 82
     target 28
-    weight 0.085982
+    weight NaN
     inverse 0.914018
   ]
   edge
   [
     source 82
     target 36
-    weight 0.024805
+    weight NaN
     inverse 0.975195
   ]
   edge
   [
     source 82
     target 40
-    weight 0.012685
+    weight NaN
     inverse 0.987315
   ]
   edge
   [
     source 82
     target 80
-    weight 0.070813
+    weight NaN
     inverse 0.929187
   ]
   edge
   [
     source 82
     target 84
-    weight 0.099456
+    weight NaN
     inverse 0.900544
   ]
   edge
   [
     source 82
     target 86
-    weight 0.067831
+    weight NaN
     inverse 0.932169
   ]
   edge
   [
     source 83
     target 15
-    weight 0.032989
+    weight NaN
     inverse 0.967011
   ]
   edge
   [
     source 83
     target 29
-    weight 0.087827
+    weight NaN
     inverse 0.912173
   ]
   edge
   [
     source 83
     target 37
-    weight 0.027741
+    weight NaN
     inverse 0.972259
   ]
   edge
   [
     source 83
     target 41
-    weight 0.019026
+    weight NaN
     inverse 0.980974
   ]
   edge
   [
     source 83
     target 81
-    weight 0.089407
+    weight NaN
     inverse 0.910593
   ]
   edge
   [
     source 83
     target 85
-    weight 0.073304
+    weight NaN
     inverse 0.926696
   ]
   edge
   [
     source 83
     target 87
-    weight 0.091297
+    weight NaN
     inverse 0.908703
   ]
   edge
   [
     source 84
     target 39
-    weight 0.00045606
+    weight NaN
     inverse 0.99954394
   ]
   edge
   [
     source 84
     target 47
-    weight 0.0019458
+    weight NaN
     inverse 0.9980542
   ]
   edge
   [
     source 84
     target 50
-    weight 0.050062
+    weight NaN
     inverse 0.949938
   ]
   edge
   [
     source 84
     target 64
-    weight 0.075776
+    weight NaN
     inverse 0.924224
   ]
   edge
   [
     source 84
     target 74
-    weight 0.00045593
+    weight NaN
     inverse 0.99954407
   ]
   edge
   [
     source 84
     target 79
-    weight 5.0253e-05
+    weight NaN
     inverse 0.999949747
   ]
   edge
   [
     source 84
     target 80
-    weight 0.062641
+    weight NaN
     inverse 0.937359
   ]
   edge
   [
     source 84
     target 87
-    weight 0.00055808
+    weight NaN
     inverse 0.99944192
   ]
   edge
   [
     source 84
     target 88
-    weight 0.076646
+    weight NaN
     inverse 0.923354
   ]
   edge
   [
     source 85
     target 39
-    weight 0.0012464
+    weight NaN
     inverse 0.9987536
   ]
   edge
   [
     source 85
     target 47
-    weight 0.018919
+    weight NaN
     inverse 0.981081
   ]
   edge
   [
     source 85
     target 51
-    weight 0.056158
+    weight NaN
     inverse 0.943842
   ]
   edge
   [
     source 85
     target 65
-    weight 0.055461
+    weight NaN
     inverse 0.944539
   ]
   edge
   [
     source 85
     target 74
-    weight 0.00036403
+    weight NaN
     inverse 0.99963597
   ]
   edge
   [
     source 85
     target 79
-    weight 4.9505e-06
+    weight NaN
     inverse 0.9999950495
   ]
   edge
   [
     source 85
     target 81
-    weight 0.15215
+    weight NaN
     inverse 0.84785
   ]
   edge
   [
     source 85
     target 87
-    weight 0.037842
+    weight NaN
     inverse 0.962158
   ]
   edge
   [
     source 85
     target 89
-    weight 0.13102
+    weight NaN
     inverse 0.86898
   ]
   edge
   [
     source 86
     target 36
-    weight 0.27072
+    weight NaN
     inverse 0.72928
   ]
   edge
   [
     source 86
     target 54
-    weight 0.057297
+    weight NaN
     inverse 0.942703
   ]
   edge
   [
     source 86
     target 82
-    weight 0.20443
+    weight NaN
     inverse 0.79557
   ]
   edge
   [
     source 86
     target 84
-    weight 0.18054
+    weight NaN
     inverse 0.81946
   ]
   edge
   [
     source 86
     target 88
-    weight 0.14617
+    weight NaN
     inverse 0.85383
   ]
   edge
   [
     source 87
     target 1
-    weight 0.00082784
+    weight NaN
     inverse 0.99917216
   ]
   edge
   [
     source 87
     target 6
-    weight 6.9072e-05
+    weight NaN
     inverse 0.999930928
   ]
   edge
   [
     source 87
     target 7
-    weight 0.00053918
+    weight NaN
     inverse 0.99946082
   ]
   edge
   [
     source 87
     target 8
-    weight 0.00026907
+    weight NaN
     inverse 0.99973093
   ]
   edge
   [
     source 87
     target 9
-    weight 0.0054588
+    weight NaN
     inverse 0.9945412
   ]
   edge
   [
     source 87
     target 10
-    weight 6.1856e-05
+    weight NaN
     inverse 0.999938144
   ]
   edge
   [
     source 87
     target 11
-    weight 6.2887e-05
+    weight NaN
     inverse 0.999937113
   ]
   edge
   [
     source 87
     target 12
-    weight 0.00014124
+    weight NaN
     inverse 0.99985876
   ]
   edge
   [
     source 87
     target 22
-    weight 0.00020206
+    weight NaN
     inverse 0.99979794
   ]
   edge
   [
     source 87
     target 23
-    weight 0.00038351
+    weight NaN
     inverse 0.99961649
   ]
   edge
   [
     source 87
     target 26
-    weight 0.0013103
+    weight NaN
     inverse 0.9986897
   ]
   edge
   [
     source 87
     target 27
-    weight 0.0092856
+    weight NaN
     inverse 0.9907144
   ]
   edge
   [
     source 87
     target 37
-    weight 0.20247
+    weight NaN
     inverse 0.79753
   ]
   edge
   [
     source 87
     target 38
-    weight 0.00031443
+    weight NaN
     inverse 0.99968557
   ]
   edge
   [
     source 87
     target 39
-    weight 0.067805
+    weight NaN
     inverse 0.932195
   ]
   edge
   [
     source 87
     target 40
-    weight 0.0021216
+    weight NaN
     inverse 0.9978784
   ]
   edge
   [
     source 87
     target 41
-    weight 0.061603
+    weight NaN
     inverse 0.938397
   ]
   edge
   [
     source 87
     target 42
-    weight 0.0024134
+    weight NaN
     inverse 0.9975866
   ]
   edge
   [
     source 87
     target 43
-    weight 0.011118
+    weight NaN
     inverse 0.988882
   ]
   edge
   [
     source 87
     target 44
-    weight 0.0012629
+    weight NaN
     inverse 0.9987371
   ]
   edge
   [
     source 87
     target 45
-    weight 0.0041268
+    weight NaN
     inverse 0.9958732
   ]
   edge
   [
     source 87
     target 46
-    weight 0.0027629
+    weight NaN
     inverse 0.9972371
   ]
   edge
   [
     source 87
     target 47
-    weight 0.032927
+    weight NaN
     inverse 0.967073
   ]
   edge
   [
     source 87
     target 48
-    weight 0.0019381
+    weight NaN
     inverse 0.9980619
   ]
   edge
   [
     source 87
     target 49
-    weight 0.0042495
+    weight NaN
     inverse 0.9957505
   ]
   edge
   [
     source 87
     target 51
-    weight 0.0048423
+    weight NaN
     inverse 0.9951577
   ]
   edge
   [
     source 87
     target 52
-    weight 0.00033608
+    weight NaN
     inverse 0.99966392
   ]
   edge
   [
     source 87
     target 53
-    weight 0.0055928
+    weight NaN
     inverse 0.9944072
   ]
   edge
   [
     source 87
     target 54
-    weight 0.00049691
+    weight NaN
     inverse 0.99950309
   ]
   edge
   [
     source 87
     target 55
-    weight 0.12422
+    weight NaN
     inverse 0.87578
   ]
   edge
   [
     source 87
     target 58
-    weight 0.0012794
+    weight NaN
     inverse 0.9987206
   ]
   edge
   [
     source 87
     target 60
-    weight 0.00031237
+    weight NaN
     inverse 0.99968763
   ]
   edge
   [
     source 87
     target 61
-    weight 0.00027629
+    weight NaN
     inverse 0.99972371
   ]
   edge
   [
     source 87
     target 62
-    weight 0.00023093
+    weight NaN
     inverse 0.99976907
   ]
   edge
   [
     source 87
     target 63
-    weight 0.00012371
+    weight NaN
     inverse 0.99987629
   ]
   edge
   [
     source 87
     target 64
-    weight 0.00030928
+    weight NaN
     inverse 0.99969072
   ]
   edge
   [
     source 87
     target 65
-    weight 0.00042165
+    weight NaN
     inverse 0.99957835
   ]
   edge
   [
     source 87
     target 71
-    weight 0.0084309
+    weight NaN
     inverse 0.9915691
   ]
   edge
   [
     source 87
     target 74
-    weight 0.00071546
+    weight NaN
     inverse 0.99928454
   ]
   edge
   [
     source 87
     target 75
-    weight 0.0060866
+    weight NaN
     inverse 0.9939134
   ]
   edge
   [
     source 87
     target 78
-    weight 3.0928e-06
+    weight NaN
     inverse 0.9999969072
   ]
   edge
   [
     source 87
     target 79
-    weight 4.1237e-06
+    weight NaN
     inverse 0.9999958763
   ]
   edge
   [
     source 87
     target 83
-    weight 0.13608
+    weight NaN
     inverse 0.86392
   ]
   edge
   [
     source 87
     target 84
-    weight 0.0055485
+    weight NaN
     inverse 0.9944515
   ]
   edge
   [
     source 87
     target 85
-    weight 0.2026
+    weight NaN
     inverse 0.7974
   ]
   edge
   [
     source 87
     target 88
-    weight 0.0027608
+    weight NaN
     inverse 0.9972392
   ]
   edge
   [
     source 87
     target 89
-    weight 0.11888
+    weight NaN
     inverse 0.88112
   ]
   edge
   [
     source 88
     target 6
-    weight 0.00014057
+    weight NaN
     inverse 0.99985943
   ]
   edge
   [
     source 88
     target 7
-    weight 9.9742e-05
+    weight NaN
     inverse 0.999900258
   ]
   edge
   [
     source 88
     target 8
-    weight 0.0004292
+    weight NaN
     inverse 0.9995708
   ]
   edge
   [
     source 88
     target 37
-    weight 0.0012473
+    weight NaN
     inverse 0.9987527
   ]
   edge
   [
     source 88
     target 38
-    weight 0.0081302
+    weight NaN
     inverse 0.9918698
   ]
   edge
   [
     source 88
     target 39
-    weight 0.00022248
+    weight NaN
     inverse 0.99977752
   ]
   edge
   [
     source 88
     target 41
-    weight 0.00016072
+    weight NaN
     inverse 0.99983928
   ]
   edge
   [
     source 88
     target 47
-    weight 0.0031677
+    weight NaN
     inverse 0.9968323
   ]
   edge
   [
     source 88
     target 49
-    weight 0.00055168
+    weight NaN
     inverse 0.99944832
   ]
   edge
   [
     source 88
     target 52
-    weight 0.051905
+    weight NaN
     inverse 0.948095
   ]
   edge
   [
     source 88
     target 53
-    weight 4.031e-05
+    weight NaN
     inverse 0.99995969
   ]
   edge
   [
     source 88
     target 54
-    weight 0.15453
+    weight NaN
     inverse 0.84547
   ]
   edge
   [
     source 88
     target 61
-    weight 0.0022669
+    weight NaN
     inverse 0.9977331
   ]
   edge
   [
     source 88
     target 62
-    weight 5.5814e-05
+    weight NaN
     inverse 0.999944186
   ]
   edge
   [
     source 88
     target 64
-    weight 0.0013183
+    weight NaN
     inverse 0.9986817
   ]
   edge
   [
     source 88
     target 65
-    weight 0.00016693
+    weight NaN
     inverse 0.99983307
   ]
   edge
   [
     source 88
     target 74
-    weight 0.00026382
+    weight NaN
     inverse 0.99973618
   ]
   edge
   [
     source 88
     target 75
-    weight 0.00024289
+    weight NaN
     inverse 0.99975711
   ]
   edge
   [
     source 88
     target 78
-    weight 1.0336e-06
+    weight NaN
     inverse 0.9999989664
   ]
   edge
   [
     source 88
     target 79
-    weight 1.8088e-06
+    weight NaN
     inverse 0.9999981912
   ]
   edge
   [
     source 88
     target 84
-    weight 0.22351
+    weight NaN
     inverse 0.77649
   ]
   edge
   [
     source 88
     target 87
-    weight 0.00026822
+    weight NaN
     inverse 0.99973178
   ]
   edge
   [
     source 88
     target 89
-    weight 0.0016871
+    weight NaN
     inverse 0.9983129
   ]
   edge
   [
     source 89
     target 6
-    weight 9.206e-05
+    weight NaN
     inverse 0.99990794
   ]
   edge
   [
     source 89
     target 7
-    weight 0.00068391
+    weight NaN
     inverse 0.99931609
   ]
   edge
   [
     source 89
     target 8
-    weight 0.00031052
+    weight NaN
     inverse 0.99968948
   ]
   edge
   [
     source 89
     target 37
-    weight 0.017487
+    weight NaN
     inverse 0.982513
   ]
   edge
   [
     source 89
     target 38
-    weight 0.00035773
+    weight NaN
     inverse 0.99964227
   ]
   edge
   [
     source 89
     target 39
-    weight 0.0087888
+    weight NaN
     inverse 0.9912112
   ]
   edge
   [
     source 89
     target 41
-    weight 0.0025974
+    weight NaN
     inverse 0.9974026
   ]
   edge
   [
     source 89
     target 47
-    weight 0.015053
+    weight NaN
     inverse 0.984947
   ]
   edge
   [
     source 89
     target 49
-    weight 0.0079637
+    weight NaN
     inverse 0.9920363
   ]
   edge
   [
     source 89
     target 53
-    weight 0.03361
+    weight NaN
     inverse 0.96639
   ]
   edge
   [
     source 89
     target 55
-    weight 0.098762
+    weight NaN
     inverse 0.901238
   ]
   edge
   [
     source 89
     target 61
-    weight 0.0020219
+    weight NaN
     inverse 0.9979781
   ]
   edge
   [
     source 89
     target 62
-    weight 4.2918e-05
+    weight NaN
     inverse 0.999957082
   ]
   edge
   [
     source 89
     target 64
-    weight 0.00019099
+    weight NaN
     inverse 0.99980901
   ]
   edge
   [
     source 89
     target 65
-    weight 0.022554
+    weight NaN
     inverse 0.977446
   ]
   edge
   [
     source 89
     target 74
-    weight 0.0002412
+    weight NaN
     inverse 0.9997588
   ]
   edge
   [
     source 89
     target 75
-    weight 0.00048541
+    weight NaN
     inverse 0.99951459
   ]
   edge
   [
     source 89
     target 78
-    weight 2.3605e-06
+    weight NaN
     inverse 0.9999976395
   ]
   edge
   [
     source 89
     target 79
-    weight 4.2918e-07
+    weight NaN
     inverse 0.99999957082
   ]
   edge
   [
     source 89
     target 85
-    weight 0.17752
+    weight NaN
     inverse 0.82248
   ]
   edge
   [
     source 89
     target 87
-    weight 0.024418
+    weight NaN
     inverse 0.975582
   ]
   edge
   [
     source 89
     target 88
-    weight 0.0030895
+    weight NaN
     inverse 0.9969105
   ]
   edge
   [
     source 1
     target 75
-    weight 0.0041552
+    weight NaN
     inverse 0.9958448
   ]
   edge
   [
     source 1
     target 86
-    weight 5.7046e-05
+    weight NaN
     inverse 0.999942954
   ]
   edge
   [
     source 1
     target 88
-    weight 0.00012733
+    weight NaN
     inverse 0.99987267
   ]
   edge
   [
     source 3
     target 77
-    weight 0.016839
+    weight NaN
     inverse 0.983161
   ]
   edge
   [
     source 4
     target 14
-    weight 0.1226
+    weight NaN
     inverse 0.8774
   ]
   edge
   [
     source 5
     target 15
-    weight 0.075987
+    weight NaN
     inverse 0.924013
   ]
   edge
   [
     source 6
     target 24
-    weight 0.00020417
+    weight NaN
     inverse 0.99979583
   ]
   edge
   [
     source 6
     target 40
-    weight 0.00013662
+    weight NaN
     inverse 0.99986338
   ]
   edge
   [
     source 6
     target 42
-    weight 0.00045389
+    weight NaN
     inverse 0.99954611
   ]
   edge
   [
     source 6
     target 44
-    weight 0.00027742
+    weight NaN
     inverse 0.99972258
   ]
   edge
   [
     source 6
     target 45
-    weight 3.0171e-05
+    weight NaN
     inverse 0.999969829
   ]
   edge
   [
     source 6
     target 46
-    weight 0.00053662
+    weight NaN
     inverse 0.99946338
   ]
   edge
   [
     source 6
     target 48
-    weight 0.00033738
+    weight NaN
     inverse 0.99966262
   ]
   edge
   [
     source 6
     target 52
-    weight 9.6015e-05
+    weight NaN
     inverse 0.999903985
   ]
   edge
   [
     source 6
     target 86
-    weight 0.00027723
+    weight NaN
     inverse 0.99972277
   ]
   edge
   [
     source 7
     target 9
-    weight 0.020159
+    weight NaN
     inverse 0.979841
   ]
   edge
   [
     source 7
     target 10
-    weight 0.00036433
+    weight NaN
     inverse 0.99963567
   ]
   edge
   [
     source 7
     target 11
-    weight 0.027438
+    weight NaN
     inverse 0.972562
   ]
   edge
   [
     source 7
     target 12
-    weight 0.0010909
+    weight NaN
     inverse 0.9989091
   ]
   edge
   [
     source 7
     target 22
-    weight 0.0018291
+    weight NaN
     inverse 0.9981709
   ]
   edge
   [
     source 7
     target 23
-    weight 0.0018355
+    weight NaN
     inverse 0.9981645
   ]
   edge
   [
     source 7
     target 24
-    weight 0.00011447
+    weight NaN
     inverse 0.99988553
   ]
   edge
   [
     source 7
     target 26
-    weight 4.5565e-05
+    weight NaN
     inverse 0.999954435
   ]
   edge
   [
     source 7
     target 27
-    weight 4.0336e-05
+    weight NaN
     inverse 0.999959664
   ]
   edge
   [
     source 7
     target 34
-    weight 0.00061886
+    weight NaN
     inverse 0.99938114
   ]
   edge
   [
     source 7
     target 36
-    weight 0.00098655
+    weight NaN
     inverse 0.99901345
   ]
   edge
   [
     source 7
     target 40
-    weight 0.00010401
+    weight NaN
     inverse 0.99989599
   ]
   edge
   [
     source 7
     target 42
-    weight 0.00030458
+    weight NaN
     inverse 0.99969542
   ]
   edge
   [
     source 7
     target 43
-    weight 0.00023511
+    weight NaN
     inverse 0.99976489
   ]
   edge
   [
     source 7
     target 44
-    weight 0.00018655
+    weight NaN
     inverse 0.99981345
   ]
   edge
   [
     source 7
     target 45
-    weight 0.00011055
+    weight NaN
     inverse 0.99988945
   ]
   edge
   [
     source 7
     target 46
-    weight 0.00030047
+    weight NaN
     inverse 0.99969953
   ]
   edge
   [
     source 7
     target 48
-    weight 0.00028796
+    weight NaN
     inverse 0.99971204
   ]
   edge
   [
     source 7
     target 50
-    weight 0.00026779
+    weight NaN
     inverse 0.99973221
   ]
   edge
   [
     source 7
     target 51
-    weight 9.4304e-05
+    weight NaN
     inverse 0.999905696
   ]
   edge
   [
     source 7
     target 52
-    weight 6.4426e-05
+    weight NaN
     inverse 0.999935574
   ]
   edge
   [
     source 7
     target 54
-    weight 5.1354e-05
+    weight NaN
     inverse 0.999948646
   ]
   edge
   [
     source 7
     target 55
-    weight 0.00045173
+    weight NaN
     inverse 0.99954827
   ]
   edge
   [
     source 7
     target 58
-    weight 0.00034342
+    weight NaN
     inverse 0.99965658
   ]
   edge
   [
     source 7
     target 60
-    weight 4.0523e-05
+    weight NaN
     inverse 0.999959477
   ]
   edge
   [
     source 7
     target 63
-    weight 8.4594e-05
+    weight NaN
     inverse 0.999915406
   ]
   edge
   [
     source 7
     target 71
-    weight 0.01252
+    weight NaN
     inverse 0.98748
   ]
   edge
   [
     source 7
     target 81
-    weight 0.00017703
+    weight NaN
     inverse 0.99982297
   ]
   edge
   [
     source 7
     target 84
-    weight 0.00056471
+    weight NaN
     inverse 0.99943529
   ]
   edge
   [
     source 7
     target 86
-    weight 0.00013782
+    weight NaN
     inverse 0.99986218
   ]
   edge
   [
     source 8
     target 24
-    weight 0.0029634
+    weight NaN
     inverse 0.9970366
   ]
   edge
   [
     source 8
     target 40
-    weight 0.00098911
+    weight NaN
     inverse 0.99901089
   ]
   edge
   [
     source 8
     target 42
-    weight 0.0081658
+    weight NaN
     inverse 0.9918342
   ]
   edge
   [
     source 8
     target 44
-    weight 0.0047276
+    weight NaN
     inverse 0.9952724
   ]
   edge
   [
     source 8
     target 45
-    weight 0.00022879
+    weight NaN
     inverse 0.99977121
   ]
   edge
   [
     source 8
     target 46
-    weight 0.014236
+    weight NaN
     inverse 0.985764
   ]
   edge
   [
     source 8
     target 48
-    weight 0.0038257
+    weight NaN
     inverse 0.9961743
   ]
   edge
   [
     source 8
     target 52
-    weight 0.0018171
+    weight NaN
     inverse 0.9981829
   ]
   edge
   [
     source 8
     target 86
-    weight 0.011394
+    weight NaN
     inverse 0.988606
   ]
   edge
   [
     source 9
     target 75
-    weight 0.033974
+    weight NaN
     inverse 0.966026
   ]
   edge
   [
     source 9
     target 86
-    weight 0.00034932
+    weight NaN
     inverse 0.99965068
   ]
   edge
   [
     source 9
     target 88
-    weight 0.00070205
+    weight NaN
     inverse 0.99929795
   ]
   edge
   [
     source 10
     target 7
-    weight 0.00071818
+    weight NaN
     inverse 0.99928182
   ]
   edge
   [
     source 10
     target 75
-    weight 0.00088099
+    weight NaN
     inverse 0.99911901
   ]
   edge
   [
     source 10
     target 86
-    weight 0.00071983
+    weight NaN
     inverse 0.99928017
   ]
   edge
   [
     source 10
     target 88
-    weight 0.0010488
+    weight NaN
     inverse 0.9989512
   ]
   edge
   [
     source 11
     target 7
-    weight 0.12265
+    weight NaN
     inverse 0.87735
   ]
   edge
   [
     source 11
     target 75
-    weight 0.00056063
+    weight NaN
     inverse 0.99943937
   ]
   edge
   [
     source 11
     target 86
-    weight 2.5397e-05
+    weight NaN
     inverse 0.999974603
   ]
   edge
   [
     source 11
     target 88
-    weight 9.8413e-05
+    weight NaN
     inverse 0.999901587
   ]
   edge
   [
     source 12
     target 7
-    weight 0.0010362
+    weight NaN
     inverse 0.9989638
   ]
   edge
   [
     source 12
     target 75
-    weight 0.00071197
+    weight NaN
     inverse 0.99928803
   ]
   edge
   [
     source 12
     target 86
-    weight 0.0011317
+    weight NaN
     inverse 0.9988683
   ]
   edge
   [
     source 12
     target 88
-    weight 0.001445
+    weight NaN
     inverse 0.998555
   ]
   edge
   [
     source 22
     target 7
-    weight 0.003032
+    weight NaN
     inverse 0.996968
   ]
   edge
   [
     source 22
     target 75
-    weight 0.0011279
+    weight NaN
     inverse 0.9988721
   ]
   edge
   [
     source 22
     target 86
-    weight 0.00027171
+    weight NaN
     inverse 0.99972829
   ]
   edge
   [
     source 22
     target 88
-    weight 0.00019006
+    weight NaN
     inverse 0.99980994
   ]
   edge
   [
     source 23
     target 7
-    weight 0.010568
+    weight NaN
     inverse 0.989432
   ]
   edge
   [
     source 23
     target 75
-    weight 0.0019506
+    weight NaN
     inverse 0.9980494
   ]
   edge
   [
     source 23
     target 86
-    weight 0.0003251
+    weight NaN
     inverse 0.9996749
   ]
   edge
   [
     source 23
     target 88
-    weight 0.00031815
+    weight NaN
     inverse 0.99968185
   ]
   edge
   [
     source 24
     target 6
-    weight 0.0002755
+    weight NaN
     inverse 0.9997245
   ]
   edge
   [
     source 24
     target 7
-    weight 0.00074458
+    weight NaN
     inverse 0.99925542
   ]
   edge
   [
     source 24
     target 8
-    weight 0.00073333
+    weight NaN
     inverse 0.99926667
   ]
   edge
   [
     source 24
     target 38
-    weight 0.00025944
+    weight NaN
     inverse 0.99974056
   ]
   edge
   [
     source 24
     target 39
-    weight 8.8353e-06
+    weight NaN
     inverse 0.9999911647
   ]
   edge
   [
     source 24
     target 40
-    weight 0.00030602
+    weight NaN
     inverse 0.99969398
   ]
   edge
   [
     source 24
     target 41
-    weight 1.2851e-05
+    weight NaN
     inverse 0.999987149
   ]
   edge
   [
     source 24
     target 42
-    weight 0.00032289
+    weight NaN
     inverse 0.99967711
   ]
   edge
   [
     source 24
     target 44
-    weight 0.0001494
+    weight NaN
     inverse 0.9998506
   ]
   edge
   [
     source 24
     target 45
-    weight 1.4458e-05
+    weight NaN
     inverse 0.999985542
   ]
   edge
   [
     source 24
     target 46
-    weight 0.00048835
+    weight NaN
     inverse 0.99951165
   ]
   edge
   [
     source 24
     target 47
-    weight 2.8112e-05
+    weight NaN
     inverse 0.999971888
   ]
   edge
   [
     source 24
     target 48
-    weight 0.00011566
+    weight NaN
     inverse 0.99988434
   ]
   edge
   [
     source 24
     target 49
-    weight 1.6867e-05
+    weight NaN
     inverse 0.999983133
   ]
   edge
   [
     source 24
     target 52
-    weight 5.8635e-05
+    weight NaN
     inverse 0.999941365
   ]
   edge
   [
     source 24
     target 53
-    weight 8.0321e-07
+    weight NaN
     inverse 0.99999919679
   ]
   edge
   [
     source 24
     target 61
-    weight 1.0442e-05
+    weight NaN
     inverse 0.999989558
   ]
   edge
   [
     source 24
     target 62
-    weight 2.4096e-05
+    weight NaN
     inverse 0.999975904
   ]
   edge
   [
     source 24
     target 64
-    weight 1.7671e-05
+    weight NaN
     inverse 0.999982329
   ]
   edge
   [
     source 24
     target 65
-    weight 2.4096e-06
+    weight NaN
     inverse 0.9999975904
   ]
   edge
   [
     source 24
     target 74
-    weight 0.00056627
+    weight NaN
     inverse 0.99943373
   ]
   edge
   [
     source 24
     target 75
-    weight 0.00034779
+    weight NaN
     inverse 0.99965221
   ]
   edge
   [
     source 24
     target 78
-    weight 2.4096e-06
+    weight NaN
     inverse 0.9999975904
   ]
   edge
   [
     source 24
     target 79
-    weight 0
+    weight 1e-05
     inverse 1
   ]
   edge
   [
     source 24
     target 86
-    weight 0.0006755
+    weight NaN
     inverse 0.9993245
   ]
   edge
   [
     source 24
     target 87
-    weight 0.00015743
+    weight NaN
     inverse 0.99984257
   ]
   edge
   [
     source 24
     target 88
-    weight 0.00055341
+    weight NaN
     inverse 0.99944659
   ]
   edge
   [
     source 24
     target 89
-    weight 4.3373e-05
+    weight NaN
     inverse 0.999956627
   ]
   edge
   [
     source 26
     target 7
-    weight 3.3981e-05
+    weight NaN
     inverse 0.999966019
   ]
   edge
   [
     source 26
     target 75
-    weight 0.00013398
+    weight NaN
     inverse 0.99986602
   ]
   edge
   [
     source 26
     target 86
-    weight 0.0055359
+    weight NaN
     inverse 0.9944641
   ]
   edge
   [
     source 26
     target 88
-    weight 0.0045942
+    weight NaN
     inverse 0.9954058
   ]
   edge
   [
     source 27
     target 7
-    weight 3.4118e-05
+    weight NaN
     inverse 0.999965882
   ]
   edge
   [
     source 27
     target 75
-    weight 0.0013176
+    weight NaN
     inverse 0.9986824
   ]
   edge
   [
     source 27
     target 86
-    weight 0.00067294
+    weight NaN
     inverse 0.99932706
   ]
   edge
   [
     source 27
     target 88
-    weight 0.00069647
+    weight NaN
     inverse 0.99930353
   ]
   edge
   [
     source 34
     target 7
-    weight 0.00086222
+    weight NaN
     inverse 0.99913778
   ]
   edge
   [
     source 34
     target 39
-    weight 0.00504
+    weight NaN
     inverse 0.99496
   ]
   edge
   [
     source 34
     target 47
-    weight 0.01786
+    weight NaN
     inverse 0.98214
   ]
   edge
   [
     source 34
     target 74
-    weight 0.0010444
+    weight NaN
     inverse 0.9989556
   ]
   edge
   [
     source 34
     target 75
-    weight 0.0012622
+    weight NaN
     inverse 0.9987378
   ]
   edge
   [
     source 34
     target 79
-    weight 0
+    weight 1e-05
     inverse 1
   ]
   edge
   [
     source 34
     target 86
-    weight 0.0025733
+    weight NaN
     inverse 0.9974267
   ]
   edge
   [
     source 34
     target 88
-    weight 0.011562
+    weight NaN
     inverse 0.988438
   ]
   edge
   [
     source 35
     target 36
-    weight 0.023
+    weight NaN
     inverse 0.977
   ]
   edge
   [
     source 36
     target 7
-    weight 0.0003898
+    weight NaN
     inverse 0.9996102
   ]
   edge
   [
     source 36
     target 39
-    weight 0.00049592
+    weight NaN
     inverse 0.99950408
   ]
   edge
   [
     source 36
     target 47
-    weight 0.010011
+    weight NaN
     inverse 0.989989
   ]
   edge
   [
     source 36
     target 74
-    weight 0.0043442
+    weight NaN
     inverse 0.9956558
   ]
   edge
   [
     source 36
     target 75
-    weight 0.003668
+    weight NaN
     inverse 0.996332
   ]
   edge
   [
     source 36
     target 79
-    weight 8.1633e-06
+    weight NaN
     inverse 0.9999918367
   ]
   edge
   [
     source 36
     target 82
-    weight 0.058397
+    weight NaN
     inverse 0.941603
   ]
   edge
   [
     source 36
     target 88
-    weight 0.084724
+    weight NaN
     inverse 0.915276
   ]
   edge
   [
     source 37
     target 86
-    weight 0.00084912
+    weight NaN
     inverse 0.99915088
   ]
   edge
   [
     source 38
     target 24
-    weight 0.00015846
+    weight NaN
     inverse 0.99984154
   ]
   edge
   [
     source 38
     target 40
-    weight 0.024753
+    weight NaN
     inverse 0.975247
   ]
   edge
   [
     source 38
     target 42
-    weight 0.0093033
+    weight NaN
     inverse 0.9906967
   ]
   edge
   [
     source 38
     target 44
-    weight 0.0052148
+    weight NaN
     inverse 0.9947852
   ]
   edge
   [
     source 38
     target 45
-    weight 0.00016677
+    weight NaN
     inverse 0.99983323
   ]
   edge
   [
     source 38
     target 48
-    weight 0.0050095
+    weight NaN
     inverse 0.9949905
   ]
   edge
   [
     source 38
     target 52
-    weight 0.00022077
+    weight NaN
     inverse 0.99977923
   ]
   edge
   [
     source 38
     target 86
-    weight 0.095794
+    weight NaN
     inverse 0.904206
   ]
   edge
   [
     source 39
     target 24
-    weight 5.9195e-05
+    weight NaN
     inverse 0.999940805
   ]
   edge
   [
     source 39
     target 34
-    weight 0.0030672
+    weight NaN
     inverse 0.9969328
   ]
   edge
   [
     source 39
     target 36
-    weight 0.00093046
+    weight NaN
     inverse 0.99906954
   ]
   edge
   [
     source 39
     target 50
-    weight 0.00046437
+    weight NaN
     inverse 0.99953563
   ]
   edge
   [
     source 39
     target 81
-    weight 0.00013218
+    weight NaN
     inverse 0.99986782
   ]
   edge
   [
     source 39
     target 86
-    weight 0.00020057
+    weight NaN
     inverse 0.99979943
   ]
   edge
   [
     source 40
     target 6
-    weight 0.00013585
+    weight NaN
     inverse 0.99986415
   ]
   edge
   [
     source 40
     target 7
-    weight 0.0002
+    weight NaN
     inverse 0.9998
   ]
   edge
   [
     source 40
     target 8
-    weight 0.00080755
+    weight NaN
     inverse 0.99919245
   ]
   edge
   [
     source 40
     target 24
-    weight 0.00075472
+    weight NaN
     inverse 0.99924528
   ]
   edge
   [
     source 40
     target 41
-    weight 0.0030377
+    weight NaN
     inverse 0.9969623
   ]
   edge
   [
     source 40
     target 42
-    weight 0.015615
+    weight NaN
     inverse 0.984385
   ]
   edge
   [
     source 40
     target 44
-    weight 0.0066679
+    weight NaN
     inverse 0.9933321
   ]
   edge
   [
     source 40
     target 45
-    weight 0.00063019
+    weight NaN
     inverse 0.99936981
   ]
   edge
   [
     source 40
     target 46
-    weight 0.040143
+    weight NaN
     inverse 0.959857
   ]
   edge
   [
     source 40
     target 48
-    weight 0.0095736
+    weight NaN
     inverse 0.9904264
   ]
   edge
   [
     source 40
     target 49
-    weight 0.00078491
+    weight NaN
     inverse 0.99921509
   ]
   edge
   [
     source 40
     target 52
-    weight 0.0023396
+    weight NaN
     inverse 0.9976604
   ]
   edge
   [
     source 40
     target 53
-    weight 0.00016604
+    weight NaN
     inverse 0.99983396
   ]
   edge
   [
     source 40
     target 61
-    weight 0.0011887
+    weight NaN
     inverse 0.9988113
   ]
   edge
   [
     source 40
     target 62
-    weight 0.0002
+    weight NaN
     inverse 0.9998
   ]
   edge
   [
     source 40
     target 64
-    weight 0.00024151
+    weight NaN
     inverse 0.99975849
   ]
   edge
   [
     source 40
     target 65
-    weight 0.00017358
+    weight NaN
     inverse 0.99982642
   ]
   edge
   [
     source 40
     target 75
-    weight 0.0046792
+    weight NaN
     inverse 0.9953208
   ]
   edge
   [
     source 40
     target 78
-    weight 7.5472e-06
+    weight NaN
     inverse 0.9999924528
   ]
   edge
   [
     source 40
     target 86
-    weight 0.026404
+    weight NaN
     inverse 0.973596
   ]
   edge
   [
     source 40
     target 88
-    weight 0.027174
+    weight NaN
     inverse 0.972826
   ]
   edge
   [
     source 40
     target 89
-    weight 0.0016075
+    weight NaN
     inverse 0.9983925
   ]
   edge
   [
     source 41
     target 24
-    weight 0.00014667
+    weight NaN
     inverse 0.99985333
   ]
   edge
   [
     source 41
     target 40
-    weight 0.0019567
+    weight NaN
     inverse 0.9980433
   ]
   edge
   [
     source 41
     target 42
-    weight 0.0015967
+    weight NaN
     inverse 0.9984033
   ]
   edge
   [
     source 41
     target 44
-    weight 0.00105
+    weight NaN
     inverse 0.99895
   ]
   edge
   [
     source 41
     target 45
-    weight 0.0053967
+    weight NaN
     inverse 0.9946033
   ]
   edge
   [
     source 41
     target 46
-    weight 0.0015233
+    weight NaN
     inverse 0.9984767
   ]
   edge
   [
     source 41
     target 48
-    weight 0.0018067
+    weight NaN
     inverse 0.9981933
   ]
   edge
   [
     source 41
     target 52
-    weight 0.00020667
+    weight NaN
     inverse 0.99979333
   ]
   edge
   [
     source 41
     target 86
-    weight 0.00070667
+    weight NaN
     inverse 0.99929333
   ]
   edge
   [
     source 42
     target 6
-    weight 0.00013422
+    weight NaN
     inverse 0.99986578
   ]
   edge
   [
     source 42
     target 7
-    weight 9.5274e-05
+    weight NaN
     inverse 0.999904726
   ]
   edge
   [
     source 42
     target 8
-    weight 0.00055879
+    weight NaN
     inverse 0.99944121
   ]
   edge
   [
     source 42
     target 24
-    weight 0.00010699
+    weight NaN
     inverse 0.99989301
   ]
   edge
   [
     source 42
     target 38
-    weight 0.025803
+    weight NaN
     inverse 0.974197
   ]
   edge
   [
     source 42
     target 40
-    weight 0.00074026
+    weight NaN
     inverse 0.99925974
   ]
   edge
   [
     source 42
     target 41
-    weight 0.00032854
+    weight NaN
     inverse 0.99967146
   ]
   edge
   [
     source 42
     target 45
-    weight 0.037507
+    weight NaN
     inverse 0.962493
   ]
   edge
   [
     source 42
     target 48
-    weight 0.18252
+    weight NaN
     inverse 0.81748
   ]
   edge
   [
     source 42
     target 49
-    weight 0.010625
+    weight NaN
     inverse 0.989375
   ]
   edge
   [
     source 42
     target 52
-    weight 0.0052809
+    weight NaN
     inverse 0.9947191
   ]
   edge
   [
     source 42
     target 53
-    weight 0.00070926
+    weight NaN
     inverse 0.99929074
   ]
   edge
   [
     source 42
     target 61
-    weight 0.00014934
+    weight NaN
     inverse 0.99985066
   ]
   edge
   [
     source 42
     target 62
-    weight 5.7467e-05
+    weight NaN
     inverse 0.999942533
   ]
   edge
   [
     source 42
     target 64
-    weight 0.00066767
+    weight NaN
     inverse 0.99933233
   ]
   edge
   [
     source 42
     target 65
-    weight 0.00039546
+    weight NaN
     inverse 0.99960454
   ]
   edge
   [
     source 42
     target 75
-    weight 0.00043743
+    weight NaN
     inverse 0.99956257
   ]
   edge
   [
     source 42
     target 78
-    weight 1.8904e-06
+    weight NaN
     inverse 0.9999981096
   ]
   edge
   [
     source 42
     target 86
-    weight 0.0048034
+    weight NaN
     inverse 0.9951966
   ]
   edge
   [
     source 42
     target 88
-    weight 0.0055637
+    weight NaN
     inverse 0.9944363
   ]
   edge
   [
     source 42
     target 89
-    weight 0.0019758
+    weight NaN
     inverse 0.9980242
   ]
   edge
   [
     source 43
     target 7
-    weight 0.00050205
+    weight NaN
     inverse 0.99949795
   ]
   edge
   [
     source 43
     target 75
-    weight 0.00025604
+    weight NaN
     inverse 0.99974396
   ]
   edge
   [
     source 43
     target 86
-    weight 0.00018861
+    weight NaN
     inverse 0.99981139
   ]
   edge
   [
     source 43
     target 88
-    weight 0.0005754
+    weight NaN
     inverse 0.9994246
   ]
   edge
   [
     source 44
     target 6
-    weight 0.0001877
+    weight NaN
     inverse 0.9998123
   ]
   edge
   [
     source 44
     target 7
-    weight 9.0909e-05
+    weight NaN
     inverse 0.999909091
   ]
   edge
   [
     source 44
     target 8
-    weight 0.00078128
+    weight NaN
     inverse 0.99921872
   ]
   edge
   [
     source 44
     target 24
-    weight 0.00015455
+    weight NaN
     inverse 0.99984545
   ]
   edge
   [
     source 44
     target 38
-    weight 0.014468
+    weight NaN
     inverse 0.985532
   ]
   edge
   [
     source 44
     target 40
-    weight 0.00074118
+    weight NaN
     inverse 0.99925882
   ]
   edge
   [
     source 44
     target 41
-    weight 0.00030481
+    weight NaN
     inverse 0.99969519
   ]
   edge
   [
     source 44
     target 46
-    weight 0.11785
+    weight NaN
     inverse 0.88215
   ]
   edge
   [
     source 44
     target 49
-    weight 0.0087882
+    weight NaN
     inverse 0.9912118
   ]
   edge
   [
     source 44
     target 52
-    weight 0.001208
+    weight NaN
     inverse 0.998792
   ]
   edge
   [
     source 44
     target 53
-    weight 0.00034011
+    weight NaN
     inverse 0.99965989
   ]
   edge
   [
     source 44
     target 61
-    weight 0.00035134
+    weight NaN
     inverse 0.99964866
   ]
   edge
   [
     source 44
     target 62
-    weight 0.00014332
+    weight NaN
     inverse 0.99985668
   ]
   edge
   [
     source 44
     target 64
-    weight 0.0012963
+    weight NaN
     inverse 0.9987037
   ]
   edge
   [
     source 44
     target 65
-    weight 0.0011406
+    weight NaN
     inverse 0.9988594
   ]
   edge
   [
     source 44
     target 75
-    weight 0.00039305
+    weight NaN
     inverse 0.99960695
   ]
   edge
   [
     source 44
     target 78
-    weight 3.7433e-06
+    weight NaN
     inverse 0.9999962567
   ]
   edge
   [
     source 44
     target 86
-    weight 0.0033866
+    weight NaN
     inverse 0.9966134
   ]
   edge
   [
     source 44
     target 88
-    weight 0.0056706
+    weight NaN
     inverse 0.9943294
   ]
   edge
   [
     source 44
     target 89
-    weight 0.0034144
+    weight NaN
     inverse 0.9965856
   ]
   edge
   [
     source 45
     target 6
-    weight 8.655e-05
+    weight NaN
     inverse 0.99991345
   ]
   edge
   [
     source 45
     target 7
-    weight 0.00030877
+    weight NaN
     inverse 0.99969123
   ]
   edge
   [
     source 45
     target 8
-    weight 0.00022515
+    weight NaN
     inverse 0.99977485
   ]
   edge
   [
     source 45
     target 24
-    weight 4.7368e-05
+    weight NaN
     inverse 0.999952632
   ]
   edge
   [
     source 45
     target 38
-    weight 0.00064503
+    weight NaN
     inverse 0.99935497
   ]
   edge
   [
     source 45
     target 40
-    weight 0.00026842
+    weight NaN
     inverse 0.99973158
   ]
   edge
   [
     source 45
     target 41
-    weight 0.00068304
+    weight NaN
     inverse 0.99931696
   ]
   edge
   [
     source 45
     target 42
-    weight 0.070773
+    weight NaN
     inverse 0.929227
   ]
   edge
   [
     source 45
     target 46
-    weight 0.032978
+    weight NaN
     inverse 0.967022
   ]
   edge
   [
     source 45
     target 48
-    weight 0.01913
+    weight NaN
     inverse 0.98087
   ]
   edge
   [
     source 45
     target 52
-    weight 0.0007731
+    weight NaN
     inverse 0.9992269
   ]
   edge
   [
     source 45
     target 53
-    weight 0.00090994
+    weight NaN
     inverse 0.99909006
   ]
   edge
   [
     source 45
     target 61
-    weight 0.0007152
+    weight NaN
     inverse 0.9992848
   ]
   edge
   [
     source 45
     target 62
-    weight 3.9766e-05
+    weight NaN
     inverse 0.999960234
   ]
   edge
   [
     source 45
     target 64
-    weight 0.00020117
+    weight NaN
     inverse 0.99979883
   ]
   edge
   [
     source 45
     target 65
-    weight 0.0034632
+    weight NaN
     inverse 0.9965368
   ]
   edge
   [
     source 45
     target 75
-    weight 0.00029942
+    weight NaN
     inverse 0.99970058
   ]
   edge
   [
     source 45
     target 78
-    weight 5.848e-07
+    weight NaN
     inverse 0.9999994152
   ]
   edge
   [
     source 45
     target 86
-    weight 0.00035439
+    weight NaN
     inverse 0.99964561
   ]
   edge
   [
     source 45
     target 88
-    weight 0.0021626
+    weight NaN
     inverse 0.9978374
   ]
   edge
   [
     source 45
     target 89
-    weight 0.0087789
+    weight NaN
     inverse 0.9912211
   ]
   edge
   [
     source 46
     target 6
-    weight 0.00025685
+    weight NaN
     inverse 0.99974315
   ]
   edge
   [
     source 46
     target 7
-    weight 5.8896e-05
+    weight NaN
     inverse 0.999941104
   ]
   edge
   [
     source 46
     target 8
-    weight 0.0010466
+    weight NaN
     inverse 0.9989534
   ]
   edge
   [
     source 46
     target 24
-    weight 0.00018691
+    weight NaN
     inverse 0.99981309
   ]
   edge
   [
     source 46
     target 40
-    weight 0.0024618
+    weight NaN
     inverse 0.9975382
   ]
   edge
   [
     source 46
     target 41
-    weight 0.00029652
+    weight NaN
     inverse 0.99970348
   ]
   edge
   [
     source 46
     target 44
-    weight 0.068827
+    weight NaN
     inverse 0.931173
   ]
   edge
   [
     source 46
     target 45
-    weight 0.0061771
+    weight NaN
     inverse 0.9938229
   ]
   edge
   [
     source 46
     target 48
-    weight 0.034046
+    weight NaN
     inverse 0.965954
   ]
   edge
   [
     source 46
     target 49
-    weight 0.0012519
+    weight NaN
     inverse 0.9987481
   ]
   edge
   [
     source 46
     target 52
-    weight 0.015861
+    weight NaN
     inverse 0.984139
   ]
   edge
   [
     source 46
     target 53
-    weight 0.00019591
+    weight NaN
     inverse 0.99980409
   ]
   edge
   [
     source 46
     target 61
-    weight 7.8528e-05
+    weight NaN
     inverse 0.999921472
   ]
   edge
   [
     source 46
     target 62
-    weight 3.4356e-05
+    weight NaN
     inverse 0.999965644
   ]
   edge
   [
     source 46
     target 64
-    weight 0.00034233
+    weight NaN
     inverse 0.99965767
   ]
   edge
   [
     source 46
     target 65
-    weight 0.00013865
+    weight NaN
     inverse 0.99986135
   ]
   edge
   [
     source 46
     target 75
-    weight 0.00045971
+    weight NaN
     inverse 0.99954029
   ]
   edge
   [
     source 46
     target 78
-    weight 4.09e-07
+    weight NaN
     inverse 0.999999591
   ]
   edge
   [
     source 46
     target 86
-    weight 0.017811
+    weight NaN
     inverse 0.982189
   ]
   edge
   [
     source 46
     target 88
-    weight 0.067341
+    weight NaN
     inverse 0.932659
   ]
   edge
   [
     source 46
     target 89
-    weight 0.0011153
+    weight NaN
     inverse 0.9988847
   ]
   edge
   [
     source 47
     target 24
-    weight 2.4549e-05
+    weight NaN
     inverse 0.999975451
   ]
   edge
   [
     source 47
     target 34
-    weight 0.0077632
+    weight NaN
     inverse 0.9922368
   ]
   edge
   [
     source 47
     target 36
-    weight 0.0023668
+    weight NaN
     inverse 0.9976332
   ]
   edge
   [
     source 47
     target 50
-    weight 0.0029065
+    weight NaN
     inverse 0.9970935
   ]
   edge
   [
     source 47
     target 81
-    weight 0.00083971
+    weight NaN
     inverse 0.99916029
   ]
   edge
   [
     source 47
     target 86
-    weight 0.00040253
+    weight NaN
     inverse 0.99959747
   ]
   edge
   [
     source 48
     target 6
-    weight 0.00017476
+    weight NaN
     inverse 0.99982524
   ]
   edge
   [
     source 48
     target 7
-    weight 0.00021165
+    weight NaN
     inverse 0.99978835
   ]
   edge
   [
     source 48
     target 8
-    weight 0.00068544
+    weight NaN
     inverse 0.99931456
   ]
   edge
   [
     source 48
     target 24
-    weight 0.0001068
+    weight NaN
     inverse 0.9998932
   ]
   edge
   [
     source 48
     target 35
-    weight 0.074959
+    weight NaN
     inverse 0.925041
   ]
   edge
   [
     source 48
     target 38
-    weight 0.02666
+    weight NaN
     inverse 0.97334
   ]
   edge
   [
     source 48
     target 40
-    weight 0.0012887
+    weight NaN
     inverse 0.9987113
   ]
   edge
   [
     source 48
     target 41
-    weight 0.0005534
+    weight NaN
     inverse 0.9994466
   ]
   edge
   [
     source 48
     target 42
-    weight 0.18565
+    weight NaN
     inverse 0.81435
   ]
   edge
   [
     source 48
     target 45
-    weight 0.027817
+    weight NaN
     inverse 0.972183
   ]
   edge
   [
     source 48
     target 46
-    weight 0.052192
+    weight NaN
     inverse 0.947808
   ]
   edge
   [
     source 48
     target 52
-    weight 0.0082052
+    weight NaN
     inverse 0.9917948
   ]
   edge
   [
     source 48
     target 53
-    weight 0.0012369
+    weight NaN
     inverse 0.9987631
   ]
   edge
   [
     source 48
     target 61
-    weight 0.00020324
+    weight NaN
     inverse 0.99979676
   ]
   edge
   [
     source 48
     target 62
-    weight 0.00017799
+    weight NaN
     inverse 0.99982201
   ]
   edge
   [
     source 48
     target 64
-    weight 0.0030777
+    weight NaN
     inverse 0.9969223
   ]
   edge
   [
     source 48
     target 65
-    weight 0.0005165
+    weight NaN
     inverse 0.9994835
   ]
   edge
   [
     source 48
     target 75
-    weight 0.001343
+    weight NaN
     inverse 0.998657
   ]
   edge
   [
     source 48
     target 78
-    weight 1.2945e-06
+    weight NaN
     inverse 0.9999987055
   ]
   edge
   [
     source 48
     target 86
-    weight 0.0032032
+    weight NaN
     inverse 0.9967968
   ]
   edge
   [
     source 48
     target 88
-    weight 0.009134
+    weight NaN
     inverse 0.990866
   ]
   edge
   [
     source 48
     target 89
-    weight 0.0030932
+    weight NaN
     inverse 0.9969068
   ]
   edge
   [
     source 49
     target 24
-    weight 5.9836e-05
+    weight NaN
     inverse 0.999940164
   ]
   edge
   [
     source 49
     target 40
-    weight 0.00047705
+    weight NaN
     inverse 0.99952295
   ]
   edge
   [
     source 49
     target 42
-    weight 0.031583
+    weight NaN
     inverse 0.968417
   ]
   edge
   [
     source 49
     target 44
-    weight 0.022841
+    weight NaN
     inverse 0.977159
   ]
   edge
   [
     source 49
     target 46
-    weight 0.0034943
+    weight NaN
     inverse 0.9965057
   ]
   edge
   [
     source 49
     target 48
-    weight 0.042388
+    weight NaN
     inverse 0.957612
   ]
   edge
   [
     source 49
     target 52
-    weight 0.0015
+    weight NaN
     inverse 0.9985
   ]
   edge
   [
     source 49
     target 86
-    weight 0.00050492
+    weight NaN
     inverse 0.99949508
   ]
   edge
   [
     source 50
     target 7
-    weight 0.00011647
+    weight NaN
     inverse 0.99988353
   ]
   edge
   [
     source 50
     target 39
-    weight 8.6158e-05
+    weight NaN
     inverse 0.999913842
   ]
   edge
   [
     source 50
     target 47
-    weight 0.00073747
+    weight NaN
     inverse 0.99926253
   ]
   edge
   [
     source 50
     target 74
-    weight 0.00038711
+    weight NaN
     inverse 0.99961289
   ]
   edge
   [
     source 50
     target 75
-    weight 0.0011704
+    weight NaN
     inverse 0.9988296
   ]
   edge
   [
     source 50
     target 79
-    weight 7.1599e-07
+    weight NaN
     inverse 0.99999928401
   ]
   edge
   [
     source 50
     target 86
-    weight 0.0014263
+    weight NaN
     inverse 0.9985737
   ]
   edge
   [
     source 50
     target 88
-    weight 0.033928
+    weight NaN
     inverse 0.966072
   ]
   edge
   [
     source 51
     target 7
-    weight 0.00064953
+    weight NaN
     inverse 0.99935047
   ]
   edge
   [
     source 51
     target 75
-    weight 0.00028585
+    weight NaN
     inverse 0.99971415
   ]
   edge
   [
     source 51
     target 86
-    weight 0.00018443
+    weight NaN
     inverse 0.99981557
   ]
   edge
   [
     source 51
     target 88
-    weight 0.00085708
+    weight NaN
     inverse 0.99914292
   ]
   edge
   [
     source 52
     target 6
-    weight 0.00020578
+    weight NaN
     inverse 0.99979422
   ]
   edge
   [
     source 52
     target 7
-    weight 6.1272e-05
+    weight NaN
     inverse 0.999938728
   ]
   edge
   [
     source 52
     target 8
-    weight 0.00066012
+    weight NaN
     inverse 0.99933988
   ]
   edge
   [
     source 52
     target 24
-    weight 8.4393e-05
+    weight NaN
     inverse 0.999915607
   ]
   edge
   [
     source 52
     target 38
-    weight 0.0034613
+    weight NaN
     inverse 0.9965387
   ]
   edge
   [
     source 52
     target 40
-    weight 0.0007526
+    weight NaN
     inverse 0.9992474
   ]
   edge
   [
     source 52
     target 41
-    weight 7.6301e-05
+    weight NaN
     inverse 0.999923699
   ]
   edge
   [
     source 52
     target 42
-    weight 0.018349
+    weight NaN
     inverse 0.981651
   ]
   edge
   [
     source 52
     target 44
-    weight 0.0044324
+    weight NaN
     inverse 0.9955676
   ]
   edge
   [
     source 52
     target 45
-    weight 0.00072254
+    weight NaN
     inverse 0.99927746
   ]
   edge
   [
     source 52
     target 48
-    weight 0.030465
+    weight NaN
     inverse 0.969535
   ]
   edge
   [
     source 52
     target 49
-    weight 0.0012809
+    weight NaN
     inverse 0.9987191
   ]
   edge
   [
     source 52
     target 53
-    weight 4.0462e-05
+    weight NaN
     inverse 0.999959538
   ]
   edge
   [
     source 52
     target 61
-    weight 0.00010173
+    weight NaN
     inverse 0.99989827
   ]
   edge
   [
     source 52
     target 62
-    weight 6.7052e-05
+    weight NaN
     inverse 0.999932948
   ]
   edge
   [
     source 52
     target 64
-    weight 0.00069133
+    weight NaN
     inverse 0.99930867
   ]
   edge
   [
     source 52
     target 65
-    weight 0.00012948
+    weight NaN
     inverse 0.99987052
   ]
   edge
   [
     source 52
     target 75
-    weight 0.00045318
+    weight NaN
     inverse 0.99954682
   ]
   edge
   [
     source 52
     target 78
-    weight 4.6243e-06
+    weight NaN
     inverse 0.9999953757
   ]
   edge
   [
     source 52
     target 86
-    weight 0.0013919
+    weight NaN
     inverse 0.9986081
   ]
   edge
   [
     source 52
     target 89
-    weight 0.0010497
+    weight NaN
     inverse 0.9989503
   ]
   edge
   [
     source 53
     target 24
-    weight 5.0761e-06
+    weight NaN
     inverse 0.9999949239
   ]
   edge
   [
     source 53
     target 40
-    weight 0.00010761
+    weight NaN
     inverse 0.99989239
   ]
   edge
   [
     source 53
     target 42
-    weight 0.0042162
+    weight NaN
     inverse 0.9957838
   ]
   edge
   [
     source 53
     target 44
-    weight 0.001403
+    weight NaN
     inverse 0.998597
   ]
   edge
   [
     source 53
     target 45
-    weight 0.0063472
+    weight NaN
     inverse 0.9936528
   ]
   edge
   [
     source 53
     target 46
-    weight 0.00073503
+    weight NaN
     inverse 0.99926497
   ]
   edge
   [
     source 53
     target 48
-    weight 0.0047766
+    weight NaN
     inverse 0.9952234
   ]
   edge
   [
     source 53
     target 52
-    weight 0.00016954
+    weight NaN
     inverse 0.99983046
   ]
   edge
   [
     source 53
     target 86
-    weight 6.802e-05
+    weight NaN
     inverse 0.99993198
   ]
   edge
   [
     source 54
     target 7
-    weight 1.6311e-05
+    weight NaN
     inverse 0.999983689
   ]
   edge
   [
     source 54
     target 75
-    weight 0.00023184
+    weight NaN
     inverse 0.99976816
   ]
   edge
   [
     source 54
     target 86
-    weight 0.030402
+    weight NaN
     inverse 0.969598
   ]
   edge
   [
     source 55
     target 7
-    weight 0.00025577
+    weight NaN
     inverse 0.99974423
   ]
   edge
   [
     source 55
     target 75
-    weight 0.00054561
+    weight NaN
     inverse 0.99945439
   ]
   edge
   [
     source 55
     target 86
-    weight 0.00014423
+    weight NaN
     inverse 0.99985577
   ]
   edge
   [
     source 55
     target 88
-    weight 0.0007642
+    weight NaN
     inverse 0.9992358
   ]
   edge
   [
     source 58
     target 7
-    weight 9.604e-05
+    weight NaN
     inverse 0.99990396
   ]
   edge
   [
     source 58
     target 75
-    weight 0.00088168
+    weight NaN
     inverse 0.99911832
   ]
   edge
   [
     source 58
     target 86
-    weight 0.00029307
+    weight NaN
     inverse 0.99970693
   ]
   edge
   [
     source 58
     target 88
-    weight 0.0031866
+    weight NaN
     inverse 0.9968134
   ]
   edge
   [
     source 60
     target 7
-    weight 8.6798e-05
+    weight NaN
     inverse 0.999913202
   ]
   edge
   [
     source 60
     target 75
-    weight 0.00042094
+    weight NaN
     inverse 0.99957906
   ]
   edge
   [
     source 60
     target 86
-    weight 0.00013809
+    weight NaN
     inverse 0.99986191
   ]
   edge
   [
     source 60
     target 88
-    weight 0.002427
+    weight NaN
     inverse 0.997573
   ]
   edge
   [
     source 61
     target 24
-    weight 7.8571e-06
+    weight NaN
     inverse 0.9999921429
   ]
   edge
   [
     source 61
     target 40
-    weight 4.5714e-05
+    weight NaN
     inverse 0.999954286
   ]
   edge
   [
     source 61
     target 42
-    weight 5.0714e-05
+    weight NaN
     inverse 0.999949286
   ]
   edge
   [
     source 61
     target 44
-    weight 0.000105
+    weight NaN
     inverse 0.999895
   ]
   edge
   [
     source 61
     target 45
-    weight 0.00075643
+    weight NaN
     inverse 0.99924357
   ]
   edge
   [
     source 61
     target 46
-    weight 5.8571e-05
+    weight NaN
     inverse 0.999941429
   ]
   edge
   [
     source 61
     target 48
-    weight 0.00010929
+    weight NaN
     inverse 0.99989071
   ]
   edge
   [
     source 61
     target 52
-    weight 2.1429e-05
+    weight NaN
     inverse 0.999978571
   ]
   edge
   [
     source 61
     target 86
-    weight 9.5714e-05
+    weight NaN
     inverse 0.999904286
   ]
   edge
   [
     source 62
     target 24
-    weight 0.00026429
+    weight NaN
     inverse 0.99973571
   ]
   edge
   [
     source 62
     target 40
-    weight 0.00047302
+    weight NaN
     inverse 0.99952698
   ]
   edge
   [
     source 62
     target 42
-    weight 0.00021508
+    weight NaN
     inverse 0.99978492
   ]
   edge
   [
     source 62
     target 44
-    weight 0.00023413
+    weight NaN
     inverse 0.99976587
   ]
   edge
   [
     source 62
     target 45
-    weight 7.1429e-05
+    weight NaN
     inverse 0.999928571
   ]
   edge
   [
     source 62
     target 46
-    weight 0.00023254
+    weight NaN
     inverse 0.99976746
   ]
   edge
   [
     source 62
     target 48
-    weight 0.00034762
+    weight NaN
     inverse 0.99965238
   ]
   edge
   [
     source 62
     target 52
-    weight 4.8413e-05
+    weight NaN
     inverse 0.999951587
   ]
   edge
   [
     source 62
     target 86
-    weight 0.0015857
+    weight NaN
     inverse 0.9984143
   ]
   edge
   [
     source 63
     target 7
-    weight 0.00092634
+    weight NaN
     inverse 0.99907366
   ]
   edge
   [
     source 63
     target 75
-    weight 0.0003289
+    weight NaN
     inverse 0.9996711
   ]
   edge
   [
     source 63
     target 86
-    weight 5.6777e-05
+    weight NaN
     inverse 0.999943223
   ]
   edge
   [
     source 63
     target 88
-    weight 0.00026036
+    weight NaN
     inverse 0.99973964
   ]
   edge
   [
     source 64
     target 24
-    weight 3.4146e-05
+    weight NaN
     inverse 0.999965854
   ]
   edge
   [
     source 64
     target 40
-    weight 6.5854e-05
+    weight NaN
     inverse 0.999934146
   ]
   edge
   [
     source 64
     target 42
-    weight 0.0009939
+    weight NaN
     inverse 0.9990061
   ]
   edge
   [
     source 64
     target 44
-    weight 0.0024689
+    weight NaN
     inverse 0.9975311
   ]
   edge
   [
     source 64
     target 45
-    weight 0.00017988
+    weight NaN
     inverse 0.99982012
   ]
   edge
   [
     source 64
     target 46
-    weight 0.0005378
+    weight NaN
     inverse 0.9994622
   ]
   edge
   [
     source 64
     target 48
-    weight 0.0062841
+    weight NaN
     inverse 0.9937159
   ]
   edge
   [
     source 64
     target 52
-    weight 0.00026951
+    weight NaN
     inverse 0.99973049
   ]
   edge
   [
     source 64
     target 86
-    weight 0.00018171
+    weight NaN
     inverse 0.99981829
   ]
   edge
   [
     source 65
     target 24
-    weight 1.5467e-05
+    weight NaN
     inverse 0.999984533
   ]
   edge
   [
     source 65
     target 40
-    weight 6.7733e-05
+    weight NaN
     inverse 0.999932267
   ]
   edge
   [
     source 65
     target 42
-    weight 0.00041973
+    weight NaN
     inverse 0.99958027
   ]
   edge
   [
     source 65
     target 44
-    weight 0.00097707
+    weight NaN
     inverse 0.99902293
   ]
   edge
   [
     source 65
     target 45
-    weight 0.0031136
+    weight NaN
     inverse 0.9968864
   ]
   edge
   [
     source 65
     target 46
-    weight 0.00024267
+    weight NaN
     inverse 0.99975733
   ]
   edge
   [
     source 65
     target 48
-    weight 0.00064907
+    weight NaN
     inverse 0.99935093
   ]
   edge
   [
     source 65
     target 52
-    weight 0.0001312
+    weight NaN
     inverse 0.9998688
   ]
   edge
   [
     source 65
     target 86
-    weight 9.76e-05
+    weight NaN
     inverse 0.9999024
   ]
   edge
   [
     source 67
     target 43
-    weight 0.05039
+    weight NaN
     inverse 0.94961
   ]
   edge
   [
     source 71
     target 7
-    weight 0.023151
+    weight NaN
     inverse 0.976849
   ]
   edge
   [
     source 71
     target 75
-    weight 0.012198
+    weight NaN
     inverse 0.987802
   ]
   edge
   [
     source 71
     target 86
-    weight 0.0007275
+    weight NaN
     inverse 0.9992725
   ]
   edge
   [
     source 71
     target 88
-    weight 0.0012637
+    weight NaN
     inverse 0.9987363
   ]
   edge
   [
     source 72
     target 68
-    weight 0.057985
+    weight NaN
     inverse 0.942015
   ]
   edge
   [
     source 73
     target 1
-    weight 0.043059
+    weight NaN
     inverse 0.956941
   ]
   edge
   [
     source 74
     target 24
-    weight 0.010501
+    weight NaN
     inverse 0.989499
   ]
   edge
   [
     source 74
     target 34
-    weight 0.0035134
+    weight NaN
     inverse 0.9964866
   ]
   edge
   [
     source 74
     target 36
-    weight 0.0073851
+    weight NaN
     inverse 0.9926149
   ]
   edge
   [
     source 74
     target 50
-    weight 0.002594
+    weight NaN
     inverse 0.997406
   ]
   edge
   [
     source 74
     target 81
-    weight 0.00038507
+    weight NaN
     inverse 0.99961493
   ]
   edge
   [
     source 74
     target 86
-    weight 0.0014985
+    weight NaN
     inverse 0.9985015
   ]
   edge
   [
     source 75
     target 1
-    weight 0.056103
+    weight NaN
     inverse 0.943897
   ]
   edge
   [
     source 75
     target 9
-    weight 0.054297
+    weight NaN
     inverse 0.945703
   ]
   edge
   [
     source 75
     target 10
-    weight 0.00078
+    weight NaN
     inverse 0.99922
   ]
   edge
   [
     source 75
     target 11
-    weight 0.018054
+    weight NaN
     inverse 0.981946
   ]
   edge
   [
     source 75
     target 12
-    weight 0.0016714
+    weight NaN
     inverse 0.9983286
   ]
   edge
   [
     source 75
     target 22
-    weight 0.0057543
+    weight NaN
     inverse 0.9942457
   ]
   edge
   [
     source 75
     target 23
-    weight 0.012857
+    weight NaN
     inverse 0.987143
   ]
   edge
   [
     source 75
     target 24
-    weight 0.0015486
+    weight NaN
     inverse 0.9984514
   ]
   edge
   [
     source 75
     target 26
-    weight 0.00029429
+    weight NaN
     inverse 0.99970571
   ]
   edge
   [
     source 75
     target 27
-    weight 0.00052
+    weight NaN
     inverse 0.99948
   ]
   edge
   [
     source 75
     target 34
-    weight 0.0019229
+    weight NaN
     inverse 0.9980771
   ]
   edge
   [
     source 75
     target 36
-    weight 0.00718
+    weight NaN
     inverse 0.99282
   ]
   edge
   [
     source 75
     target 40
-    weight 0.0066257
+    weight NaN
     inverse 0.9933743
   ]
   edge
   [
     source 75
     target 42
-    weight 0.0012371
+    weight NaN
     inverse 0.9987629
   ]
   edge
   [
     source 75
     target 43
-    weight 0.00092286
+    weight NaN
     inverse 0.99907714
   ]
   edge
   [
     source 75
     target 44
-    weight 0.00071714
+    weight NaN
     inverse 0.99928286
   ]
   edge
   [
     source 75
     target 45
-    weight 0.00074571
+    weight NaN
     inverse 0.99925429
   ]
   edge
   [
     source 75
     target 46
-    weight 0.0017029
+    weight NaN
     inverse 0.9982971
   ]
   edge
   [
     source 75
     target 48
-    weight 0.00098286
+    weight NaN
     inverse 0.99901714
   ]
   edge
   [
     source 75
     target 50
-    weight 0.00136
+    weight NaN
     inverse 0.99864
   ]
   edge
   [
     source 75
     target 51
-    weight 0.00069714
+    weight NaN
     inverse 0.99930286
   ]
   edge
   [
     source 75
     target 52
-    weight 0.0002
+    weight NaN
     inverse 0.9998
   ]
   edge
   [
     source 75
     target 54
-    weight 0.00061714
+    weight NaN
     inverse 0.99938286
   ]
   edge
   [
     source 75
     target 55
-    weight 0.0022714
+    weight NaN
     inverse 0.9977286
   ]
   edge
   [
     source 75
     target 58
-    weight 0.0017543
+    weight NaN
     inverse 0.9982457
   ]
   edge
   [
     source 75
     target 60
-    weight 0.00091143
+    weight NaN
     inverse 0.99908857
   ]
   edge
   [
     source 75
     target 63
-    weight 0.00054
+    weight NaN
     inverse 0.99946
   ]
   edge
   [
     source 75
     target 81
-    weight 0.00053714
+    weight NaN
     inverse 0.99946286
   ]
   edge
   [
     source 75
     target 84
-    weight 0.0036057
+    weight NaN
     inverse 0.9963943
   ]
   edge
   [
     source 75
     target 86
-    weight 0.0016914
+    weight NaN
     inverse 0.9983086
   ]
   edge
   [
     source 78
     target 24
-    weight 0
+    weight 1e-05
     inverse 1
   ]
   edge
   [
     source 78
     target 40
-    weight 7.8431e-06
+    weight NaN
     inverse 0.9999921569
   ]
   edge
   [
     source 78
     target 42
-    weight 3.9216e-06
+    weight NaN
     inverse 0.9999960784
   ]
   edge
   [
     source 78
     target 44
-    weight 1.1765e-05
+    weight NaN
     inverse 0.999988235
   ]
   edge
   [
     source 78
     target 45
-    weight 0
+    weight 1e-05
     inverse 1
   ]
   edge
   [
     source 78
     target 46
-    weight 1.1765e-05
+    weight NaN
     inverse 0.999988235
   ]
   edge
   [
     source 78
     target 48
-    weight 2.3529e-05
+    weight NaN
     inverse 0.999976471
   ]
   edge
   [
     source 78
     target 52
-    weight 3.9216e-06
+    weight NaN
     inverse 0.9999960784
   ]
   edge
   [
     source 78
     target 86
-    weight 5.098e-05
+    weight NaN
     inverse 0.99994902
   ]
   edge
   [
     source 79
     target 24
-    weight 0
+    weight 1e-05
     inverse 1
   ]
   edge
   [
     source 79
     target 34
-    weight 3.5714e-05
+    weight NaN
     inverse 0.999964286
   ]
   edge
   [
     source 79
     target 36
-    weight 3.2143e-05
+    weight NaN
     inverse 0.999967857
   ]
   edge
   [
     source 79
     target 50
-    weight 1.0714e-05
+    weight NaN
     inverse 0.999989286
   ]
   edge
   [
     source 79
     target 86
-    weight 7.1429e-06
+    weight NaN
     inverse 0.9999928571
   ]
   edge
   [
     source 81
     target 7
-    weight 0.0026548
+    weight NaN
     inverse 0.9973452
   ]
   edge
   [
     source 81
     target 39
-    weight 0.00071116
+    weight NaN
     inverse 0.99928884
   ]
   edge
   [
     source 81
     target 47
-    weight 0.0044325
+    weight NaN
     inverse 0.9955675
   ]
   edge
   [
     source 81
     target 74
-    weight 0.00029322
+    weight NaN
     inverse 0.99970678
   ]
   edge
   [
     source 81
     target 75
-    weight 0.00063525
+    weight NaN
     inverse 0.99936475
   ]
   edge
   [
     source 81
     target 86
-    weight 0.00048905
+    weight NaN
     inverse 0.99951095
   ]
   edge
   [
     source 81
     target 88
-    weight 0.0029522
+    weight NaN
     inverse 0.9970478
   ]
   edge
   [
     source 84
     target 7
-    weight 0.00028914
+    weight NaN
     inverse 0.99971086
   ]
   edge
   [
     source 84
     target 75
-    weight 0.00055896
+    weight NaN
     inverse 0.99944104
   ]
   edge
   [
     source 84
     target 86
-    weight 0.011215
+    weight NaN
     inverse 0.988785
   ]
   edge
   [
     source 86
     target 1
-    weight 0.0008
+    weight NaN
     inverse 0.9992
   ]
   edge
   [
     source 86
     target 6
-    weight 0.00018609
+    weight NaN
     inverse 0.99981391
   ]
   edge
   [
     source 86
     target 7
-    weight 0.00012696
+    weight NaN
     inverse 0.99987304
   ]
   edge
   [
     source 86
     target 8
-    weight 0.004367
+    weight NaN
     inverse 0.995633
   ]
   edge
   [
     source 86
     target 9
-    weight 0.00061739
+    weight NaN
     inverse 0.99938261
   ]
   edge
   [
     source 86
     target 10
-    weight 4.8696e-05
+    weight NaN
     inverse 0.999951304
   ]
   edge
   [
     source 86
     target 11
-    weight 4.3478e-05
+    weight NaN
     inverse 0.999956522
   ]
   edge
   [
     source 86
     target 12
-    weight 0.00024348
+    weight NaN
     inverse 0.99975652
   ]
   edge
   [
     source 86
     target 22
-    weight 0.00034783
+    weight NaN
     inverse 0.99965217
   ]
   edge
   [
     source 86
     target 23
-    weight 9.913e-05
+    weight NaN
     inverse 0.99990087
   ]
   edge
   [
     source 86
     target 24
-    weight 0.0015635
+    weight NaN
     inverse 0.9984365
   ]
   edge
   [
     source 86
     target 26
-    weight 0.010043
+    weight NaN
     inverse 0.989957
   ]
   edge
   [
     source 86
     target 27
-    weight 0.0010887
+    weight NaN
     inverse 0.9989113
   ]
   edge
   [
     source 86
     target 34
-    weight 0.0040974
+    weight NaN
     inverse 0.9959026
   ]
   edge
   [
     source 86
     target 37
-    weight 0.0057757
+    weight NaN
     inverse 0.9942243
   ]
   edge
   [
     source 86
     target 38
-    weight 0.089934
+    weight NaN
     inverse 0.910066
   ]
   edge
   [
     source 86
     target 39
-    weight 0.00036
+    weight NaN
     inverse 0.99964
   ]
   edge
   [
     source 86
     target 40
-    weight 0.03452
+    weight NaN
     inverse 0.96548
   ]
   edge
   [
     source 86
     target 41
-    weight 0.0011826
+    weight NaN
     inverse 0.9988174
   ]
   edge
   [
     source 86
     target 42
-    weight 0.011656
+    weight NaN
     inverse 0.988344
   ]
   edge
   [
     source 86
     target 43
-    weight 0.0010087
+    weight NaN
     inverse 0.9989913
   ]
   edge
   [
     source 86
     target 44
-    weight 0.0065739
+    weight NaN
     inverse 0.9934261
   ]
   edge
   [
     source 86
     target 45
-    weight 0.00048
+    weight NaN
     inverse 0.99952
   ]
   edge
   [
     source 86
     target 46
-    weight 0.04568
+    weight NaN
     inverse 0.95432
   ]
   edge
   [
     source 86
     target 47
-    weight 0.005313
+    weight NaN
     inverse 0.994687
   ]
   edge
   [
     source 86
     target 48
-    weight 0.0056713
+    weight NaN
     inverse 0.9943287
   ]
   edge
   [
     source 86
     target 49
-    weight 0.00058609
+    weight NaN
     inverse 0.99941391
   ]
   edge
   [
     source 86
     target 50
-    weight 0.0055391
+    weight NaN
     inverse 0.9944609
   ]
   edge
   [
     source 86
     target 51
-    weight 0.00040522
+    weight NaN
     inverse 0.99959478
   ]
   edge
   [
     source 86
     target 52
-    weight 0.0017513
+    weight NaN
     inverse 0.9982487
   ]
   edge
   [
     source 86
     target 53
-    weight 0.00012348
+    weight NaN
     inverse 0.99987652
   ]
   edge
   [
     source 86
     target 55
-    weight 0.0008713
+    weight NaN
     inverse 0.9991287
   ]
   edge
   [
     source 86
     target 58
-    weight 0.0011496
+    weight NaN
     inverse 0.9988504
   ]
   edge
   [
     source 86
     target 60
-    weight 0.00021217
+    weight NaN
     inverse 0.99978783
   ]
   edge
   [
     source 86
     target 61
-    weight 0.0012574
+    weight NaN
     inverse 0.9987426
   ]
   edge
   [
     source 86
     target 62
-    weight 0.0002
+    weight NaN
     inverse 0.9998
   ]
   edge
   [
     source 86
     target 63
-    weight 0.00025739
+    weight NaN
     inverse 0.99974261
   ]
   edge
   [
     source 86
     target 64
-    weight 0.00021739
+    weight NaN
     inverse 0.99978261
   ]
   edge
   [
     source 86
     target 65
-    weight 0.00025217
+    weight NaN
     inverse 0.99974783
   ]
   edge
   [
     source 86
     target 71
-    weight 0.0018261
+    weight NaN
     inverse 0.9981739
   ]
   edge
   [
     source 86
     target 74
-    weight 0.0049704
+    weight NaN
     inverse 0.9950296
   ]
   edge
   [
     source 86
     target 75
-    weight 0.0038278
+    weight NaN
     inverse 0.9961722
   ]
   edge
   [
     source 86
     target 78
-    weight 2.6087e-05
+    weight NaN
     inverse 0.999973913
   ]
   edge
   [
     source 86
     target 79
-    weight 1.7391e-05
+    weight NaN
     inverse 0.999982609
   ]
   edge
   [
     source 86
     target 81
-    weight 0.0053443
+    weight NaN
     inverse 0.9946557
   ]
   edge
   [
     source 86
     target 87
-    weight 0.00089043
+    weight NaN
     inverse 0.99910957
   ]
   edge
   [
     source 86
     target 89
-    weight 0.0014278
+    weight NaN
     inverse 0.9985722
   ]
   edge
   [
     source 87
     target 24
-    weight 0.00024742
+    weight NaN
     inverse 0.99975258
   ]
   edge
   [
     source 87
     target 86
-    weight 0.00094845
+    weight NaN
     inverse 0.99905155
   ]
   edge
   [
     source 88
     target 1
-    weight 0.00010801
+    weight NaN
     inverse 0.99989199
   ]
   edge
   [
     source 88
     target 9
-    weight 0.00012946
+    weight NaN
     inverse 0.99987054
   ]
   edge
   [
     source 88
     target 10
-    weight 0.00023023
+    weight NaN
     inverse 0.99976977
   ]
   edge
   [
     source 88
     target 11
-    weight 2.4548e-05
+    weight NaN
     inverse 0.999975452
   ]
   edge
   [
     source 88
     target 12
-    weight 0.00033359
+    weight NaN
     inverse 0.99966641
   ]
   edge
   [
     source 88
     target 22
-    weight 8.7597e-05
+    weight NaN
     inverse 0.999912403
   ]
   edge
   [
     source 88
     target 23
-    weight 3.4367e-05
+    weight NaN
     inverse 0.999965633
   ]
   edge
   [
     source 88
     target 24
-    weight 6.9509e-05
+    weight NaN
     inverse 0.999930491
   ]
   edge
   [
     source 88
     target 26
-    weight 0.00040233
+    weight NaN
     inverse 0.99959767
   ]
   edge
   [
     source 88
     target 27
-    weight 7.4935e-05
+    weight NaN
     inverse 0.999925065
   ]
   edge
   [
     source 88
     target 34
-    weight 0.0086382
+    weight NaN
     inverse 0.9913618
   ]
   edge
   [
     source 88
     target 36
-    weight 0.019608
+    weight NaN
     inverse 0.980392
   ]
   edge
   [
     source 88
     target 40
-    weight 0.00082532
+    weight NaN
     inverse 0.99917468
   ]
   edge
   [
     source 88
     target 42
-    weight 0.010955
+    weight NaN
     inverse 0.989045
   ]
   edge
   [
     source 88
     target 43
-    weight 0.00047907
+    weight NaN
     inverse 0.99952093
   ]
   edge
   [
     source 88
     target 44
-    weight 0.0058121
+    weight NaN
     inverse 0.9941879
   ]
   edge
   [
     source 88
     target 45
-    weight 0.00048527
+    weight NaN
     inverse 0.99951473
   ]
   edge
   [
     source 88
     target 46
-    weight 0.031412
+    weight NaN
     inverse 0.968588
   ]
   edge
   [
     source 88
     target 48
-    weight 0.0078742
+    weight NaN
     inverse 0.9921258
   ]
   edge
   [
     source 88
     target 50
-    weight 0.051073
+    weight NaN
     inverse 0.948927
   ]
   edge
   [
     source 88
     target 51
-    weight 0.00032868
+    weight NaN
     inverse 0.99967132
   ]
   edge
   [
     source 88
     target 55
-    weight 0.0011997
+    weight NaN
     inverse 0.9988003
   ]
   edge
   [
     source 88
     target 58
-    weight 0.0020315
+    weight NaN
     inverse 0.9979685
   ]
   edge
   [
     source 88
     target 60
-    weight 0.00063463
+    weight NaN
     inverse 0.99936537
   ]
   edge
   [
     source 88
     target 63
-    weight 0.00010052
+    weight NaN
     inverse 0.99989948
   ]
   edge
   [
     source 88
     target 71
-    weight 0.0002845
+    weight NaN
     inverse 0.9997155
   ]
   edge
   [
     source 88
     target 81
-    weight 0.0037576
+    weight NaN
     inverse 0.9962424
   ]
   edge
   [
     source 88
     target 86
-    weight 0.018505
+    weight NaN
     inverse 0.981495
   ]
   edge
   [
     source 89
     target 24
-    weight 5.7082e-05
+    weight NaN
     inverse 0.999942918
   ]
   edge
   [
     source 89
     target 40
-    weight 0.00042983
+    weight NaN
     inverse 0.99957017
   ]
   edge
   [
     source 89
     target 42
-    weight 0.00147
+    weight NaN
     inverse 0.99853
   ]
   edge
   [
     source 89
     target 44
-    weight 0.001894
+    weight NaN
     inverse 0.998106
   ]
   edge
   [
     source 89
     target 45
-    weight 0.0042189
+    weight NaN
     inverse 0.9957811
   ]
   edge
   [
     source 89
     target 46
-    weight 0.0011869
+    weight NaN
     inverse 0.9988131
   ]
   edge
   [
     source 89
     target 48
-    weight 0.0023298
+    weight NaN
     inverse 0.9976702
   ]
   edge
   [
     source 89
     target 52
-    weight 0.00050966
+    weight NaN
     inverse 0.99949034
   ]
   edge
   [
     source 89
     target 86
-    weight 0.00044056
+    weight NaN
     inverse 0.99955944
   ]
 ]
