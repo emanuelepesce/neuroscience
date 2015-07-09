@@ -45,8 +45,7 @@ attachLabels <- function(g, labels, set = FALSE){
   }
   
   # attach labels strong = 1 if an edge is in a labels
-  labels <- patientsLabels 
-  for(i in 1:dim(controlsLabels)[1]){
+  for(i in 1:dim(labels)[1]){
     v1 <- labels[i,1]
     v2 <- labels[i,2]
     g[v1, v2, attr="strong"] <- 1
@@ -89,12 +88,12 @@ if(interactive()){
   
   controlsLabels <- getLabels(RC)
   patientsLabels <- getLabels(RP)
-#   
-#   applyAttachLabel("./../../data/toyData/cutted_controls/", "./../../data/toyData/cutted_controls/",
-#    controlsLabels, patientsLabels)
-#   
-#   applyAttachLabel("./../../data/toyData/cutted_patients/", "./../../data/toyData/cutted_patients/",
-#                    controlsLabels, patientsLabels)
+  
+  applyAttachLabel("./../../data/toyData/cutted_controls/", "./../../data/toyData/cutted_controls/",
+   controlsLabels, patientsLabels)
+  
+  applyAttachLabel("./../../data/toyData/cutted_patients/", "./../../data/toyData/cutted_patients/",
+                   controlsLabels, patientsLabels)
   
   # =============== check MST mask ====================
 #   cnt <- 0
