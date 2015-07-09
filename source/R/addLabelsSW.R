@@ -1,6 +1,7 @@
-
+rm(list = ls())
 library(igraph)
 source("./pruningEdges.R", chdir = T)
+
 
 #' Get a list' t of strong edges
 #' A strong edge is an adges which is in the set of minimum spanning tree
@@ -12,7 +13,7 @@ source("./pruningEdges.R", chdir = T)
 getLabels <- function(Res){
   # get utils edges 
   g <- Res$v_util
-  l_edges = matrix(nrow = R$n_util, ncol = 2)
+  l_edges = matrix(nrow = Res$n_util, ncol = 2)
   
   # create list of utils edges
   k = 1
@@ -83,18 +84,32 @@ if(interactive()){
   gc <- i_adjacencyFromFile("./../../data/toyData/extract/bordaMatrixControls.txt")
   gp <- i_adjacencyFromFile("./../../data/toyData/extract/bordaMatrixPatients.txt")
   
-  RC <- minFlowPruning(g, threshold = 0.05, flow = 0)
-  RP <- minFlowPruning(g, threshold = 0.05, flow = 0)
+  RC <- minFlowPruning(gc, threshold = 0.05, flow = 0)
+  RP <- minFlowPruning(gp, threshold = 0.05, flow = 0)
   
   controlsLabels <- getLabels(RC)
   patientsLabels <- getLabels(RP)
+#   
+#   applyAttachLabel("./../../data/toyData/cutted_controls/", "./../../data/toyData/cutted_controls/",
+#    controlsLabels, patientsLabels)
+#   
+#   applyAttachLabel("./../../data/toyData/cutted_patients/", "./../../data/toyData/cutted_patients/",
+#                    controlsLabels, patientsLabels)
   
-  applyAttachLabel("./../../data/toyData/cutted_controls/", "./../../data/toyData/cutted_controls/",
-   controlsLabels, patientsLabels)
-  
-  applyAttachLabel("./../../data/toyData/cutted_patients/", "./../../data/toyData/cutted_patients/",
-                   controlsLabels, patientsLabels)
-  
+  # =============== check MST mask ====================
+#   cnt <- 0
+#   for(i in 1:dim(controlsLabels)[1]){
+#     vs_c <- controlsLabels[i,1]
+#     vt_c <- controlsLabels[i,2]
+#     for (j in 1:dim(patientsLabels)[1]){
+#       vs_p <- patientsLabels[j,1]
+#       vt_p <- patientsLabels[j,2]
+#       if((vs_c == vs_p) && (vt_c == vt_p)){
+#         cnt = cnt + 1
+#       }
+#     }
+#   }
+
   time  <- proc.time() - ptm
   print(time)
 }

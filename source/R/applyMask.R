@@ -4,6 +4,7 @@
 #' 
 #' Author: Emanuele Pesce
 library(igraph)
+library(kernlab)
 source("./graphUtils.R", chdir = T)
 
 
@@ -40,11 +41,11 @@ applyMask <- function(graph, mask){
       if (w <= 0){
         g[v1, v2, attr = "weight"] <- 1e-05
       }
+      else{
+        g[v1, v2, attr="weight"] <- w
+      }
     }
-    else{
-      g[v1, v2, attr="weight"] <- graph[v1, v2]
-    }
-    g[v1, v2, attr="inverse"] <- 1 - graph[v1, v2]
+    g[v1, v2, attr="inverse"] <- 1 - w
   }
   
   return(g)
@@ -112,14 +113,14 @@ if(interactive()){
   
 #   mask <- read.csv(file = "./../../data/toyData/results/1_maskUnion/edgesMask.csv")
 #   mask <- as.matrix(mask)
-#   
+#    
 #   g <- i_adjacencyFromFile("./../../data/toyData/controls/CTRL_amore.txt")
 #   gm <- applyMask(g,mask)
 #   applyMaskDirectory("./../../data/toyData/controls/a/", "./../../data/toyData/cutted_controls/")
 
-#   applyMaskDirectory("./../../data/toyData/controls/", "./../../data/toyData/cutted_controls/")
+  applyMaskDirectory("./../../data/toyData/controls/", "./../../data/toyData/cutted_controls/")
   applyMaskDirectory("./../../data/toyData/patients/", "./../../data/toyData/cutted_patients/")  
-
+  
   time = proc.time() -ptm
   print (time)
 }
