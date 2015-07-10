@@ -1,0 +1,3 @@
+\beamer@endinputifotherversion {3.33pt}
+\beamer@sectionintoc {1}{Definizione obiettivo}{2}{0}{1}
+\beamer@sectionintoc {2}{Proposte}{5}{0}{2}
