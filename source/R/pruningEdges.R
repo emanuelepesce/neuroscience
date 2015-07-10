@@ -53,7 +53,7 @@ minFlowPruning <- function(graph, threshold=0.5, invert = FALSE, flow=0){
   ### put in v_util all edges which are part of a shortest path
   for (v in V(graph)){ #for each vertex v
     # all shortest paths from v
-    sp <- get.all.shortest.paths(graph, from = v, to = V(graph), mode = "out")
+    sp <- get.all.shortest.paths(graph, from = v, to = V(graph), mode = "out", weights = E(graph)$weight)
     # updates utils
     for(i in 1:length(sp$res)){ # for each target (path v-i) vertex i
       if( length(sp$res[[i]])>1){ # if the list has more than an element
@@ -179,6 +179,7 @@ minFlowPruning <- function(graph, threshold=0.5, invert = FALSE, flow=0){
 if(interactive()){
   ptm <- proc.time()
   g <- i_adjacencyFromFile("./../../data/toyData/extract/bordaMatrixControls.txt")
+  g <- i_adjacencyFromFile("./../../data/toyData/extract/bordaMatrixPatients.txt")
 #   g <- i_adjacencyFromFile("./../../data/toyData/controls/CTRL_amore.txt")
 #   g <- i_adjacencyFromFile("./../../data/toyData/extract/bordaMatrix.txt")
   R <- minFlowPruning(g, threshold = 0.05, flow = 0)
