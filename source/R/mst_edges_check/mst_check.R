@@ -1,6 +1,8 @@
 rm(list=ls())
 library(igraph)
 library(miscTools)
+library(rgexf)
+library(rgl)
 source("./../graphUtils.R", chdir = TRUE)
 
 g_mstlist <- function(graph){
@@ -146,6 +148,103 @@ findFirstK <- function(M, k){
 }
 
 
+saveResults <- function(kc, kp, g, path="./../../../data/toyData/controls/mst_first_100/"){
+  edgesLeft <- kc - kp
+  edgesRight <- kp - kc
+  common <- kc + kp
+  
+  #left
+  gl <- graph.adjacency(edgesLeft, mode = "directed", weighted = TRUE);
+  gl <- set.vertex.attribute(gl, name = "area",value = V(g)$area)
+  gl <- set.vertex.attribute(gl, name = "cx",value = V(g)$cx)
+  gl <- set.vertex.attribute(gl, name = "cy",value = V(g)$cy)
+  gl <- set.vertex.attribute(gl, name = "cz",value = V(g)$cz)
+  gl <- set.vertex.attribute(gl, name = "id",value = V(g)$id)
+  rmv <- list()
+  k <- 1
+  gnew <- gl
+  for(i in 1:ecount(gl)){
+    if(E(gl)$weight[i] <= 0){
+      rmv[k] <- E(gl)[i]
+      k = k+1
+    }
+  }
+  gl <- delete.edges(gl, rmv)
+  
+  #right
+  gr <- graph.adjacency(edgesLeft, mode = "directed", weighted = TRUE);
+  gr <- set.vertex.attribute(gr, name = "area",value = V(g)$area)
+  gr <- set.vertex.attribute(gr, name = "cx",value = V(g)$cx)
+  gr <- set.vertex.attribute(gr, name = "cy",value = V(g)$cy)
+  gr <- set.vertex.attribute(gr, name = "cz",value = V(g)$cz)
+  gr <- set.vertex.attribute(gr, name = "id",value = V(g)$id)
+  rmv <- list()
+  k <- 1
+  gnew <- gr
+  for(i in 1:ecount(gr)){
+    if(E(gr)$weight[i] <= 0){
+      rmv[k] <- E(gr)[i]
+      k = k+1
+    }
+  }
+  gr <- delete.edges(gr, rmv)
+  
+  #common
+  gc <- graph.adjacency(edgesLeft, mode = "directed", weighted = TRUE);
+  gc <- set.vertex.attribute(gc, name = "area",value = V(g)$area)
+  gc <- set.vertex.attribute(gc, name = "cx",value = V(g)$cx)
+  gc <- set.vertex.attribute(gc, name = "cy",value = V(g)$cy)
+  gc <- set.vertex.attribute(gc, name = "cz",value = V(g)$cz)
+  gc <- set.vertex.attribute(gc, name = "id",value = V(g)$id)
+  rmv <- list()
+  k <- 1
+  gnew <- gc
+  for(i in 1:ecount(gc)){
+    if(E(gc)$weight[i] <= 0){
+      rmv[k] <- E(gc)[i]
+      k = k+1
+    }
+  }
+  gc <- delete.edges(gc, rmv)
+  
+  el <- edgesLabels(gl)
+  er <- edgesLabels(gr)
+  ec <- edgesLabels(gc)
+  
+  write.csv(el, paste(path, "edge_controls.csv", sep=""))
+  write.csv(er,paste(path, "edge_patients.csv", sep=""))
+  write.csv(ec, paste(path, "edge_common.csv", sep=""))
+  
+  x <- V(g)$cx
+  y <- V(g)$cy
+  z <- V(g)$cz
+  coords <- cbind(x,y,z)
+  open3d()
+  rglplot(gr, layout=coords, vertex.label = V(g)$area, vertex.size = 10, vertex.color = "green", 
+          vertex.label.dist=0.5 )
+  open3d()
+  rglplot(gl, layout=coords, vertex.label = V(g)$area, vertex.size = 10, vertex.color = "red", 
+          vertex.label.dist=0.5 )
+  open3d()
+  rglplot(gc, layout=coords, vertex.label = V(g)$area, vertex.size = 10, vertex.color = "yellow", 
+          vertex.label.dist=0.5 )
+  
+}
+
+edgesLabels <- function(g){
+  m <- matrix(nrow = 0, ncol=2)
+  k <- 1
+  for(i in 1:ecount(g)){
+    ed <-  get.edge(g, E(g)[i])
+    vs <- get.vertex.attribute(graph = g, name = "area", index = ed[1])
+    vt <- get.vertex.attribute(graph = g, name = "area", index = ed[2])
+    m <- insertRow(m, k, v = c(vs, vt))
+    k = k+1
+  }
+  return(m)
+}
+
+
 if(interactive()){
   pathg <- "./../../../data/toyData/cutted_controls/CTRL_barbatoa.gml"
   pathg2 <- "./../../../data/toyData/cutted_controls/CTRL_amore.gml"
@@ -169,10 +268,14 @@ if(interactive()){
   edgesLeft <- kc - kp
   edgesRight <- kp - kc
   common <- kc + kp
+  
+  saveResults(kc, kp, g)
 
   #plot
-
+  
   gr <- graph.adjacency(edgesRight, mode = "directed", weighted = TRUE);
+gr <- set.vertex.attribute(gr, name = "name",value = V(g)$name)
+  gr <- set.vertex.attribute(gr, name = "area",value = V(g)$area)
   gr <- set.vertex.attribute(gr, name = "id",value = V(g)$id)
   rmv <- list()
   k <- 1
@@ -184,13 +287,13 @@ if(interactive()){
     }
   }
   gr <- delete.edges(gr, rmv)
-  
   x <- V(g)$cx
   y <- V(g)$cy
   z <- V(g)$cz
   coords <- cbind(x,y,z)
   #   V(g)$name <- V(g)$area
+  rgl.open()
+  rgl.bg(sphere=TRUE, color = c("black", "white"),lit=FALSE, back="lines" )
   rglplot(gr, layout=coords, vertex.label = V(g)$area, vertex.size = 10, vertex.color = "red", 
           vertex.label.dist=0.5 )
-
 }

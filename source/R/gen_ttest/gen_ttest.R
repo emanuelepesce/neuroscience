@@ -10,7 +10,7 @@ source("./../graphUtils.R", chdir = T)
 
 
 # Restituisce una lista di archi da rimuovere secondo il criterio del t-test
-testOfRelevance <- function(pathIn = "./../../../data/toyData/controls/withNoise/", verbose = TRUE) {
+testOfRelevance <- function(pathIn = "./../../../data/toyData/controls/withNoise/", pathOut, verbose = TRUE) {
   
   k <- 1 # Conta gli archi selezionati
   l <- array()
@@ -52,7 +52,8 @@ testOfRelevance <- function(pathIn = "./../../../data/toyData/controls/withNoise
         tt <- t.test(unlist(l_values), mu = 0)
         if(tt$p.value <= 0.05) {
           archiPresi <- insertRow(archiPresi, kr, c(vi,vj))
-          write.table(archiPresi, file = "./../../../data/toyData/t_test_mask/t_test_mask.csv", sep=",", col.names = F, row.names = F)
+          
+          write.table(archiPresi, file = pathOut, sep=",", col.names = F, row.names = F)
           kr <- kr + 1
         }
       }
@@ -121,13 +122,13 @@ applyMaskDirectory <- function(pathIn, pathOut, pathMask = "./../../data/toyData
   for(i in 1:length(files)){ # for each file
     # take path + name and apply the mask
     cfile <- paste(pathIn, files[i], sep="")
-    if(grepl(cfile, pattern = "*.txt")){
+    if(grepl(cfile, pattern = "*.gml")){
       print(cfile)
-      g <- i_adjacencyFromFile(cfile)
+      g <- read.graph(cfile, format="gml")
       gm <- applyMask(g,mask)
       # write the output
       outfile <- paste(pathOut, files[i], sep="")
-      outfile <- gsub(".txt", ".gml", outfile)
+#       outfile <- gsub(".txt", ".gml", outfile)
       write.graph(gm, outfile, format="gml")
     }
   }
@@ -165,13 +166,22 @@ applyMaskDirectory <- function(pathIn, pathOut, pathMask = "./../../data/toyData
 
 
 if(interactive()) {
+  ptm <- proc.time()
   
-  pathInC <- "./../../../data/toyData/controls/withNoise/"
+  pathInC <- "./../../../data/toyData/controls/withNoise/a/"
   pathInP <- "./../../../data/toyData/patients/withNoise/"
   pathOutC <- "./../../../data/toyData/cutted_control_ttest/"
   pathOutP <- "./../../../data/toyData/cutted_patents_ttest/"
-  testOfRelevance (pathInC)
-  applyMaskDirectory(pathInC, pathOutC, pathMask = "./../../../data/toyData/t_test_mask/t_test_mask.csv")
+#   testOfRelevance (pathInC)
+#   #test
+#   testOfRelevance (pathInC, "./../../../data/toyData/controls/withNoise/t_test_mask/t_test_mask_controls111.csv")
+#   #controls
+#   testOfRelevance (pathInC,
+#                    "./../../../data/toyData/controls/withNoise/t_test_mask/t_test_mask_controls.csv")
+#   #patients
+  testOfRelevance (pathInP,
+                   "./../../../data/toyData/controls/withNoise/t_test_mask/t_test_mask_patients.csv")
+#   applyMaskDirectory(pathInC, pathOutC, pathMask = "./../../../data/toyData/controls/withNoise/t_test_mask/t_test_mask.csv")
   time = proc.time() - ptm
   print (time)
   
