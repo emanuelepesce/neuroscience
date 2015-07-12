@@ -15,7 +15,7 @@ source("./graphUtils.R")
 #' @return A list of vectors
 #' @examples
 #' M <-  m <- genMatrix("./../../data/toyData/controls/")
-genMatrix <- function(path = "./../../data/toyData/controls/"){
+genMatrix <- function(path = "./../../data/toyData/controls/") {
   # get all filenames
   fileNames  <- list.files(path)
   nRoi = 90
