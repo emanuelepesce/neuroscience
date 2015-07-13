@@ -10,4 +10,4 @@ with open(pathfile, 'rb') as csvfile:
 
 add_sphere = bpy.ops.mesh.primitive_ico_sphere_add
 for index in range(0, len(coords)): 
-    add_sphere(location=(coords[i][1], coords[i][1], coords[i][1]))
+    add_sphere(location=(float(coords[i][1]), float(coords[i][1]), float(coords[i][1])))
