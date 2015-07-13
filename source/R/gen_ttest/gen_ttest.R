@@ -10,10 +10,11 @@ source("./../graphUtils.R", chdir = T)
 
 
 # Restituisce una lista di archi da rimuovere secondo il criterio del t-test
-testOfRelevance <- function(pathIn = "./../../../data/toyData/controls/withNoise/", verbose = TRUE) {
+testOfRelevance <- function(pathIn = "./../../../data/toyData/controls/withNoise/", pathOut, verbose = TRUE) {
   
+  t <- 1
   k <- 1 # Conta gli archi selezionati
-  l <- array()
+  
   files <- list.files(path = pathIn) # Prendo la lista dei nomi dei file nella directory
   archiPresi <- matrix(nrow = 0, ncol = 2)
   kr <- 1
@@ -51,14 +52,87 @@ testOfRelevance <- function(pathIn = "./../../../data/toyData/controls/withNoise
         # Performing the t-test on every single edge
         tt <- t.test(unlist(l_values), mu = 0)
         if(tt$p.value <= 0.05) {
+          ttest[t] <- tt$p.value
+          t <- t + 1
           archiPresi <- insertRow(archiPresi, kr, c(vi,vj))
-          write.table(archiPresi, file = "./../../../data/toyData/t_test_mask/t_test_mask.csv", sep=",", col.names = F, row.names = F)
+          
+          write.table(archiPresi, file = pathOut, sep=",", col.names = F, row.names = F)
+          kr <- kr + 1
+        }
+        p.adjust(ttest, "bonferroni")
+      }
+    }
+  }
+  
+  return(archiPresi)
+}
+
+
+
+# Restituisce una lista di archi da rimuovere secondo il criterio del t-test
+testOfRelevancePlus <- function(pathIn = "./../../../data/toyData/controls/withNoise/", pathOut, verbose = TRUE) {
+  
+  k <- 1 # Conta gli archi selezionati
+  l <- array()
+  files <- list.files(path = pathIn) # Prendo la lista dei nomi dei file nella directory
+  archiPresi <- matrix(nrow = 0, ncol = 2)
+  kr <- 1
+
+  l <- array()
+  ttest <- array()
+
+  #creo una lista di oggetti grafo
+  listGraphs <- list()
+  k <- 1
+  for(i in 1:length(files)) { # Per ogni file
+    cfile <- paste(pathIn, files[i], sep="") # Recupero il nome completo, compreso di percorso
+    if(grepl(cfile, pattern = "*.gml")) {
+      g <- read.graph(cfile, format = "gml") # Recupero il grafo di questo file
+      listGraphs[[k]] <- g
+      k <- k +1
+    }
+  }
+
+  ################### Recupero tutti gli archi, accedendo alle coppie di vertici #######################
+  for(i in 1:vcount(g)) {
+    vi <- V(g)$name[i]
+    l_values <- array()
+    inx <- 1
+    for (j in 1:vcount(g)) {
+      vj <- V(g)$name[j]
+      
+      # Check for verbose
+      if (verbose) {
+        print("Testing for egde")
+        print(V(g)$name[i])
+        print(V(g)$name[j])
+      }
+      
+      
+      if (vi != vj) {
+        
+        # Scorro la directory
+        for(k in 1:length(listGraphs)) { # Per ogni file
+          g <- listGraphs[[k]]
+          if(g[vi, vj] >= 0) {
+            l_values[inx] <- g[vi, vj]
+            inx <- inx + 1
+          }          
+        }
+        
+        # Performing the t-test on every single edge
+        tt <- t.test(unlist(l_values), mu = 0)
+        adj <- p.adjust(tt$p.value, "bonferroni")
+        if(adj <= 0.01) {
+          print(tt$p.value)
+          archiPresi <- insertRow(archiPresi, kr, c(vi,vj))         
           kr <- kr + 1
         }
       }
     }
   }
   
+  write.table(archiPresi, file = pathOut, sep=",", col.names = F, row.names = F)
   return(archiPresi)
 }
 
@@ -121,13 +195,13 @@ applyMaskDirectory <- function(pathIn, pathOut, pathMask = "./../../data/toyData
   for(i in 1:length(files)){ # for each file
     # take path + name and apply the mask
     cfile <- paste(pathIn, files[i], sep="")
-    if(grepl(cfile, pattern = "*.txt")){
+    if(grepl(cfile, pattern = "*.gml")){
       print(cfile)
-      g <- i_adjacencyFromFile(cfile)
+      g <- read.graph(cfile, format="gml")
       gm <- applyMask(g,mask)
       # write the output
       outfile <- paste(pathOut, files[i], sep="")
-      outfile <- gsub(".txt", ".gml", outfile)
+#       outfile <- gsub(".txt", ".gml", outfile)
       write.graph(gm, outfile, format="gml")
     }
   }
@@ -165,13 +239,22 @@ applyMaskDirectory <- function(pathIn, pathOut, pathMask = "./../../data/toyData
 
 
 if(interactive()) {
+  ptm <- proc.time()
   
   pathInC <- "./../../../data/toyData/controls/withNoise/"
   pathInP <- "./../../../data/toyData/patients/withNoise/"
   pathOutC <- "./../../../data/toyData/cutted_control_ttest/"
   pathOutP <- "./../../../data/toyData/cutted_patents_ttest/"
-  testOfRelevance (pathInC)
-  applyMaskDirectory(pathInC, pathOutC, pathMask = "./../../../data/toyData/t_test_mask/t_test_mask.csv")
+#   testOfRelevance (pathInC)
+#   #test
+#   testOfRelevance (pathInC, "./../../../data/toyData/controls/withNoise/t_test_mask/t_test_mask_controls111.csv")
+  #controls
+  testOfRelevancePlus(pathInC,
+                   "./../../../data/toyData/controls/withNoise/t_test_mask/t_test_mask_controls.csv")
+#   #patients
+  testOfRelevancePlus(pathInP,
+                   "./../../../data/toyData/controls/withNoise/t_test_mask/t_test_mask_patients.csv")
+#   applyMaskDirectory(pathInC, pathOutC, pathMask = "./../../../data/toyData/controls/withNoise/t_test_mask/t_test_mask.csv")
   time = proc.time() - ptm
   print (time)
   
