@@ -16,7 +16,7 @@ g_mstlist <- function(graph){
   ### put in mst_edges all edges which are part of a shortest path
   for (v in V(graph)){ #for each vertex v
     # all shortest paths from v
-    sp <- get.all.shortest.paths(graph, from = v, to = V(graph), mode = "out", weights = E(graph)$weight)
+    sp <- get.all.shortest.paths(graph, from = v, to = V(graph), mode = "out", weights = E(graph)$inverse)
     # updates
     for(i in 1:length(sp$res)){ # for each target (path v-i) vertex i
       if( length(sp$res[[i]])>1){ # if the list has more than an element
@@ -172,7 +172,7 @@ saveResults <- function(kc, kp, g, path="./../../../data/toyData/controls/mst_fi
   gl <- delete.edges(gl, rmv)
   
   #right
-  gr <- graph.adjacency(edgesLeft, mode = "directed", weighted = TRUE);
+  gr <- graph.adjacency(edgesRight, mode = "directed", weighted = TRUE);
   gr <- set.vertex.attribute(gr, name = "area",value = V(g)$area)
   gr <- set.vertex.attribute(gr, name = "cx",value = V(g)$cx)
   gr <- set.vertex.attribute(gr, name = "cy",value = V(g)$cy)
@@ -190,7 +190,7 @@ saveResults <- function(kc, kp, g, path="./../../../data/toyData/controls/mst_fi
   gr <- delete.edges(gr, rmv)
   
   #common
-  gc <- graph.adjacency(edgesLeft, mode = "directed", weighted = TRUE);
+  gc <- graph.adjacency(common, mode = "directed", weighted = TRUE);
   gc <- set.vertex.attribute(gc, name = "area",value = V(g)$area)
   gc <- set.vertex.attribute(gc, name = "cx",value = V(g)$cx)
   gc <- set.vertex.attribute(gc, name = "cy",value = V(g)$cy)
@@ -200,7 +200,7 @@ saveResults <- function(kc, kp, g, path="./../../../data/toyData/controls/mst_fi
   k <- 1
   gnew <- gc
   for(i in 1:ecount(gc)){
-    if(E(gc)$weight[i] <= 0){
+    if(E(gc)$weight[i] <= 1){
       rmv[k] <- E(gc)[i]
       k = k+1
     }
@@ -273,27 +273,27 @@ if(interactive()){
 
   #plot
   
-  gr <- graph.adjacency(edgesRight, mode = "directed", weighted = TRUE);
-gr <- set.vertex.attribute(gr, name = "name",value = V(g)$name)
-  gr <- set.vertex.attribute(gr, name = "area",value = V(g)$area)
-  gr <- set.vertex.attribute(gr, name = "id",value = V(g)$id)
-  rmv <- list()
-  k <- 1
-  gnew <- gr
-  for(i in 1:ecount(gr)){
-    if(E(gr)$weight[i] <= 0){
-      rmv[k] <- E(gr)[i]
-      k = k+1
-    }
-  }
-  gr <- delete.edges(gr, rmv)
-  x <- V(g)$cx
-  y <- V(g)$cy
-  z <- V(g)$cz
-  coords <- cbind(x,y,z)
-  #   V(g)$name <- V(g)$area
-  rgl.open()
-  rgl.bg(sphere=TRUE, color = c("black", "white"),lit=FALSE, back="lines" )
-  rglplot(gr, layout=coords, vertex.label = V(g)$area, vertex.size = 10, vertex.color = "red", 
-          vertex.label.dist=0.5 )
+#   gr <- graph.adjacency(edgesRight, mode = "directed", weighted = TRUE);
+# gr <- set.vertex.attribute(gr, name = "name",value = V(g)$name)
+#   gr <- set.vertex.attribute(gr, name = "area",value = V(g)$area)
+#   gr <- set.vertex.attribute(gr, name = "id",value = V(g)$id)
+#   rmv <- list()
+#   k <- 1
+#   gnew <- gr
+#   for(i in 1:ecount(gr)){
+#     if(E(gr)$weight[i] <= 0){
+#       rmv[k] <- E(gr)[i]
+#       k = k+1
+#     }
+#   }
+#   gr <- delete.edges(gr, rmv)
+#   x <- V(g)$cx
+#   y <- V(g)$cy
+#   z <- V(g)$cz
+#   coords <- cbind(x,y,z)
+#   #   V(g)$name <- V(g)$area
+#   rgl.open()
+#   rgl.bg(sphere=TRUE, color = c("black", "white"),lit=FALSE, back="lines" )
+#   rglplot(gr, layout=coords, vertex.label = V(g)$area, vertex.size = 10, vertex.color = "red", 
+#           vertex.label.dist=0.5 )
 }
