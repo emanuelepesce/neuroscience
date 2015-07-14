@@ -1,0 +1,4 @@
+
+ - Run applyMask.R, it generates graph .gml
+ - Run attachLabels.R, it attach labels to graphs previously generated
+ 
