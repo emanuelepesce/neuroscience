@@ -21,17 +21,28 @@ coins = c(rep(1, p*1000), rep(0,(1-p)*1000))
 n = length(coins)
 sample(coins, 1, replace=TRUE, prob=rep(1/n, n))
 
+att = 0.80
+g <- set.vertex.attribute(g, name = "cap", value = graph.strength(g, mode="in")*att)
+
+
+
 # function for updating the diffusers
 update_diffusers = function(diffusers){
   nearest_neighbors = neighborhood(g, 1, diffusers, "out")
   nearest_neighbors = data.frame(table(unlist(nearest_neighbors)))
   nearest_neighbors = subset(nearest_neighbors, !(nearest_neighbors[,1]%in%diffusers))
+
   # toss the coins
-  toss = function(freq) {
+  toss = function(v) {
     tossing = NULL
-    for (i in 1:freq ) 
-      tossing[i] = sample(coins, 1, replace=TRUE, prob=rep(1/n, times=n))
-    tossing = sum(tossing)
+    flow <- 0
+    nrbs <- neighbors(g, v = v, mode = "in")
+    for(i in 1:length(nrbs)){
+      flow <- flow + g[v, nrbs[i]]
+    }
+    if(flow >=  get.vertex.attribute(g, name = "cap", index = v)){
+      tossing = 1
+    }
     return (tossing)
   }
   keep = unlist(lapply(nearest_neighbors[,2], toss))
