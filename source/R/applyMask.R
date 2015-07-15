@@ -108,6 +108,28 @@ applyMaskDirectory <- function(pathIn, pathOut, pathMask = "./../../data/toyData
   }
 }
 
+
+applyMaskDirectoryGML<- function(pathIn, pathOut, pathMask = "./../../data/toyData/results/1_maskUnion/edgesMask.csv"){
+  # get the mask
+  mask <- read.csv(file = pathMask)
+  mask <- as.matrix(mask)
+  
+  files <- list.files(path = pathIn) #take all files in pathIn
+  for(i in 1:length(files)){ #for each file
+    # take path + name and apply the mask
+    cfile <- paste(pathIn, files[i], sep="")
+    if(grepl(cfile, pattern = "*.gml")){
+      print(cfile)
+      g <- read.graph(cfile, format="gml")
+      #       g <- addNoise(g) # add noise to the adges with weight = 0
+      gm <- applyMask(g,mask)
+      # write the output
+      outfile <- paste(pathOut, files[i], sep="")
+      write.graph(gm, outfile, format="gml")
+    }
+  }
+}
+
 if(interactive()){
   ptm <- proc.time()
   
@@ -118,9 +140,31 @@ if(interactive()){
 #   gm <- applyMask(g,mask)
 #   applyMaskDirectory("./../../data/toyData/controls/a/", "./../../data/toyData/cutted_controls/")
 
-  applyMaskDirectory("./../../data/toyData/controls/", "./../../data/toyData/cutted_controls/")
-  applyMaskDirectory("./../../data/toyData/patients/", "./../../data/toyData/cutted_patients/")  
+#   applyMaskDirectory("./../../data/toyData/controls/", "./../../data/toyData/cutted_controls/")
+#   applyMaskDirectory("./../../data/toyData/patients/", "./../../data/toyData/cutted_patients/")  
+
+### t test
+#   pathMask <- "./../../data/toyData/results/2_t_test_mask/mask_tt_test_cutted.csv"
+#   pathIn <- "./../../data/toyData/controls/withNoise/"
+#   pathOut <- "./../../data/toyData/t_test_controls/"
+#   applyMaskDirectoryGML(pathIn, pathOut, pathMask)
   
+#   pathMask <- "./../../data/toyData/results/2_t_test_mask/mask_tt_test_cutted.csv"
+#   pathIn <- "./../../data/toyData/patients/withNoise/"
+#   pathOut <- "./../../data/toyData/t_test_patients/"
+#   applyMaskDirectoryGML(pathIn, pathOut, pathMask)
+
+### t test MST
+#   pathMask <- "./../../data/toyData/results/2_t_test_mask/mask_tt_test_MST.csv"
+#   pathIn <- "./../../data/toyData/controls/withNoise/"
+#   pathOut <- "./../../data/toyData/t_test_MST_controls/"
+#   applyMaskDirectoryGML(pathIn, pathOut, pathMask)
+# 
+#   pathMask <- "./../../data/toyData/results/2_t_test_mask/mask_tt_test_MST.csv"
+#   pathIn <- "./../../data/toyData/patients/withNoise/"
+#   pathOut <- "./../../data/toyData/t_test_MST_patients/"
+#   applyMaskDirectoryGML(pathIn, pathOut, pathMask)
+
   time = proc.time() -ptm
   print (time)
 }

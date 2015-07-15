@@ -80,21 +80,47 @@ applyAttachLabel <- function(pathIn, pathOut, labelC, labelP){
 
 if(interactive()){
   ptm <- proc.time()
-  gc <- i_adjacencyFromFile("./../../data/toyData/extract/bordaMatrixControls.txt")
-  gp <- i_adjacencyFromFile("./../../data/toyData/extract/bordaMatrixPatients.txt")
-  
-  RC <- minFlowPruning(gc, threshold = 0.05, flow = 0)
-  RP <- minFlowPruning(gp, threshold = 0.05, flow = 0)
-  
-  controlsLabels <- getLabels(RC)
-  patientsLabels <- getLabels(RP)
-  
-  applyAttachLabel("./../../data/toyData/cutted_controls/", "./../../data/toyData/cutted_controls/",
-   controlsLabels, patientsLabels)
-  
-  applyAttachLabel("./../../data/toyData/cutted_patients/", "./../../data/toyData/cutted_patients/",
-                   controlsLabels, patientsLabels)
-  
+#   gc <- i_adjacencyFromFile("./../../data/toyData/extract/bordaMatrixControls.txt")
+#   gp <- i_adjacencyFromFile("./../../data/toyData/extract/bordaMatrixPatients.txt")
+#   
+#   RC <- minFlowPruning(gc, threshold = 0.05, flow = 0)
+#   RP <- minFlowPruning(gp, threshold = 0.05, flow = 0)
+#   
+#   controlsLabels <- getLabels(RC)
+#   patientsLabels <- getLabels(RP)
+#   
+#   applyAttachLabel("./../../data/toyData/cutted_controls/", "./../../data/toyData/cutted_controls/",
+#    controlsLabels, patientsLabels)
+#   
+#   applyAttachLabel("./../../data/toyData/cutted_patients/", "./../../data/toyData/cutted_patients/",
+#                    controlsLabels, patientsLabels)
+
+
+### t test
+g <- read.graph("./../../data/toyData/results/2_t_test_mask/union_t_test_WEIGHTED.gml", format="gml")
+
+R <- minFlowPruning(g, threshold = 0.05, flow = 0)
+
+labels <- getLabels(R)
+
+pathIn <- "./../../data/toyData/t_test_controls/"
+applyAttachLabel(pathIn,pathIn,labels,labels)
+pathIn <- "./../../data/toyData/t_test_patients/"
+applyAttachLabel(pathIn,pathIn,labels,labels)
+
+### t test MST
+g <- read.graph("./../../data/toyData/results/2_t_test_mask/union_t_test_WEIGHTED.gml", format="gml")
+
+R <- minFlowPruning(g, threshold = 0.05, flow = 0)
+
+labels <- getLabels(R)
+
+pathIn <- "./../../data/toyData/t_test_MST_controls/"
+applyAttachLabel(pathIn,pathIn,labels,labels)
+pathIn <- "./../../data/toyData/t_test_MST_patients/"
+applyAttachLabel(pathIn,pathIn,labels,labels)
+
+
   # =============== check MST mask ====================
 #   cnt <- 0
 #   for(i in 1:dim(controlsLabels)[1]){

@@ -91,16 +91,16 @@ makeUnion <- function(ctrl, pznt) {
     vs_p <- pznt[i,1]
     vt_p <- pznt[i,2]
     catched <- 0
-    for (i in 1:dim(ctrl)[1]) {
-      vs_c <- ctrl[i,1]
-      vt_c <- ctrl[i,2]
+    for (j in 1:dim(ctrl)[1]) {
+      vs_c <- ctrl[j,1]
+      vt_c <- ctrl[j,2]
       if((vs_p==vs_c) && (vt_p==vt_c)){
         catched <- 1
         break
       }
     }
     if(catched == 0){
-      unionList <- insertRow(unionList, k, c(vs, vt))
+      unionList <- insertRow(unionList, k, c(vs_p, vt_p))
       k <- k + 1
     }
   }
@@ -170,18 +170,18 @@ applyMaskDirectory <- function(pathIn, pathOut, pathMask = "./../../data/toyData
 if(interactive()) {
   ptm <- proc.time()
   
-  pathInC <- "./../../../data/toyData/controls/withNoise/"
-  pathInP <- "./../../../data/toyData/patients/withNoise/"
-  pathOutC <- "./../../../data/toyData/cutted_control_ttest/"
-  pathOutP <- "./../../../data/toyData/cutted_patents_ttest/"
+#   pathInC <- "./../../../data/toyData/controls/withNoise/"
+#   pathInP <- "./../../../data/toyData/patients/withNoise/"
+#   pathOutC <- "./../../../data/toyData/cutted_control_ttest/"
+#   pathOutP <- "./../../../data/toyData/cutted_patents_ttest/"
   #   testOfRelevance (pathInC)
   #   #test
 #   r <-  testOfRelevancePlus(pathInC, "./../../../data/toyData/results/2_t_test_mask/t_test_mask_controls_prova.csv")
   #controls
 #   res <- testOfRelevancePlus(pathInC, "./../../../data/toyData/results/2_t_test_mask/t_test_mask_controls.csv")
   #   #patients
-#   res <- applyMaskDirectory(pathInC, pathOutC, pathMask = "./../../../data/toyData/controls/withNoise/t_test_mask/t_test_mask.csv")
-  #   r <-  testOfRelevancePlus(pathInC, "./../../../data/toyData/results/2_t_test_mask/t_test_mask_controls_prova.csv")
+
+#   r <-  testOfRelevancePlus(pathInC, "./../../../data/toyData/results/2_t_test_mask/t_test_mask_controls_prova.csv")
   #controls
   #   res <- testOfRelevancePlus(pathInC, "./../../../data/toyData/results/2_t_test_mask/t_test_mask_controls.csv")
   #   #patients
@@ -191,8 +191,19 @@ if(interactive()) {
   patients_mask = read.csv(file = "./../../../data/toyData/results/2_t_test_mask/t_test_mask_patients.csv", sep = ",")
   unione <- makeUnion(as.matrix(control_mask), as.matrix(patients_mask))
   write.table(unione, file = "./../../../data/toyData/results/2_t_test_mask/union_t_test.csv", sep=",", col.names = F, row.names = F)
-  #write.csv(unione, file = "./../../../data/toyData/results/2_t_test_mask/union_t_test.csv")
-  #   res <- applyMaskDirectory(pathInC, pathOutC, pathMask = "./../../../data/toyData/controls/withNoise/t_test_mask/t_test_mask.csv")
+  
+### APPLY MASK
+  #controls
+#   m_pathIn = "./../../../data/toyData/controls/withNoise/"
+#   m_pathOut = "./../../../data/toyData/t_test_controls/"
+#   res <- applyMaskDirectory(m_pathIn, m_pathOut, pathMask = "./../../../data/toyData/results/2_t_test_mask/union_t_test.csv")
+#   
+#   #patients
+#   m_pathIn = "./../../../data/toyData/patients/withNoise/"
+#   m_pathOut = "./../../../data/toyData/t_test_patients/"
+#   res <- applyMaskDirectory(m_pathIn, m_pathOut, pathMask = 
+#                               "./../../../data/toyData/results/2_t_test_mask/union_t_test.csv")
+
   time = proc.time() - ptm
   print (time)
 }

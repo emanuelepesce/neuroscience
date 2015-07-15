@@ -36,21 +36,38 @@ if(interactive()){
   m <- read.table(path_names, header=FALSE)
   labels <- as.matrix(m)
   
-  g <- read.graph("./../../../data/toyData/cutted_controls/CTRL_amore.gml", format="gml")
-  gl <- addLabelsCoord(g, labels)
+#   g <- read.graph("./../../../data/toyData/cutted_controls/CTRL_amore.gml", format="gml")
+#   gl <- addLabelsCoord(g, labels)
+  
 #   
 #   applyLabelCoord("./../../../data/toyData/cutted_controls/", "./../../../data/toyData/cutted_controls/", labels)
 #   applyLabelCoord("./../../../data/toyData/cutted_patients/", "./../../../data/toyData/cutted_patients/", labels)
-#  
-# #test
-  g <- read.graph("./../../../data/toyData/cutted_controls/CTRL_amore.gml", format="gml")
-  x <- V(g)$cx
-  y <- V(g)$cy
-  z <- V(g)$cz
-  coords <- cbind(x,y,z)
-#   V(g)$name <- V(g)$area
-  rglplot(g, layout=coords, vertex.label = V(g)$area, vertex.size = 10, vertex.color = "red", 
-          vertex.label.dist=0.5 )
+#
+
+  ### t test
+  pathIn <- "./../../../data/toyData/t_test_controls/"
+  applyLabelCoord(pathIn, pathIn, labels)
+  
+  pathIn <- "./../../../data/toyData/t_test_patients/"
+  applyLabelCoord(pathIn, pathIn, labels)
+  
+  ### t test MST
+  pathIn <- "./../../../data/toyData/t_test_MST_controls/"
+  applyLabelCoord(pathIn, pathIn, labels)
+  
+  pathIn <- "./../../../data/toyData/t_test_MST_patients/"
+  applyLabelCoord(pathIn, pathIn, labels)
+
+
+#test
+#   g <- read.graph("./../../../data/toyData/t_test_MST_controls/CTRL_amore.gml", format="gml")
+#   x <- V(g)$cx
+#   y <- V(g)$cy
+#   z <- V(g)$cz
+#   coords <- cbind(x,y,z)
+# #   V(g)$name <- V(g)$area
+#   rglplot(g, layout=coords, vertex.label = V(g)$area, vertex.size = 10, vertex.color = "red", 
+#           vertex.label.dist=0.5 )
 }
 
 
