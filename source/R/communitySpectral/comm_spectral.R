@@ -1,8 +1,25 @@
+#' Execution and testing of spectral clust method for community detection problem
+#' The test is performed on
+#' - Bonferroni corrected t-test-cutted graph
+#' - Shortest path + Bonferroni corrected t-test-cutted graph
+#' - Shortest path + MST cutted graph
+#' To evaluate the result is used a hitmap
+#'
+#' Author: Alessandro Merola
+
+rm(list=ls())
+
 library(kernlab)
 library(igraph)
+library(gplots)
+library(ade4)
 
 
-# Performs the specified community detection method
+# Performs the specified community detection method saving result on a specified file
+# @param pathIn is the input path
+# @param pathOut is the output path
+# @algorithm specifies the community detection algorithm
+# @verbose specifies if verbose execution is desired
 performingCommunityDetection <- function(pathIn = "./../../../data/toyData/cutted_controls/", pathOut = "./../../../../data/toyData/cutted_controls/spectral", algorithm = "specc", verbose = FALSE) {
   
   pathForCommunity = pathOut
@@ -22,7 +39,7 @@ performingCommunityDetection <- function(pathIn = "./../../../data/toyData/cutte
         
         # get the graph from the file
         g <- read.graph(cfile, format="gml")
-        ugm <- as.undirected(gm, "collapse")
+        ugm <- as.undirected(g, "collapse")
         MA <- get.adjacency(ugm, attr="weight")
         M <- as.matrix(MA)
         listNames <- c(listNames, files[i])
@@ -36,28 +53,91 @@ performingCommunityDetection <- function(pathIn = "./../../../data/toyData/cutte
         spec_cl = spc@.Data
         names <- V(g)$name
         if(k <= 1) {
-          outp <- cbind(name, spec_cl)
+          outp <- cbind(names, spec_cl)
         }
         else {
           outp <- cbind(outp, spec_cl)
         }
       }
     }
-    #outp <- cbind(outp, spec_cl)
   }
   colnames(outp) <- listNames
-  write.csv(outp[,-1], pathForCommunity, row.names = outp[,1] )
+  write.csv(outp[,-1], pathForCommunity, row.names = outp[,1])
 }
 
+# Counts how many times each region is in the same community for each subject
+# @param pathIn is the input path
+# @return a sets of elements (a matrix) A(i,j) to indicate how many time the regions i and j are in the same community
+coOccurrence <- function(pathIn = "./../../../data/toyData/cutted_patients/spectral/membership_patients.csv") {
+  data <- read.table(pathIn, sep=",", header=TRUE)
+  data <- data[,-1]
+  
+  m <- as.matrix(data) # a matrix to return
+  numRow <- dim(m)[1]
+  k <- 0
+  occurrenceMatrix <- matrix(nrow = 90, ncol = 90, data = 0)
+  
+  for (i in 1:numRow) {
+    for (j in 1:numRow) {
+      r1 <- m[i,]
+      r2 <- m[j,]
+      for (z in 1:length(m[i,])) { # check for each subject
+        if(m[i,][z] == m[j,][z]) {
+          occurrenceMatrix[i,j] <- occurrenceMatrix[i,j] + 1
+        }
+      }
+    }
+  }
+  return(occurrenceMatrix)
+}
+
+
+# Compute the heatmap for m1 and m2 cooccurrence matrix
+# @pathOut is the output file to save
+makeHeatmap <- function(m1, m2, pathOut) {
+  
+  # heatmap
+  jpeg(filename=paste(pathOut, "heat_controls.jpeg", sep=""), 
+       width = 1000, height = 1000)
+  h1 <- heatmap.2(t(m1), tracecol = F, main = "Community Controls")
+  dev.off()
+  jpeg(filename=paste(pathOut, "heat_patients.jpeg", sep=""), 
+       width = 1000, height = 1000)
+  h2 <- heatmap.2(t(m2), tracecol = F, main = "Community Patients")
+  dev.off()
+  
+  sum_occ <- coOc_Ctrl + coOc_Ptnt
+  jpeg(filename=paste(pathOut, "heat_sum.jpeg", sep=""), 
+       width = 1000, height = 1000)
+  sumH <- heatmap.2(t(sum_occ), tracecol = F, main = "Community Sum")
+  dev.off()
+  
+  res <- list("h1"=h1, "h2"=h2, "sum"=sumH)
+  return(res)
+}
+
+
 if(interactive()) {
+  
   pathInC = "./../../../data/toyData/cutted_controls/"
   pathInP = "./../../../data/toyData/cutted_patients/"
   pathOutC = "./../../../data/toyData/cutted_controls/spectral/membership_controls.csv"
   pathOutP = "./../../../data/toyData/cutted_patients/spectral/membership_patients.csv"
-  performingCommunityDetection(pathInC, pathOutC)
-  performingCommunityDetection(pathInP, pathOutP)
+  pathOutResults = "./../../../data/toyData/results/3_community/cutted/"
+  
+  controls <- performingCommunityDetection(pathInC, pathOutC)
+  patient <- performingCommunityDetection(pathInP, pathOutP)
+  
+  coOc_Ctrl <- coOccurrence(pathOutC)
+  coOc_Ptnt <- coOccurrence(pathOutP)
+  #   m <- computeStatistic(coOc_Ctrl)
+  #   print(m)
+  
+  # Test di mantell
+  #mantel.rtest(as.dist(coOc_Ctrl), as.dist(coOc_Ptnt), nrepet = 6000)
+  
+  H <- makeHeatmap(coOc_Ctrl, coOc_Ptnt, pathOutResults)
 }
-
 
 
 # gm <- read.graph("./CTRL_lavoro.gml", format="gml") # Leggo il grafo
