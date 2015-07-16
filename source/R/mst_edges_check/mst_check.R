@@ -273,27 +273,27 @@ if(interactive()){
 
   #plot
   
-#   gr <- graph.adjacency(edgesRight, mode = "directed", weighted = TRUE);
-# gr <- set.vertex.attribute(gr, name = "name",value = V(g)$name)
-#   gr <- set.vertex.attribute(gr, name = "area",value = V(g)$area)
-#   gr <- set.vertex.attribute(gr, name = "id",value = V(g)$id)
-#   rmv <- list()
-#   k <- 1
-#   gnew <- gr
-#   for(i in 1:ecount(gr)){
-#     if(E(gr)$weight[i] <= 0){
-#       rmv[k] <- E(gr)[i]
-#       k = k+1
-#     }
-#   }
-#   gr <- delete.edges(gr, rmv)
-#   x <- V(g)$cx
-#   y <- V(g)$cy
-#   z <- V(g)$cz
-#   coords <- cbind(x,y,z)
-#   #   V(g)$name <- V(g)$area
-#   rgl.open()
-#   rgl.bg(sphere=TRUE, color = c("black", "white"),lit=FALSE, back="lines" )
-#   rglplot(gr, layout=coords, vertex.label = V(g)$area, vertex.size = 10, vertex.color = "red", 
-#           vertex.label.dist=0.5 )
+  gr <- graph.adjacency(edgesRight, mode = "directed", weighted = TRUE);
+  gr <- set.vertex.attribute(gr, name = "name",value = V(g)$name)
+  gr <- set.vertex.attribute(gr, name = "area",value = V(g)$area)
+  gr <- set.vertex.attribute(gr, name = "id",value = V(g)$id)
+  rmv <- list()
+  k <- 1
+  gnew <- gr
+  for(i in 1:ecount(gr)){
+    if(E(gr)$weight[i] <= 0){
+      rmv[k] <- E(gr)[i]
+      k = k+1
+    }
+  }
+  gr <- delete.edges(gr, rmv)
+  x <- V(g)$cx
+  y <- V(g)$cy
+  z <- V(g)$cz
+  coords <- cbind(x,y,z)
+  #   V(g)$name <- V(g)$area
+  rgl.open()
+  rgl.bg(sphere=TRUE, color = c("black", "white"),lit=FALSE, back="lines" )
+  rglplot(gr, layout=coords, vertex.label = V(g)$area, vertex.size = 10, vertex.color = "red", 
+          vertex.label.dist=0.5 )
 }

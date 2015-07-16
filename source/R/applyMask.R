@@ -165,6 +165,7 @@ if(interactive()){
 #   pathOut <- "./../../data/toyData/t_test_MST_patients/"
 #   applyMaskDirectoryGML(pathIn, pathOut, pathMask)
 
+
   time = proc.time() -ptm
   print (time)
 }
