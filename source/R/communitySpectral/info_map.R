@@ -14,34 +14,19 @@ library(igraph)
 library(gplots)
 library(ade4)
 
-trySpec <- function(M) {
-  out <- tryCatch({ 
-    spc <- specc(M, 10, kernel = "rbfdot")
-  },
-  error=function(cond){
-    return(NULL)
-  },
-  warning=function(cond) {
-  },
-  finally={    
-  }
-  )
-  return(out)
-}
-
 
 # Performs the specified community detection method saving result on a specified file
 # @param pathIn is the input path
 # @param pathOut is the output path
 # @algorithm specifies the community detection algorithm
 # @verbose specifies if verbose execution is desired
-performingCommunityDetection <- function(pathIn = "./../../../data/toyData/cutted_controls/", pathOut = "./../../../../data/toyData/cutted_controls/spectral", algorithm = "specc", verbose = FALSE) {
+performingCommunityDetection <- function(pathIn = "./../../../data/toyData/cutted_controls/", pathOut = "./../../../../data/toyData/cutted_controls/spectral", algorithm = "info", verbose = FALSE) {
   
   pathForCommunity = pathOut
   listNames <- "names"
   k <- 0
   files <- list.files(path = pathIn) # take all files in pathIn
-  if(algorithm == "specc") {
+  if(algorithm == "info") {
     for(i in 1:length(files)) {
       cfile <- paste(pathIn, files[i], sep="")
       if(grepl(cfile, pattern = "*.gml")) {
@@ -56,25 +41,18 @@ performingCommunityDetection <- function(pathIn = "./../../../data/toyData/cutte
         
         # get the graph from the file
         g <- read.graph(cfile, format="gml")
-        ugm <- as.undirected(g, "collapse")
-        MA <- get.adjacency(ugm, attr="weight")
-        M <- as.matrix(MA)
         listNames <- c(listNames, files[i])
         
-        # execute spectral clustering method
-        repeat{
-          spc <- trySpec(M)
-          if(!is.null(spc)){
-            break
-          } 
-        }
-        spec_cl = spc@.Data
+        info <- cluster_infomap(g, e.weights = E(g)$weight)
+        
+        member <- as.vector(membership(info))
+        # spec_cl = spc@.Data
         names <- V(g)$name
         if(k <= 1) {
-          outp <- cbind(names, spec_cl)
+          outp <- cbind(names, member)
         }
         else {
-          outp <- cbind(outp, spec_cl)
+          outp <- cbind(outp, member)
         }
       }
     }
@@ -146,9 +124,9 @@ if(interactive()) {
   
   pathInC = "./../../../data/toyData/cutted_controls/"
   pathInP = "./../../../data/toyData/cutted_patients/"
-  pathOutC = "./../../../data/toyData/results/3_community_spectral/cutted/membership_controls.csv"
-  pathOutP = "./../../../data/toyData/results/3_community_spectral/cutted/membership_patients.csv"
-  pathOutResults = "./../../../data/toyData/results/3_community_spectral/cutted/"
+  pathOutC = "./../../../data/toyData/results/4_info_map/cutted/membership_controls.csv"
+  pathOutP = "./../../../data/toyData/results/4_info_map/cutted/membership_patients.csv"
+  pathOutResults = "./../../../data/toyData/results/4_info_map/cutted/"
   
   controls <- performingCommunityDetection(pathInC, pathOutC)
   patient <- performingCommunityDetection(pathInP, pathOutP)
@@ -161,9 +139,9 @@ if(interactive()) {
   ################################################# t test #######################################################
   pathInC = "./../../../data/toyData/t_test_controls/"
   pathInP = "./../../../data/toyData/t_test_patients/"
-  pathOutC = "./../../../data/toyData/results/3_community_spectral/t_test_cutted/membership_controls.csv"
-  pathOutP = "./../../../data/toyData/results/3_community_spectral/t_test_cutted/membership_patients.csv"
-  pathOutResults = "./../../../data/toyData/results/3_community_spectral/t_test_cutted/"
+  pathOutC = "./../../../data/toyData/results/4_info_map/t_test_cutted/membership_controls.csv"
+  pathOutP = "./../../../data/toyData/results/4_info_map/t_test_cutted/membership_patients.csv"
+  pathOutResults = "./../../../data/toyData/results/4_info_map/t_test_cutted/"
   
   controls <- performingCommunityDetection(pathInC, pathOutC)
   patient <- performingCommunityDetection(pathInP, pathOutP)
@@ -176,9 +154,9 @@ if(interactive()) {
   ################################################# t test MST ####################################################
   pathInC = "./../../../data/toyData/t_test_MST_controls/"
   pathInP = "./../../../data/toyData/t_test_MST_patients/"
-  pathOutC = "./../../../data/toyData/results/3_community_spectral/t_test_MST/membership_controls.csv"
-  pathOutP = "./../../../data/toyData/results/3_community_spectral/t_test_MST/membership_patients.csv"
-  pathOutResults = "./../../../data/toyData/results/3_community_spectral/t_test_MST/"
+  pathOutC = "./../../../data/toyData/results/4_info_map/t_test_MST/membership_controls.csv"
+  pathOutP = "./../../../data/toyData/results/4_info_map/t_test_MST/membership_patients.csv"
+  pathOutResults = "./../../../data/toyData/results/4_info_map/t_test_MST/"
   
   controls <- performingCommunityDetection(pathInC, pathOutC)
   patient <- performingCommunityDetection(pathInP, pathOutP)
