@@ -70,8 +70,13 @@ performingCommunityDetection <- function(pathIn = "./../../../data/toyData/cutte
             break
           } 
         }
+<<<<<<< HEAD
+        
+        
+=======
       
           
+>>>>>>> 01f6a00e28da44682ad9bfa054c03dd1524ca332
         spec_cl = spc@.Data
         names <- V(g)$name
         if(k <= 1) {
@@ -83,8 +88,13 @@ performingCommunityDetection <- function(pathIn = "./../../../data/toyData/cutte
       }
     }
   }
+<<<<<<< HEAD
+  colnames(outp) <- listNames
+  write.csv(outp[,-1], pathForCommunity, row.names = outp[,1])
+=======
     colnames(outp) <- listNames
     write.csv(outp[,-1], pathForCommunity, row.names = outp[,1])
+>>>>>>> 01f6a00e28da44682ad9bfa054c03dd1524ca332
 }
 
 # Counts how many times each region is in the same community for each subject
@@ -119,6 +129,25 @@ coOccurrence <- function(pathIn = "./../../../data/toyData/cutted_patients/spect
 makeHeatmap <- function(m1, m2, pathOut) {
   
   # heatmap
+<<<<<<< HEAD
+  #   jpeg(filename=paste(pathOut, "heat_controls.jpeg", sep=""), 
+  #        width = 1000, height = 1000)
+  h1 <- heatmap.2(t(m1), tracecol = F, main = "Community Controls")
+  #   dev.off()
+  #   jpeg(filename=paste(pathOut, "heat_patients.jpeg", sep=""), 
+  #        width = 1000, height = 1000)
+  #   h2 <- heatmap.2(t(m2), tracecol = F, main = "Community Patients")
+  #   dev.off()
+  #   
+  #   sum_occ <- m1 + m2
+  #   jpeg(filename=paste(pathOut, "heat_sum.jpeg", sep=""), 
+  #        width = 1000, height = 1000)
+  #   sumH <- heatmap.2(t(sum_occ), tracecol = F, main = "Community Sum")
+  #   dev.off()
+  
+  #   res <- list("h1"=h1, "h2"=h2, "sum"=sumH)
+  #   return(res)
+=======
 #   jpeg(filename=paste(pathOut, "heat_controls.jpeg", sep=""), 
 #        width = 1000, height = 1000)
   h1 <- heatmap.2(t(m1), tracecol = F, main = "Community Controls")
@@ -136,10 +165,65 @@ makeHeatmap <- function(m1, m2, pathOut) {
   
 #   res <- list("h1"=h1, "h2"=h2, "sum"=sumH)
 #   return(res)
+>>>>>>> 01f6a00e28da44682ad9bfa054c03dd1524ca332
 }
 
 
 if(interactive()) {
+<<<<<<< HEAD
+  #   stime <- proc.time()
+  #   ################################################ cutted #########################################################
+  #   
+  #   pathInC = "./../../../data/toyData/cutted_controls/"
+  #   pathInP = "./../../../data/toyData/cutted_patients/"
+  #   pathOutC = "./../../../data/toyData/results/3_community_spectral/cutted/membership_controls.csv"
+  #   pathOutP = "./../../../data/toyData/results/3_community_spectral/cutted/membership_patients.csv"
+  #   pathOutResults = "./../../../data/toyData/results/3_community_spectral/cutted/"
+  #   
+  #   controls <- performingCommunityDetection(pathInC, pathOutC)
+  #   patient <- performingCommunityDetection(pathInP, pathOutP)
+  #   
+  #   coOc_Ctrl <- coOccurrence(pathOutC)
+  #   coOc_Ptnt <- coOccurrence(pathOutP)
+  #   
+  #   
+  #   H <- makeHeatmap(coOc_Ctrl, coOc_Ptnt, pathOutResults)
+  #   
+  #   ################################################# t test #######################################################
+      pathInC = "./../../../data/toyData/t_test_controls/"
+      pathInP = "./../../../data/toyData/t_test_patients/"
+      pathOutC = "./../../../data/toyData/results/3_community_spectral/t_test_cutted/membership_controls.csv"
+      pathOutP = "./../../../data/toyData/results/3_community_spectral/t_test_cutted/membership_patients.csv"
+      pathOutResults = "./../../../data/toyData/results/3_community_spectral/t_test_cutted/"
+      
+      controls <- performingCommunityDetection(pathInC, pathOutC)
+      patient <- performingCommunityDetection(pathInP, pathOutP)
+      
+      coOc_Ctrl <- coOccurrence(pathOutC)
+      coOc_Ptnt <- coOccurrence(pathOutP)
+  
+    
+    
+     H <- makeHeatmap(coOc_Ctrl, coOc_Ptnt, pathOutResults)
+    
+  #   ################################################# t test MST ####################################################
+  #     pathInC = "./../../../data/toyData/t_test_MST_controls/"
+  #     pathInP = "./../../../data/toyData/t_test_MST_patients/"
+  #     pathOutC = "./../../../data/toyData/results/3_community_spectral/t_test_MST/membership_controls.csv"
+  #     pathOutP = "./../../../data/toyData/results/3_community_spectral/t_test_MST/membership_patients.csv"
+  #     pathOutResults = "./../../../data/toyData/results/3_community_spectral/t_test_MST/"
+  #     
+  #     controls <- performingCommunityDetection(pathInC, pathOutC)
+  #     patient <- performingCommunityDetection(pathInP, pathOutP)
+  #     
+  #     coOc_Ctrl <- coOccurrence(pathOutC)
+  #     coOc_Ptnt <- coOccurrence(pathOutP)
+  #   
+  #     
+  #     H <- makeHeatmap(coOc_Ctrl, coOc_Ptnt, pathOutResults)  
+  #     etime <- stime - proc.time()
+  ######################################################################################################################
+=======
   stime <- proc.time()
   ### cutted
     
@@ -193,6 +277,7 @@ if(interactive()) {
 #     
 #     etime <- stime - proc.time()
   
+>>>>>>> 01f6a00e28da44682ad9bfa054c03dd1524ca332
 }
 
 
