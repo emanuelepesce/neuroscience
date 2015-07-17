@@ -116,28 +116,41 @@ makeHeatmap <- function(m1, m2, pathOut) {
   return(res)
 }
 
-plotF <- function(h, k=10, pathIn = "./../../../data/toyData/cutted_patients/spectral", pathOut, verbose = FALSE) {
+plotF <- function(m, k = 10, pathIn, pathOut, verbose = FALSE) {
   
+  # get coordinates
   files <- list.files(path = pathIn) # take all files in pathIn
   valid <- grepl(files, pattern = "*.gml")
   valid <- which(valid == TRUE)
   cfile <- files[valid[1]]
-  g <- read.graph(paste(pathIn, cfile, sep=""), format="gml") # get the graph from the file
-  
-  dendro <- as.dendrogram(h$rowDendrogram)
-  c <- cutree(as.hclust(dendro), k)
-  v <- as.vector(c)
-  
+  g <- read.graph(paste(pathIn, cfile, sep=""), format = "gml") # get the graph from the file
   x <- V(g)$cx
   y <- V(g)$cy
   z <- V(g)$cz
   coords <- cbind(x,y,z)
+  # for rotating
+  angle <- pi/2
+  M <- matrix( c(cos(angle), -sin(angle), sin(angle), cos(angle)), 2, 2 )
   
+  # clustering
+  dm <- dist(m)
+  hc <- hclust(dm)
+  hcc <- cutree(hc, k = 10)
+  hcc <- as.vector(hcc)
   
-  jpeg(filename=paste(pathOut, "graph_x_y", sep=""), width = 1000, height = 1000)
-  plot(g, vertex.color = v, vertex.size = 10, edge.arrow.mode = 0, layout = coords[,-3])
+  jpeg(filename = pathOut, width = 1000, height = 1000)
+  plot(g, vertex.color = hcc, vertex.size = 10, edge.arrow.mode = 0, layout = coords[,-3])
   dev.off()
   
+  pathOut <- sub("*graphControls*", "graphControls3d", pathOut)
+  pathOut <- sub("*graphPatients*", "graphPatients3d", pathOut)
+  jpeg(pathOut, width = 1000, height = 1000)
+  par(mfrow=c(2,2))
+  plot.igraph(g, vertex.color = hcc, edge.arrow.mode = 0, layout=coords[,-3])
+  plot.igraph(g, vertex.color = hcc, edge.arrow.mode = 0, layout=coords[,-2])
+  zy <- cbind(coords[,3],coords[,2])
+  plot.igraph(g, vertex.color = hcc, edge.arrow.mode = 0, layout=zy%*%M)
+  dev.off()
 }
 
 
@@ -171,8 +184,8 @@ if(interactive()) {
   #m <- mantel_test(coOc_Ctrl, coOc_Ptnt, 9000)
   
   H <- makeHeatmap(coOc_Ctrl, coOc_Ptnt, pathOutResults)
-  plotF(H$h1, 10, pathInC, pathOutResults, FALSE)
-  plotF(H$h2, 10, pathInP, pathOutResults, FALSE)
+  plotF(coOc_Ctrl, 10, pathInC, paste(pathOutResults, "graphControls.jpg", sep = ""), FALSE)
+  plotF(coOc_Ptnt, 10, pathInC, paste(pathOutResults, "graphPatients.jpg", sep = ""), FALSE)
   
   ################################################# t test #######################################################
   pathInC = "./../../../data/toyData/t_test_controls/"
@@ -187,10 +200,10 @@ if(interactive()) {
   coOc_Ctrl <- coOccurrence(pathOutC)
   coOc_Ptnt <- coOccurrence(pathOutP)
   
-  m <- mantel_test(coOc_Ctrl, coOc_Ptnt, 9000)
+  #m <- mantel_test(coOc_Ctrl, coOc_Ptnt, 9000)
   H <- makeHeatmap(coOc_Ctrl, coOc_Ptnt, pathOutResults)
-  plotF(H$h1, 10, pathInC, pathOutResults, FALSE)
-  plotF(H$h2, 10, pathInP, pathOutResults, FALSE)
+  plotF(coOc_Ctrl, 10, pathInC, paste(pathOutResults, "graphControls.jpg", sep = ""), FALSE)
+  plotF(coOc_Ptnt, 10, pathInC, paste(pathOutResults, "graphPatients.jpg", sep = ""), FALSE)
   
   ################################################# t test MST ####################################################
   pathInC = "./../../../data/toyData/t_test_MST_controls/"
@@ -202,42 +215,16 @@ if(interactive()) {
   controls <- performingCommunityDetection(pathInC, pathOutC)
   patient <- performingCommunityDetection(pathInP, pathOutP)
   
-  m <- mantel_test(coOc_Ctrl, coOc_Ptnt, 9000)
+  #m <- mantel_test(coOc_Ctrl, coOc_Ptnt, 9000)
   coOc_Ctrl <- coOccurrence(pathOutC)
   coOc_Ptnt <- coOccurrence(pathOutP)
   
   H <- makeHeatmap(coOc_Ctrl, coOc_Ptnt, pathOutResults)
-  plotF(H$h1, 10, pathInC, pathOutResults, FALSE)
-  plotF(H$h2, 10, pathInP, pathOutResults, FALSE)
-  
-  #####################################################################################################################
-  
-  ################################################# plot cutted #######################################################
-  pathInC = "./../../../data/toyData/cutted_controls/"
-  pathInP = "./../../../data/toyData/cutted_patients/"
-  pathOutC = "./../../../data/toyData/results/4_info_map/cutted/membership_controls.csv"
-  pathOutP = "./../../../data/toyData/results/4_info_map/cutted/membership_patients.csv"
-  pathOutResults = "./../../../data/toyData/results/4_info_map/cutted/"
-  plotF(H$h1, 10, pathInC, pathOutResults, FALSE)
-  plotF(H$h1, 10, pathInP, pathOutResults, FALSE)
-  ################################################# plot t test #######################################################
-  pathInC = "./../../../data/toyData/t_test_controls/"
-  pathInP = "./../../../data/toyData/t_test_patients/"
-  pathOutC = "./../../../data/toyData/results/4_info_map/t_test_cutted/membership_controls.csv"
-  pathOutP = "./../../../data/toyData/results/4_info_map/t_test_cutted/membership_patients.csv"
-  pathOutResults = "./../../../data/toyData/results/4_info_map/t_test_cutted/"
-  plotF(H$h1, 10, pathInC, pathOutResults, FALSE)
-  plotF(H$h1, 10, pathInP, pathOutResults, FALSE)
-  ################################################# plot t test MST ###################################################
-  pathInC = "./../../../data/toyData/t_test_MST_controls/"
-  pathInP = "./../../../data/toyData/t_test_MST_patients/"
-  pathOutC = "./../../../data/toyData/results/4_info_map/t_test_MST/membership_controls.csv"
-  pathOutP = "./../../../data/toyData/results/4_info_map/t_test_MST/membership_patients.csv"
-  pathOutResults = "./../../../data/toyData/results/4_info_map/t_test_MST/"
-  plotF(H$h1, 10, pathInC, pathOutResults, FALSE)
-  plotF(H$h1, 10, pathInP, pathOutResults, FALSE)
+  plotF(coOc_Ctrl, 10, pathInC, paste(pathOutResults, "graphControls.jpg", sep = ""), FALSE)
+  plotF(coOc_Ptnt, 10, pathInC, paste(pathOutResults, "graphPatients.jpg", sep = ""), FALSE)
   #####################################################################################################################
   etime <- stime - proc.time()
+  
 }
 
 #plot(igraphDat,vertex.color = spc_data, vertex.size = 10, edge.arrow.mode=0, layout = coords[,-3])
