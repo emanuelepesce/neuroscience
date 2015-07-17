@@ -157,8 +157,8 @@ plotF <- function(m, k = 10, pathIn, pathOut, verbose = FALSE) {
 # Perform the mantel test on m1 and m2 with bootstrap 9000 as default
 mantel_test <- function(m1, m2, b = 9000) {
   
-  d1 <- as.dist(coOc_Ctrl)
-  d2 <- as.dist(coOc_Ptnt)
+  d1 <- as.dist(m1)
+  d2 <- as.dist(m2)
   m <- mantel.rtest(d1, d2, b)
   return(m)
   
@@ -168,6 +168,9 @@ mantel_test <- function(m1, m2, b = 9000) {
 if(interactive()) {
   
   stime <- proc.time()
+  
+  l_m <- NULL
+  
   ################################################ cutted #########################################################
   pathInC = "./../../../data/toyData/cutted_controls/"
   pathInP = "./../../../data/toyData/cutted_patients/"
@@ -181,12 +184,11 @@ if(interactive()) {
   coOc_Ctrl <- coOccurrence(pathOutC)
   coOc_Ptnt <- coOccurrence(pathOutP)
   
-  #m <- mantel_test(coOc_Ctrl, coOc_Ptnt, 9000)
-  
+  l_m[1] <- mantel_test(coOc_Ctrl, coOc_Ptnt, 9000)$pvalue
   H <- makeHeatmap(coOc_Ctrl, coOc_Ptnt, pathOutResults)
   plotF(coOc_Ctrl, 10, pathInC, paste(pathOutResults, "graphControls.jpg", sep = ""), FALSE)
   plotF(coOc_Ptnt, 10, pathInC, paste(pathOutResults, "graphPatients.jpg", sep = ""), FALSE)
-  
+  plotF(coOc_Ptnt+coOc_Ctrl, 10, pathInC, paste(pathOutResults, "graphBoth.jpg", sep = ""), FALSE)
   ################################################# t test #######################################################
   pathInC = "./../../../data/toyData/t_test_controls/"
   pathInP = "./../../../data/toyData/t_test_patients/"
@@ -199,12 +201,11 @@ if(interactive()) {
   
   coOc_Ctrl <- coOccurrence(pathOutC)
   coOc_Ptnt <- coOccurrence(pathOutP)
-  
-  #m <- mantel_test(coOc_Ctrl, coOc_Ptnt, 9000)
+  l_m[2] <- mantel_test(coOc_Ctrl, coOc_Ptnt, 9000)$pvalue
   H <- makeHeatmap(coOc_Ctrl, coOc_Ptnt, pathOutResults)
   plotF(coOc_Ctrl, 10, pathInC, paste(pathOutResults, "graphControls.jpg", sep = ""), FALSE)
   plotF(coOc_Ptnt, 10, pathInC, paste(pathOutResults, "graphPatients.jpg", sep = ""), FALSE)
-  
+  plotF(coOc_Ptnt+coOc_Ctrl, 10, pathInC, paste(pathOutResults, "graphBoth.jpg", sep = ""), FALSE)
   ################################################# t test MST ####################################################
   pathInC = "./../../../data/toyData/t_test_MST_controls/"
   pathInP = "./../../../data/toyData/t_test_MST_patients/"
@@ -215,14 +216,16 @@ if(interactive()) {
   controls <- performingCommunityDetection(pathInC, pathOutC)
   patient <- performingCommunityDetection(pathInP, pathOutP)
   
-  #m <- mantel_test(coOc_Ctrl, coOc_Ptnt, 9000)
   coOc_Ctrl <- coOccurrence(pathOutC)
   coOc_Ptnt <- coOccurrence(pathOutP)
-  
+  l_m[3] <- mantel_test(coOc_Ctrl, coOc_Ptnt, 9000)$pvalue
   H <- makeHeatmap(coOc_Ctrl, coOc_Ptnt, pathOutResults)
   plotF(coOc_Ctrl, 10, pathInC, paste(pathOutResults, "graphControls.jpg", sep = ""), FALSE)
   plotF(coOc_Ptnt, 10, pathInC, paste(pathOutResults, "graphPatients.jpg", sep = ""), FALSE)
+  plotF(coOc_Ptnt+coOc_Ctrl, 10, pathInC, paste(pathOutResults, "graphBoth.jpg", sep = ""), FALSE)
   #####################################################################################################################
+  
+  write.csv(l_m, "./../../../data/toyData/results/4_info_map/mantel.csv")
   etime <- stime - proc.time()
   
 }
