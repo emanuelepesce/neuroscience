@@ -119,7 +119,7 @@ epidemicsPression <- function(g, diffusers, pathOut = NULL){
       plot.igraph(g, edge.arrow.mode = 0, layout=coords[,-3])
       plot.igraph(g, edge.arrow.mode = 0, layout=coords[,-2])
       zy <- cbind(coords[,3],coords[,2])
-      plot.igraph(g, edge.arrow.mode = 0, layout=zy%*%M, main = m)
+      plot.igraph(g, edge.arrow.mode = 0, layout=zy%*%M)
       plot(infected_round[1:m], xlab = "Rounds", ylab="infected nodes",
            xlim = c(0,length(infected_round)), ylim =c(0,90), cex.axis=2, cex.lab = 2, cex = 2)
       mtext(paste("Round",m), side = 3, line = -2, outer=T,  cex=2)
@@ -165,11 +165,11 @@ applyDiffusion <- function(pathIn, pathOut, diffusers="", times = 5){
       }
       toWrite[[k]] <- c(files[i], mean(l_time), mean(l_strong), mean(l_weak))
       k <- k + 1
-      # write the output
     }
   }
+  a <- toWrite
   toWrite <- unlist(toWrite)
-  toWrite<- matrix(toWrite, ncol = 4, nrow = 2, byrow=TRUE)
+  toWrite<- matrix(toWrite, ncol = 4, nrow = (k-1), byrow=TRUE)
   write.table(toWrite,file=pathOut,sep=",", col.names = F, row.names = F)
 }
 
@@ -212,26 +212,29 @@ if(interactive()){
   
 
   ################################# EXAMPLE ####################################
-  applyDiffusion(pathIn = "./", pathOut = "./result.csv")  
+#   applyDiffusion(pathIn = "./", pathOut = "./result.csv")  
 
   ################################ Cutted ######################################
-  pathIn <- "./../../../data/toyData/cutted_controls/"
-  pathOut <- "./../../../data/toyData/results/5_Diffusion_closeness/cutted/diffusion_controls.csv"
+#   pathIn <- "./../../../data/toyData/cutted_controls/"
+#   pathOut <- "./../../../data/toyData/results/5_Diffusion_closeness/cutted/diffusion_controls.csv"
+#   applyDiffusion(pathIn = pathIn, pathOut = pathOut) 
+  pathIn <- "./../../../data/toyData/cutted_patients/"
+  pathOut <- "./../../../data/toyData/results/5_Diffusion_closeness/cutted/diffusion_patients.csv"
   applyDiffusion(pathIn = pathIn, pathOut = pathOut) 
-#   pathOut <- "./../../../data/toyData/results/5_Diffusion_closeness/cutted/diffusion_patients.csv"
-#   applyDiffusion(pathIn = pathIn, pathOut = pathOut) 
-  ################################ T test ######################################  
-#   pathIn <- "./../../../data/toyData/t_test_controls/"  
-#   pathOut <- "./../../../data/toyData/results/5_Diffusion_closeness/t_test_cutted/diffusion_controls.csv"
-#   applyDiffusion(pathIn = pathIn, pathOut = pathOut) 
-#   pathOut <- "./../../../data/toyData/results/5_Diffusion_closeness/t_test_cutted/diffusion_patients.csv/"
-#   applyDiffusion(pathIn = pathIn, pathOut = pathOut) 
-#   ################################ MST ######################################
-#   pathIn <- "./../../../data/toyData/t_test_MST_controls/"    
-#   pathOut <- "./../../../data/toyData/results/5_Diffusion_closeness/t_test_MST/diffusion_controls.csv/"
-#   applyDiffusion(pathIn = pathIn, pathOut = pathOut) 
-#   pathOut <- "./../../../data/toyData/results/5_Diffusion_closeness/t_test_MST/diffusion_patients.csv/"
-#   applyDiffusion(pathIn = pathIn, pathOut = pathOut) 
+  ############################### T test ######################################  
+  pathIn <- "./../../../data/toyData/t_test_controls/"  
+  pathOut <- "./../../../data/toyData/results/5_Diffusion_closeness/t_test_cutted/diffusion_controls.csv"
+  applyDiffusion(pathIn = pathIn, pathOut = pathOut) 
+  pathIn <- "./../../../data/toyData/t_test_patients/"
+  pathOut <- "./../../../data/toyData/results/5_Diffusion_closeness/t_test_cutted/diffusion_patients.csv/"
+  applyDiffusion(pathIn = pathIn, pathOut = pathOut) 
+  ################################ MST ######################################
+  pathIn <- "./../../../data/toyData/t_test_MST_controls/"    
+  pathOut <- "./../../../data/toyData/results/5_Diffusion_closeness/t_test_MST/diffusion_controls.csv/"
+  applyDiffusion(pathIn = pathIn, pathOut = pathOut) 
+  pathIn <- "./../../../data/toyData/t_test_MST_patients/"
+  pathOut <- "./../../../data/toyData/results/5_Diffusion_closeness/t_test_MST/diffusion_patients.csv/"
+  applyDiffusion(pathIn = pathIn, pathOut = pathOut) 
   
   ttime <- sstime - proc.time()
   print(ttime)
