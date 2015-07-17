@@ -17,7 +17,7 @@ p_var <- function(){
 }
 
 # function for updating the diffusers
-update_diffusers = function(diffusers){
+update_diffusers = function(g, diffusers){
   nearest_neighbors = neighborhood(g, 1, diffusers, "out")
   nearest_neighbors = data.frame(table(unlist(nearest_neighbors)))
   nearest_neighbors = subset(nearest_neighbors, !(nearest_neighbors[,1]%in%diffusers))
@@ -72,8 +72,8 @@ epidemicsPression <- function(g, diffusers, pathOut = NULL){
   #spread
   i = 1
   while(length(infected[[i]]) < vcount(g)){ 
-    infected[[i+1]] = sort(update_diffusers(infected[[i]]))
-    cat(length(infected[[i+1]]), "\n")
+    infected[[i+1]] = sort(update_diffusers(g,infected[[i]]))
+#     cat(length(infected[[i+1]]), "\n")
     i = i + 1
   }
   
@@ -86,6 +86,10 @@ epidemicsPression <- function(g, diffusers, pathOut = NULL){
     syscall <- paste("rm ./", pathOut, "*png", sep="")
     system(syscall)
     
+    # for rotating
+    angle <- pi/2
+    M <- matrix( c(cos(angle), -sin(angle), sin(angle), cos(angle)), 2, 2 )
+    
     x <- V(g)$cx
     y <- V(g)$cy
     z <- V(g)$cz
@@ -95,7 +99,7 @@ epidemicsPression <- function(g, diffusers, pathOut = NULL){
     V(g)$color = "white"
     set.seed(2014); 
     V(g)$color[V(g)%in%diffusers] = "red"
-    plot.igraph(g, edge.arrow.mode = 0, layout=coords)
+#     plot.igraph(g, edge.arrow.mode = 0, layout=coords)
     
     m = 1
     while(m <= length(infected)){
@@ -115,38 +119,16 @@ epidemicsPression <- function(g, diffusers, pathOut = NULL){
       plot.igraph(g, edge.arrow.mode = 0, layout=coords[,-3])
       plot.igraph(g, edge.arrow.mode = 0, layout=coords[,-2])
       zy <- cbind(coords[,3],coords[,2])
-       plot.igraph(g, edge.arrow.mode = 0, layout=zy, main = m)
-      plot(infected_round[1:m], xlab = "days", ylab="infected nodes",
+      plot.igraph(g, edge.arrow.mode = 0, layout=zy%*%M, main = m)
+      plot(infected_round[1:m], xlab = "Rounds", ylab="infected nodes",
            xlim = c(0,length(infected_round)), ylim =c(0,90), cex.axis=2, cex.lab = 2, cex = 2)
-      mtext(paste("Day",m), side = 3, line = -2, outer=T,  cex=2)
-#       dev.copy(png,pathfile)
+      mtext(paste("Round",m), side = 3, line = -2, outer=T,  cex=2)
       dev.off()
-#       plot.igraph(g, edge.arrow.mode = 0, layout=coords[,-3], main = m)
-#       dev.copy(png,filename=paste(pathfile,"xy", sep=""));
-#       dev.off()
-#       plot.igraph(g, edge.arrow.mode = 0, layout=coords[,-2], main = m)
-#       dev.copy(png,filename=paste(pathfile,"xz", sep=""));
-#                dev.off()
-#       zy <- cbind(coords[,3],coords[,2])
-#        plot.igraph(g, edge.arrow.mode = 0, layout=zy, main = m)
-#       dev.copy(png,filename=paste(pathfile,"yz", sep=""));
-#                 dev.off()
       m = m + 1
 
     }
     syscall <- paste("convert -delay 100 -loop 0 ", pathOut, "*.png ",pathOut,"animation.gif", sep="")
     system(syscall)   
-#     syscall <- paste("convert -delay 100 -loop 0 ", pathOut, "*.pngxz ",pathOut,"xz_animation.gif", sep="")
-#     system(syscall)   
-#     syscall <- paste("convert -delay 100 -loop 0 ", pathOut, "*.pngyz ",pathOut,"yz_animation.gif", sep="")
-#     system(syscall)   
-         
-    
-#     plot(infected_round, xaxt='n', yaxt="n",xlab = "days", ylab="infected nodes")
-#     axis(1, at = seq(1, length(infected_round), by = 1))
-#     axis(2, at = seq(10, vcount(g), by = 10))
-#     dev.copy(png,paste(pathOut, "grow.png", sep=""))
-#     dev.off()
   }
   
 
@@ -155,18 +137,101 @@ epidemicsPression <- function(g, diffusers, pathOut = NULL){
   return(res)
 }
 
+
+applyDiffusion <- function(pathIn, pathOut, diffusers="", times = 5){
+  
+  files <- list.files(path = pathIn) #take all files in pathIn
+  toWrite <- NULL
+  k <- 1
+  for(i in 1:length(files)){ #for each file
+    # take path + name and apply the mask
+    cfile <- paste(pathIn, files[i], sep="")
+    if(grepl(cfile, pattern = "*.gml")){
+      print(cfile)
+      # calculate average values
+      l_time <- NULL
+      l_strong <- NULL
+      l_weak <- NULL
+      g <- read.graph(cfile, format="gml")
+      # get diffusers
+      centers <- closeness(g, mode = "total")
+      centers <- sort(centers, decreasing = T)
+      diffusers <- c(match(centers[1], centers), match(centers[2], centers))
+      for(j in 1:times){
+        res <- epidemicsPression(g = g, diffusers = diffusers)
+        l_time[j] <- length(res$infected_round) 
+        l_strong[j] <- res$strong
+        l_weak[j] <- res$weak
+      }
+      toWrite[[k]] <- c(files[i], mean(l_time), mean(l_strong), mean(l_weak))
+      k <- k + 1
+      # write the output
+    }
+  }
+  toWrite <- unlist(toWrite)
+  toWrite<- matrix(toWrite, ncol = 4, nrow = 2, byrow=TRUE)
+  write.table(toWrite,file=pathOut,sep=",", col.names = F, row.names = F)
+}
+
+
+
 if(interactive()){
   sstime <- proc.time()
   
-  g <- read.graph("./CTRL_amore.gml", format="gml")
+  ################################# EXAMPLE CONTROLS ####################################
+#   g <- read.graph("./CTRL_amore.gml", format="gml")
+#   
+#   # get diffusers
+#   centers <- betweenness(g)
+#   centers <- closeness(g, mode = "total")
+#   centers <- sort(centers, decreasing = T)
+#   diffusers <- c(match(centers[1], centers), match(centers[2], centers))
+#   
+#   # epidemics
+#   res <- epidemicsPression(g, diffusers, "./imgsC/")
+#   print(res$infected_round)
+#   print(length(res$infected_round))
+#   print(res$strong)
+#   print(res$weak)
+# #   ################################# EXAMPLE PATIENTS ####################################
+#   g <- read.graph("./SLA2_altezza.gml", format="gml")
+#   
+#   # get diffusers
+#   centers <- betweenness(g)
+#   centers <- closeness(g, mode = "total")
+#   centers <- sort(centers, decreasing = T)
+#   diffusers <- c(match(centers[1], centers), match(centers[2], centers))
+#   
+#   # epidemics
+#   res <- epidemicsPression(g, diffusers, "./imgsP/")
+#   print(res$infected_round)
+#   print(length(res$infected_round))
+#   print(res$strong)
+#   print(res$weak)
+  ################################# EXAMPLE ####################################
   
-  # get diffusers
-  centers <- betweenness(g)
-  centers <- sort(centers, decreasing = T)
-  diffusers <- c(match(centers[1], centers), match(centers[2], centers))
-  
-  # epidemics
-  res <- epidemicsPression(g, diffusers, "imgs/")
+
+  ################################# EXAMPLE ####################################
+  applyDiffusion(pathIn = "./", pathOut = "./result.csv")  
+
+  ################################ Cutted ######################################
+  pathIn <- "./../../../data/toyData/cutted_controls/"
+  pathOut <- "./../../../data/toyData/results/5_Diffusion_closeness/cutted/diffusion_controls.csv"
+  applyDiffusion(pathIn = pathIn, pathOut = pathOut) 
+#   pathOut <- "./../../../data/toyData/results/5_Diffusion_closeness/cutted/diffusion_patients.csv"
+#   applyDiffusion(pathIn = pathIn, pathOut = pathOut) 
+  ################################ T test ######################################  
+#   pathIn <- "./../../../data/toyData/t_test_controls/"  
+#   pathOut <- "./../../../data/toyData/results/5_Diffusion_closeness/t_test_cutted/diffusion_controls.csv"
+#   applyDiffusion(pathIn = pathIn, pathOut = pathOut) 
+#   pathOut <- "./../../../data/toyData/results/5_Diffusion_closeness/t_test_cutted/diffusion_patients.csv/"
+#   applyDiffusion(pathIn = pathIn, pathOut = pathOut) 
+#   ################################ MST ######################################
+#   pathIn <- "./../../../data/toyData/t_test_MST_controls/"    
+#   pathOut <- "./../../../data/toyData/results/5_Diffusion_closeness/t_test_MST/diffusion_controls.csv/"
+#   applyDiffusion(pathIn = pathIn, pathOut = pathOut) 
+#   pathOut <- "./../../../data/toyData/results/5_Diffusion_closeness/t_test_MST/diffusion_patients.csv/"
+#   applyDiffusion(pathIn = pathIn, pathOut = pathOut) 
   
   ttime <- sstime - proc.time()
   print(ttime)
