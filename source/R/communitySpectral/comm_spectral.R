@@ -139,57 +139,100 @@ makeHeatmap <- function(m1, m2, pathOut) {
 }
 
 
+plotF <- function(h, k=10, pathIn = "./../../../data/toyData/cutted_patients/spectral", pathOut, verbose = FALSE) {
+  
+  files <- list.files(path = pathIn) # take all files in pathIn
+  valid <- grepl(files, pattern = "*.gml")
+  valid <- which(valid == TRUE)
+  cfile <- files[valid[1]]
+  g <- read.graph(paste(pathIn, cfile, sep=""), format="gml") # get the graph from the file
+  
+  dendro <- as.dendrogram(h$rowDendrogram)
+  c <- cutree(as.hclust(dendro), k)
+  v <- as.vector(c)
+  
+  x <- V(g)$cx
+  y <- V(g)$cy
+  z <- V(g)$cz
+  coords <- cbind(x,y,z)
+  
+  
+  jpeg(filename=paste(pathOut, "graph_x_y", sep=""), width = 1000, height = 1000)
+  plot(g, vertex.color = v, vertex.size = 10, edge.arrow.mode = 0, layout = coords[,-3])
+  dev.off()
+  
+}
+
+
+
+# Perform the mantel test on m1 and m2 with bootstrap 9000 as default
+mantel_test <- function(m1, m2, b = 9000) {
+  
+  d1 <- as.dist(coOc_Ctrl)
+  d2 <- as.dist(coOc_Ptnt)
+  m <- mantel.rtest(d1, d2, b)
+  return(m)
+  
+}
+
+
 if(interactive()) {
   
   stime <- proc.time()
   ################################################ cutted #########################################################
-  
   pathInC = "./../../../data/toyData/cutted_controls/"
   pathInP = "./../../../data/toyData/cutted_patients/"
   pathOutC = "./../../../data/toyData/results/3_community_spectral/cutted/membership_controls.csv"
   pathOutP = "./../../../data/toyData/results/3_community_spectral/cutted/membership_patients.csv"
   pathOutResults = "./../../../data/toyData/results/3_community_spectral/cutted/"
-  
   controls <- performingCommunityDetection(pathInC, pathOutC)
   patient <- performingCommunityDetection(pathInP, pathOutP)
   
   coOc_Ctrl <- coOccurrence(pathOutC)
   coOc_Ptnt <- coOccurrence(pathOutP)
   
+  #m <- mantel_test(coOc_Ctrl, coOc_Ptnt, 9000)
   H <- makeHeatmap(coOc_Ctrl, coOc_Ptnt, pathOutResults)
-  
-  ################################################# t test #######################################################
+  #   ################################################ plot cutted #######################################################
+  plotF(H$h1, 10, pathInC, pathOutResults, FALSE)
+  plotF(H$h2, 10, pathInP, pathOutResults, FALSE)
+  #   ################################################### t test ##########################################################
   pathInC = "./../../../data/toyData/t_test_controls/"
   pathInP = "./../../../data/toyData/t_test_patients/"
   pathOutC = "./../../../data/toyData/results/3_community_spectral/t_test_cutted/membership_controls.csv"
   pathOutP = "./../../../data/toyData/results/3_community_spectral/t_test_cutted/membership_patients.csv"
   pathOutResults = "./../../../data/toyData/results/3_community_spectral/t_test_cutted/"
-  
   controls <- performingCommunityDetection(pathInC, pathOutC)
   patient <- performingCommunityDetection(pathInP, pathOutP)
   
   coOc_Ctrl <- coOccurrence(pathOutC)
   coOc_Ptnt <- coOccurrence(pathOutP)
   
+  #    m <- mantel_test(coOc_Ctrl, coOc_Ptnt, 9000)
   H <- makeHeatmap(coOc_Ctrl, coOc_Ptnt, pathOutResults)
-  
-  ################################################# t test MST ####################################################
+  ###################################################### plot t test #######################################################
+  # plotF(H$h1, 10, pathInC, pathOutResults, FALSE)
+  # plotF(H$h2, 10, pathInP, pathOutResults, FALSE)
+  ##################################################### t test MST ########################################################
   pathInC = "./../../../data/toyData/t_test_MST_controls/"
   pathInP = "./../../../data/toyData/t_test_MST_patients/"
   pathOutC = "./../../../data/toyData/results/3_community_spectral/t_test_MST/membership_controls.csv"
   pathOutP = "./../../../data/toyData/results/3_community_spectral/t_test_MST/membership_patients.csv"
   pathOutResults = "./../../../data/toyData/results/3_community_spectral/t_test_MST/"
-  
   controls <- performingCommunityDetection(pathInC, pathOutC)
   patient <- performingCommunityDetection(pathInP, pathOutP)
   
   coOc_Ctrl <- coOccurrence(pathOutC)
   coOc_Ptnt <- coOccurrence(pathOutP)
   
+  #    m <- mantel_test(coOc_Ctrl, coOc_Ptnt, 9000)
   H <- makeHeatmap(coOc_Ctrl, coOc_Ptnt, pathOutResults)
-  #####################################################################################################################
-  
+  #################################################### plot t test MST ###################################################
+  plotF(H$h1, 10, pathInC, pathOutResults, FALSE)
+  plotF(H$h2, 10, pathInP, pathOutResults, FALSE)
+  ########################################################################################################################
   etime <- stime - proc.time()
+  
 }
 
 #plot(igraphDat,vertex.color = spc_data, vertex.size = 10, edge.arrow.mode=0, layout = coords[,-3])
