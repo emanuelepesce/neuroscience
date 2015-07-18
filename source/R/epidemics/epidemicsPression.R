@@ -218,23 +218,23 @@ if(interactive()){
 #   pathIn <- "./../../../data/toyData/cutted_controls/"
 #   pathOut <- "./../../../data/toyData/results/5_Diffusion_closeness/cutted/diffusion_controls.csv"
 #   applyDiffusion(pathIn = pathIn, pathOut = pathOut) 
-  pathIn <- "./../../../data/toyData/cutted_patients/"
-  pathOut <- "./../../../data/toyData/results/5_Diffusion_closeness/cutted/diffusion_patients.csv"
-  applyDiffusion(pathIn = pathIn, pathOut = pathOut) 
-  ############################### T test ######################################  
-  pathIn <- "./../../../data/toyData/t_test_controls/"  
-  pathOut <- "./../../../data/toyData/results/5_Diffusion_closeness/t_test_cutted/diffusion_controls.csv"
-  applyDiffusion(pathIn = pathIn, pathOut = pathOut) 
+#   pathIn <- "./../../../data/toyData/cutted_patients/"
+#   pathOut <- "./../../../data/toyData/results/5_Diffusion_closeness/cutted/diffusion_patients.csv"
+#   applyDiffusion(pathIn = pathIn, pathOut = pathOut) 
+#   ############################### T test ######################################  
+#   pathIn <- "./../../../data/toyData/t_test_controls/"  
+#   pathOut <- "./../../../data/toyData/results/5_Diffusion_closeness/t_test_cutted/diffusion_controls.csv"
+#   applyDiffusion(pathIn = pathIn, pathOut = pathOut) 
   pathIn <- "./../../../data/toyData/t_test_patients/"
-  pathOut <- "./../../../data/toyData/results/5_Diffusion_closeness/t_test_cutted/diffusion_patients.csv/"
+  pathOut <- "./../../../data/toyData/results/5_Diffusion_closeness/t_test_cutted/diffusion_patients.csv"
   applyDiffusion(pathIn = pathIn, pathOut = pathOut) 
   ################################ MST ######################################
-  pathIn <- "./../../../data/toyData/t_test_MST_controls/"    
-  pathOut <- "./../../../data/toyData/results/5_Diffusion_closeness/t_test_MST/diffusion_controls.csv/"
-  applyDiffusion(pathIn = pathIn, pathOut = pathOut) 
-  pathIn <- "./../../../data/toyData/t_test_MST_patients/"
-  pathOut <- "./../../../data/toyData/results/5_Diffusion_closeness/t_test_MST/diffusion_patients.csv/"
-  applyDiffusion(pathIn = pathIn, pathOut = pathOut) 
+#   pathIn <- "./../../../data/toyData/t_test_MST_controls/"    
+#   pathOut <- "./../../../data/toyData/results/5_Diffusion_closeness/t_test_MST/diffusion_controls.csv"
+#   applyDiffusion(pathIn = pathIn, pathOut = pathOut) 
+#   pathIn <- "./../../../data/toyData/t_test_MST_patients/"
+#   pathOut <- "./../../../data/toyData/results/5_Diffusion_closeness/t_test_MST/diffusion_patients.csv"
+#   applyDiffusion(pathIn = pathIn, pathOut = pathOut) 
   
   ttime <- sstime - proc.time()
   print(ttime)
