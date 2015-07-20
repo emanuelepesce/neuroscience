@@ -9,6 +9,7 @@
 
 rm(list=ls())
 
+library(infotheo)
 library(kernlab)
 library(igraph)
 library(gplots)
@@ -151,6 +152,8 @@ plotF <- function(m, k = 10, pathIn, pathOut, verbose = FALSE) {
   zy <- cbind(coords[,3],coords[,2])
   plot.igraph(g, vertex.color = hcc, edge.arrow.mode = 0, layout=zy%*%M)
   dev.off()
+  
+  return(hcc)
 }
 
 
@@ -178,17 +181,23 @@ if(interactive()) {
   pathOutP = "./../../../data/toyData/results/4_info_map/cutted/membership_patients.csv"
   pathOutResults = "./../../../data/toyData/results/4_info_map/cutted/"
   
-  controls <- performingCommunityDetection(pathInC, pathOutC)
-  patient <- performingCommunityDetection(pathInP, pathOutP)
+  controls1 <- performingCommunityDetection(pathInC, pathOutC)
+  patient1 <- performingCommunityDetection(pathInP, pathOutP)
   
-  coOc_Ctrl <- coOccurrence(pathOutC)
-  coOc_Ptnt <- coOccurrence(pathOutP)
+  coOc_Ctrl1 <- coOccurrence(pathOutC)
+  coOc_Ptnt1 <- coOccurrence(pathOutP)
   
-  l_m[1] <- mantel_test(coOc_Ctrl, coOc_Ptnt, 9000)$pvalue
-  H <- makeHeatmap(coOc_Ctrl, coOc_Ptnt, pathOutResults)
-  plotF(coOc_Ctrl, 10, pathInC, paste(pathOutResults, "graphControls.jpg", sep = ""), FALSE)
-  plotF(coOc_Ptnt, 10, pathInC, paste(pathOutResults, "graphPatients.jpg", sep = ""), FALSE)
-  plotF(coOc_Ptnt+coOc_Ctrl, 10, pathInC, paste(pathOutResults, "graphBoth.jpg", sep = ""), FALSE)
+  l_m[1] <- mantel_test(coOc_Ctrl1, coOc_Ptnt1, 9000)$pvalue
+  H1 <- makeHeatmap(coOc_Ctrl1, coOc_Ptnt1, pathOutResults)
+  dvc1 <- plotF(coOc_Ctrl1, 10, pathInC, paste(pathOutResults, "graphControls.jpg", sep = ""), FALSE)
+  dvp1 <- plotF(coOc_Ptnt1, 10, pathInC, paste(pathOutResults, "graphPatients.jpg", sep = ""), FALSE)
+  plotF(coOc_Ptnt1+coOc_Ctrl1, 10, pathInC, paste(pathOutResults, "graphBoth.jpg", sep = ""), FALSE)
+  
+  MU1 <- mutinformation(dvp1,dvc1)
+  Ec1 <- entropy(dvc1)
+  Ep1 <- entropy(dvp1)
+  MUN1 <- 2* (MU1 / (Ec1 + Ep1))
+  
   ################################################# t test #######################################################
   pathInC = "./../../../data/toyData/t_test_controls/"
   pathInP = "./../../../data/toyData/t_test_patients/"
@@ -196,16 +205,24 @@ if(interactive()) {
   pathOutP = "./../../../data/toyData/results/4_info_map/t_test_cutted/membership_patients.csv"
   pathOutResults = "./../../../data/toyData/results/4_info_map/t_test_cutted/"
   
-  controls <- performingCommunityDetection(pathInC, pathOutC)
-  patient <- performingCommunityDetection(pathInP, pathOutP)
+  controls2 <- performingCommunityDetection(pathInC, pathOutC)
+  patient2 <- performingCommunityDetection(pathInP, pathOutP)
   
-  coOc_Ctrl <- coOccurrence(pathOutC)
-  coOc_Ptnt <- coOccurrence(pathOutP)
-  l_m[2] <- mantel_test(coOc_Ctrl, coOc_Ptnt, 9000)$pvalue
-  H <- makeHeatmap(coOc_Ctrl, coOc_Ptnt, pathOutResults)
-  plotF(coOc_Ctrl, 10, pathInC, paste(pathOutResults, "graphControls.jpg", sep = ""), FALSE)
-  plotF(coOc_Ptnt, 10, pathInC, paste(pathOutResults, "graphPatients.jpg", sep = ""), FALSE)
-  plotF(coOc_Ptnt+coOc_Ctrl, 10, pathInC, paste(pathOutResults, "graphBoth.jpg", sep = ""), FALSE)
+  coOc_Ctrl2 <- coOccurrence(pathOutC)
+  coOc_Ptnt2 <- coOccurrence(pathOutP)
+  
+
+    
+  l_m[2] <- mantel_test(coOc_Ctrl2, coOc_Ptnt2, 9000)$pvalue
+  H2 <- makeHeatmap(coOc_Ctrl2, coOc_Ptnt2, pathOutResults)
+  dvc2 <- plotF(coOc_Ctrl2, 10, pathInC, paste(pathOutResults, "graphControls.jpg", sep = ""), FALSE)
+  dvp2 <- plotF(coOc_Ptnt2, 10, pathInC, paste(pathOutResults, "graphPatients.jpg", sep = ""), FALSE)
+  plotF(coOc_Ptnt2+coOc_Ctrl2, 10, pathInC, paste(pathOutResults, "graphBoth.jpg", sep = ""), FALSE)
+  
+  MU2 <- mutinformation(dvp2,dvc2)
+  Ec2 <- entropy(dvc2)
+  Ep2 <- entropy(dvp2)
+  MUN2 <- 2* (MU2 / (Ec2 + Ep2))
   ################################################# t test MST ####################################################
   pathInC = "./../../../data/toyData/t_test_MST_controls/"
   pathInP = "./../../../data/toyData/t_test_MST_patients/"
@@ -213,16 +230,22 @@ if(interactive()) {
   pathOutP = "./../../../data/toyData/results/4_info_map/t_test_MST/membership_patients.csv"
   pathOutResults = "./../../../data/toyData/results/4_info_map/t_test_MST/"
   
-  controls <- performingCommunityDetection(pathInC, pathOutC)
-  patient <- performingCommunityDetection(pathInP, pathOutP)
+  controls3 <- performingCommunityDetection(pathInC, pathOutC)
+  patient3 <- performingCommunityDetection(pathInP, pathOutP)
   
-  coOc_Ctrl <- coOccurrence(pathOutC)
-  coOc_Ptnt <- coOccurrence(pathOutP)
-  l_m[3] <- mantel_test(coOc_Ctrl, coOc_Ptnt, 9000)$pvalue
-  H <- makeHeatmap(coOc_Ctrl, coOc_Ptnt, pathOutResults)
-  plotF(coOc_Ctrl, 10, pathInC, paste(pathOutResults, "graphControls.jpg", sep = ""), FALSE)
-  plotF(coOc_Ptnt, 10, pathInC, paste(pathOutResults, "graphPatients.jpg", sep = ""), FALSE)
-  plotF(coOc_Ptnt+coOc_Ctrl, 10, pathInC, paste(pathOutResults, "graphBoth.jpg", sep = ""), FALSE)
+  coOc_Ctrl3 <- coOccurrence(pathOutC)
+  coOc_Ptnt3 <- coOccurrence(pathOutP)
+  l_m[3] <- mantel_test(coOc_Ctrl3, coOc_Ptnt3, 9000)$pvalue
+  
+  H3 <- makeHeatmap(coOc_Ctrl3, coOc_Ptnt3, pathOutResults)
+  dvc3 <- plotF(coOc_Ctrl3, 10, pathInC, paste(pathOutResults, "graphControls.jpg", sep = ""), FALSE)
+  dvp3 <- plotF(coOc_Ptnt3, 10, pathInC, paste(pathOutResults, "graphPatients.jpg", sep = ""), FALSE)
+  plotF(coOc_Ptnt3+coOc_Ctrl3, 10, pathInC, paste(pathOutResults, "graphBoth.jpg", sep = ""), FALSE)
+  
+  MU3 <- mutinformation(dvp3,dvc3)
+  Ec3 <- entropy(dvc3)
+  Ep3 <- entropy(dvp3)
+  MUN3 <- 2* (MU3 / (Ec3 + Ep3))
   #####################################################################################################################
   
   write.csv(l_m, "./../../../data/toyData/results/4_info_map/mantel.csv")

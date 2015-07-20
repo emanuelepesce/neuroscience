@@ -33,8 +33,8 @@ if(interactive()){
   pathInC <- "./../../../data/toyData/results/5_Diffusion_closeness/t_test_cutted/diffusion_controls.csv"
   pathInP <- "./../../../data/toyData/results/5_Diffusion_closeness/t_test_cutted/diffusion_patients.csv"
   
-  c.data <- read.csv(pathInC)
-  p.data <- read.csv(pathInP)
+  c.data <- read.csv(pathInC, header=F)
+  p.data <- read.csv(pathInP, header=F)
   
   m_mean2 <- matrix(ncol = 2, nrow = 3)
   colnames(m_mean2) <- c("controls", "patients")
@@ -81,4 +81,12 @@ if(interactive()){
   
   m_mean3
   m_var3
+  
+  m_mean1
+  m_var1
+  m_mean2
+  m_var2
+  m_mean3
+  m_var3
+  
 }
