@@ -15,6 +15,15 @@ p_var <- function(){
   print(weak)
   print(strong)
 }
+glob_M_edges <- function(){
+  Medges <<- matrix(1, nrow=90, ncol=90)
+}
+up_M_edges <- function(i,j){
+  Medges[i,j] <<- Medges[i,j] + 10
+}
+get_M_edges <- function(i,j){
+  return(Medges[i,j])
+}
 
 # function for updating the diffusers
 update_diffusers = function(g, diffusers){
@@ -26,18 +35,28 @@ update_diffusers = function(g, diffusers){
   toss = function(v) {
     t_weak <- 0
     t_strong <- 0
+    ids <- V(g)$id
     
     tossing = 0
     tot <- 0
-    nrbs <- neighbors(g, v = v, mode = "in")
+    vt <- get.vertex.attribute(g, name="name", index= match(v, ids))
+    print(vt)
+    nrbs <- neighbors(g, vt, mode = "in")
     for(i in 1:length(nrbs)){
-      tot <- tot + g[nrbs[i], v]
+      vs <- get.vertex.attribute(g, name="name", index= nrbs[i])
+      tot <- tot + g[vs, vt, attr="weight"]
     }
     pression <- 0
     for(i in 1:length(nrbs)){
-      if(nrbs[i]%in%diffusers){
-        pression <- pression + g[nrbs[i], v]
-        if(g[nrbs[i], v, attr = "strong"]==1){
+      vs <- get.vertex.attribute(g, name="id", index= match(nrbs[i], ids))
+      print(vs)
+      if(vs%in%diffusers){
+        vs1 <- get.vertex.attribute(g, name="name", index= vs)
+        up_M_edges(vs, v)
+        print(g[vs1, vt, attr="weight"])
+        pression <- pression + g[vs1, vt]*get_M_edges(vs,v)
+        if(g[vs1, vt, attr = "strong"]==1){
+          print("we")
           t_strong <- t_strong + 1
         }
         else{
@@ -45,10 +64,11 @@ update_diffusers = function(g, diffusers){
         }
       }
     }
+    tr_infect <- 0
     tr_toInfect <- pression/tot
+    print(tr_toInfect)
     if(runif(1) <= tr_toInfect){
-      up_var(t_weak, t_strong)
-      
+      up_var(t_weak, t_strong)      
       tossing = 1
     }
     return (tossing)
@@ -68,12 +88,17 @@ epidemicsPression <- function(g, diffusers, pathOut = NULL){
   infected =list()
   infected[[1]]= diffusers  
   glob_var(0,0)
+  glob_M_edges()
   
   #spread
   i = 1
   while(length(infected[[i]]) < vcount(g)){ 
     infected[[i+1]] = sort(update_diffusers(g,infected[[i]]))
-#     cat(length(infected[[i+1]]), "\n")
+    cat(length(infected[[i+1]]), "\n")
+    if(i > 20){
+      if(length(infected[[i+1]]) == length(infected[[i-4]]))
+        break
+    }
     i = i + 1
   }
   
@@ -152,24 +177,30 @@ applyDiffusion <- function(pathIn, pathOut, diffusers="", times = 5){
       l_time <- NULL
       l_strong <- NULL
       l_weak <- NULL
+      max_conquer <- NULL
       g <- read.graph(cfile, format="gml")
       # get diffusers
-      centers <- closeness(g, mode = "total")
+#       centers <- betweenness(g)
+      centers <- closeness(g)
       centers <- sort(centers, decreasing = T)
       diffusers <- c(match(centers[1], centers), match(centers[2], centers))
+      diffusers[1] <- get.vertex.attribute(g, name="id", index= names(centers[1]))
+      diffusers[2] <- get.vertex.attribute(g, name="id", index= names(centers[2]))
+
       for(j in 1:times){
         res <- epidemicsPression(g = g, diffusers = diffusers)
+        max_conquer[j] <- length(res$infected[[length(res$infected)]])
         l_time[j] <- length(res$infected_round) 
         l_strong[j] <- res$strong
         l_weak[j] <- res$weak
       }
-      toWrite[[k]] <- c(files[i], mean(l_time), mean(l_strong), mean(l_weak))
+      toWrite[[k]] <- c(files[i], mean(l_time), mean(max_conquer), mean(l_strong), mean(l_weak))
       k <- k + 1
     }
   }
   a <- toWrite
   toWrite <- unlist(toWrite)
-  toWrite<- matrix(toWrite, ncol = 4, nrow = (k-1), byrow=TRUE)
+  toWrite<- matrix(toWrite, ncol = 5, nrow = (k-1), byrow=TRUE)
   write.table(toWrite,file=pathOut,sep=",", col.names = F, row.names = F)
 }
 
@@ -179,22 +210,22 @@ if(interactive()){
   sstime <- proc.time()
   
   ################################# EXAMPLE CONTROLS ####################################
-#   g <- read.graph("./CTRL_amore.gml", format="gml")
-#   
-#   # get diffusers
-#   centers <- betweenness(g)
-#   centers <- closeness(g, mode = "total")
-#   centers <- sort(centers, decreasing = T)
-#   diffusers <- c(match(centers[1], centers), match(centers[2], centers))
-#   
-#   # epidemics
-#   res <- epidemicsPression(g, diffusers, "./imgsC/")
+  g <- read.graph("./CTRL_conte.gml", format="gml")
+  
+  # get diffusers
+  centers <- closeness(g)
+  centers <- sort(centers, decreasing = T)
+  diffusers <- c(match(centers[1], centers), match(centers[2], centers))
+  diffusers[1] <- get.vertex.attribute(g, name="id", index= names(centers[1]))
+  diffusers[2] <- get.vertex.attribute(g, name="id", index= names(centers[2]))
+#   epidemicsC
+  res <- epidemicsPression(g = g, diffusers = diffusers, "./imgsP2/")
 #   print(res$infected_round)
 #   print(length(res$infected_round))
 #   print(res$strong)
 #   print(res$weak)
 # #   ################################# EXAMPLE PATIENTS ####################################
-#   g <- read.graph("./SLA2_altezza.gml", format="gml")
+#   g <- read.graph("./CTRL_conte.gml", format="gml")
 #   
 #   # get diffusers
 #   centers <- betweenness(g)
@@ -212,7 +243,7 @@ if(interactive()){
   
 
   ################################# EXAMPLE ####################################
-#   applyDiffusion(pathIn = "./", pathOut = "./result.csv")  
+#   applyDiffusion(pathIn = "./", pathOut = "./result.csv", times=1)  
 
   ################################ Cutted ######################################
 #   pathIn <- "./../../../data/toyData/cutted_controls/"
@@ -225,10 +256,10 @@ if(interactive()){
 #   pathIn <- "./../../../data/toyData/t_test_controls/"  
 #   pathOut <- "./../../../data/toyData/results/5_Diffusion_closeness/t_test_cutted/diffusion_controls.csv"
 #   applyDiffusion(pathIn = pathIn, pathOut = pathOut) 
-  pathIn <- "./../../../data/toyData/t_test_patients/"
-  pathOut <- "./../../../data/toyData/results/5_Diffusion_closeness/t_test_cutted/diffusion_patients.csv"
-  applyDiffusion(pathIn = pathIn, pathOut = pathOut) 
-  ################################ MST ######################################
+#   pathIn <- "./../../../data/toyData/t_test_patients/"
+#   pathOut <- "./../../../data/toyData/results/5_Diffusion_closeness/t_test_cutted/diffusion_patients.csv"
+#   applyDiffusion(pathIn = pathIn, pathOut = pathOut) 
+#   ############################### MST ######################################
 #   pathIn <- "./../../../data/toyData/t_test_MST_controls/"    
 #   pathOut <- "./../../../data/toyData/results/5_Diffusion_closeness/t_test_MST/diffusion_controls.csv"
 #   applyDiffusion(pathIn = pathIn, pathOut = pathOut) 

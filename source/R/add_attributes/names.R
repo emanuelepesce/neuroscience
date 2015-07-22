@@ -41,18 +41,25 @@ if(interactive()){
 # #test
 #   g <- read.graph("./../../../data/toyData/cutted_controls/CTRL_amore.gml", format="gml")
 
-### t test
-  pathIn <- "./../../../data/toyData/t_test_controls/"
+# ### t test
+#   pathIn <- "./../../../data/toyData/t_test_controls/"
+#   applyLabelArea(pathIn, pathIn, labels)
+#   
+#   pathIn <- "./../../../data/toyData/t_test_patients/"
+#   applyLabelArea(pathIn, pathIn, labels)
+#   
+# ### t test MST
+#   pathIn <- "./../../../data/toyData/t_test_MST_controls/"
+#   applyLabelArea(pathIn, pathIn, labels)
+#   
+#   pathIn <- "./../../../data/toyData/t_test_MST_patients/"
+#   applyLabelArea(pathIn, pathIn, labels)
+
+  ### noise
+  pathIn <- "./../../../data/toyData/controls/withNoise/"
   applyLabelArea(pathIn, pathIn, labels)
   
-  pathIn <- "./../../../data/toyData/t_test_patients/"
-  applyLabelArea(pathIn, pathIn, labels)
-  
-### t test MST
-  pathIn <- "./../../../data/toyData/t_test_MST_controls/"
-  applyLabelArea(pathIn, pathIn, labels)
-  
-  pathIn <- "./../../../data/toyData/t_test_MST_patients/"
+  pathIn <- "./../../../data/toyData/patients/withNoise/"
   applyLabelArea(pathIn, pathIn, labels)
 
 }

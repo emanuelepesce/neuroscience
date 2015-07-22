@@ -44,20 +44,27 @@ if(interactive()){
 #   applyLabelCoord("./../../../data/toyData/cutted_patients/", "./../../../data/toyData/cutted_patients/", labels)
 #
 
-  ### t test
-  pathIn <- "./../../../data/toyData/t_test_controls/"
-  applyLabelCoord(pathIn, pathIn, labels)
-  
-  pathIn <- "./../../../data/toyData/t_test_patients/"
-  applyLabelCoord(pathIn, pathIn, labels)
-  
-  ### t test MST
-  pathIn <- "./../../../data/toyData/t_test_MST_controls/"
-  applyLabelCoord(pathIn, pathIn, labels)
-  
-  pathIn <- "./../../../data/toyData/t_test_MST_patients/"
-  applyLabelCoord(pathIn, pathIn, labels)
+#   ### t test
+#   pathIn <- "./../../../data/toyData/t_test_controls/"
+#   applyLabelCoord(pathIn, pathIn, labels)
+#   
+#   pathIn <- "./../../../data/toyData/t_test_patients/"
+#   applyLabelCoord(pathIn, pathIn, labels)
+#   
+#   ### t test MST
+#   pathIn <- "./../../../data/toyData/t_test_MST_controls/"
+#   applyLabelCoord(pathIn, pathIn, labels)
+#   
+#   pathIn <- "./../../../data/toyData/t_test_MST_patients/"
+#   applyLabelCoord(pathIn, pathIn, labels)
 
+
+  ### noise
+  pathIn <- "./../../../data/toyData/controls/withNoise/"
+  applyLabelCoord(pathIn, pathIn, labels)
+  
+  pathIn <- "./../../../data/toyData/patients/withNoise/"
+  applyLabelCoord(pathIn, pathIn, labels)
 
 #test
 #   g <- read.graph("./../../../data/toyData/t_test_MST_controls/CTRL_amore.gml", format="gml")

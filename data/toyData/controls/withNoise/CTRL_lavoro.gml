@@ -1,457 +1,818 @@
-Creator "igraph version @VERSION@ Thu Jul  9 12:41:51 2015"
+Creator "igraph version @VERSION@ Tue Jul 21 18:34:11 2015"
 Version 1
 graph
 [
   directed 1
+  area "null"
   node
   [
     id 0
     name "V1"
+    cx -40
+    cy -6
+    cz 51
+    area "Precentral_L"
   ]
   node
   [
     id 1
     name "V2"
+    cx 40
+    cy -8
+    cz 52
+    area "Precentral_R"
   ]
   node
   [
     id 2
     name "V3"
+    cx -19
+    cy 35
+    cz 42
+    area "Frontal_Sup_L"
   ]
   node
   [
     id 3
     name "V4"
+    cx 20
+    cy 31
+    cz 44
+    area "Frontal_Sup_R"
   ]
   node
   [
     id 4
     name "V5"
+    cx -18
+    cy 47
+    cz -13
+    area "Frontal_Sup_Orb_L"
   ]
   node
   [
     id 5
     name "V6"
+    cx 17
+    cy 48
+    cz -14
+    area "Frontal_Sup_Orb_R"
   ]
   node
   [
     id 6
     name "V7"
+    cx -34
+    cy 33
+    cz 35
+    area "Frontal_Mid_L"
   ]
   node
   [
     id 7
     name "V8"
+    cx 37
+    cy 33
+    cz 34
+    area "Frontal_Mid_R"
   ]
   node
   [
     id 8
     name "V9"
+    cx -32
+    cy 50
+    cz -10
+    area "Frontal_Mid_Orb_L"
   ]
   node
   [
     id 9
     name "V10"
+    cx 32
+    cy 53
+    cz -11
+    area "Frontal_Mid_Orb_R"
   ]
   node
   [
     id 10
     name "V11"
+    cx -49
+    cy 13
+    cz 19
+    area "Frontal_Inf_Oper_L"
   ]
   node
   [
     id 11
     name "V12"
+    cx 49
+    cy 15
+    cz 21
+    area "Frontal_Inf_Oper_R"
   ]
   node
   [
     id 12
     name "V13"
+    cx -47
+    cy 30
+    cz 14
+    area "Frontal_Inf_Tri_L"
   ]
   node
   [
     id 13
     name "V14"
+    cx 49
+    cy 30
+    cz 14
+    area "Frontal_Inf_Tri_R"
   ]
   node
   [
     id 14
     name "V15"
+    cx -37
+    cy 31
+    cz -12
+    area "Frontal_Inf_Orb_L"
   ]
   node
   [
     id 15
     name "V16"
+    cx 40
+    cy 32
+    cz -12
+    area "Frontal_Inf_Orb_R"
   ]
   node
   [
     id 16
     name "V17"
+    cx -48
+    cy -8
+    cz 14
+    area "Rolandic_Oper_L"
   ]
   node
   [
     id 17
     name "V18"
+    cx 52
+    cy -6
+    cz 15
+    area "Rolandic_Oper_R"
   ]
   node
   [
     id 18
     name "V19"
+    cx -6
+    cy 5
+    cz 61
+    area "Supp_Motor_Area_L"
   ]
   node
   [
     id 19
     name "V20"
+    cx 8
+    cy 0
+    cz 62
+    area "Supp_Motor_Area_R"
   ]
   node
   [
     id 20
     name "V21"
+    cx -9
+    cy 15
+    cz -12
+    area "Olfactory_L"
   ]
   node
   [
     id 21
     name "V22"
+    cx 8
+    cy 16
+    cz -11
+    area "Olfactory_R"
   ]
   node
   [
     id 22
     name "V23"
+    cx -6
+    cy 49
+    cz 31
+    area "Frontal_Sup_Medial_L"
   ]
   node
   [
     id 23
     name "V24"
+    cx 8
+    cy 51
+    cz 30
+    area "Frontal_Sup_Medial_R"
   ]
   node
   [
     id 24
     name "V25"
+    cx -6
+    cy 54
+    cz -7
+    area "Frontal_Med_Orb_L"
   ]
   node
   [
     id 25
     name "V26"
+    cx 7
+    cy 52
+    cz -7
+    area "Frontal_Med_Orb_R"
   ]
   node
   [
     id 26
     name "V27"
+    cx -6
+    cy 37
+    cz -18
+    area "Rectus_L"
   ]
   node
   [
     id 27
     name "V28"
+    cx 7
+    cy 36
+    cz -18
+    area "Rectus_R"
   ]
   node
   [
     id 28
     name "V29"
+    cx -36
+    cy 7
+    cz 3
+    area "Insula_L"
   ]
   node
   [
     id 29
     name "V30"
+    cx 38
+    cy 6
+    cz 2
+    area "Insula_R"
   ]
   node
   [
     id 30
     name "V31"
+    cx -5
+    cy 35
+    cz 14
+    area "Cingulum_Ant_L"
   ]
   node
   [
     id 31
     name "V32"
+    cx 7
+    cy 37
+    cz 16
+    area "Cingulum_Ant_R"
   ]
   node
   [
     id 32
     name "V33"
+    cx -6
+    cy -15
+    cz 42
+    area "Cingulum_Mid_L"
   ]
   node
   [
     id 33
     name "V34"
+    cx 7
+    cy -9
+    cz 40
+    area "Cingulum_Mid_R"
   ]
   node
   [
     id 34
     name "V35"
+    cx -6
+    cy -43
+    cz 25
+    area "Cingulum_Post_L"
   ]
   node
   [
     id 35
     name "V36"
+    cx 6
+    cy -42
+    cz 22
+    area "Cingulum_Post_R"
   ]
   node
   [
     id 36
     name "V37"
+    cx -26
+    cy -21
+    cz -10
+    area "Hippocampus_L"
   ]
   node
   [
     id 37
     name "V38"
+    cx 28
+    cy -20
+    cz -10
+    area "Hippocampus_R"
   ]
   node
   [
     id 38
     name "V39"
+    cx -22
+    cy -16
+    cz -21
+    area "ParaHippocampal_L"
   ]
   node
   [
     id 39
     name "V40"
+    cx 24
+    cy -15
+    cz -20
+    area "ParaHippocampal_R"
   ]
   node
   [
     id 40
     name "V41"
+    cx -24
+    cy -1
+    cz -17
+    area "Amygdala_L"
   ]
   node
   [
     id 41
     name "V42"
+    cx 26
+    cy 1
+    cz -18
+    area "Amygdala_R"
   ]
   node
   [
     id 42
     name "V43"
+    cx -8
+    cy -79
+    cz 6
+    area "Calcarine_L"
   ]
   node
   [
     id 43
     name "V44"
+    cx 15
+    cy -73
+    cz 9
+    area "Calcarine_R"
   ]
   node
   [
     id 44
     name "V45"
+    cx -7
+    cy -80
+    cz 27
+    area "Cuneus_L"
   ]
   node
   [
     id 45
     name "V46"
+    cx 13
+    cy -79
+    cz 28
+    area "Cuneus_R"
   ]
   node
   [
     id 46
     name "V47"
+    cx -16
+    cy -68
+    cz -5
+    area "Lingual_L"
   ]
   node
   [
     id 47
     name "V48"
+    cx 15
+    cy -67
+    cz -4
+    area "Lingual_R"
   ]
   node
   [
     id 48
     name "V49"
+    cx -18
+    cy -84
+    cz 28
+    area "Occipital_Sup_L"
   ]
   node
   [
     id 49
     name "V50"
+    cx 23
+    cy -81
+    cz 31
+    area "Occipital_Sup_R"
   ]
   node
   [
     id 50
     name "V51"
+    cx -33
+    cy -81
+    cz 16
+    area "Occipital_Mid_L"
   ]
   node
   [
     id 51
     name "V52"
+    cx 36
+    cy -80
+    cz 19
+    area "Occipital_Mid_R"
   ]
   node
   [
     id 52
     name "V53"
+    cx -37
+    cy -78
+    cz -8
+    area "Occipital_Inf_L"
   ]
   node
   [
     id 53
     name "V54"
+    cx 37
+    cy -82
+    cz -8
+    area "Occipital_Inf_R"
   ]
   node
   [
     id 54
     name "V55"
+    cx -32
+    cy -40
+    cz -20
+    area "Fusiform_L"
   ]
   node
   [
     id 55
     name "V56"
+    cx 33
+    cy -39
+    cz -20
+    area "Fusiform_R"
   ]
   node
   [
     id 56
     name "V57"
+    cx -43
+    cy -23
+    cz 49
+    area "Postcentral_L"
   ]
   node
   [
     id 57
     name "V58"
+    cx 40
+    cy -25
+    cz 53
+    area "Postcentral_R"
   ]
   node
   [
     id 58
     name "V59"
+    cx -24
+    cy -60
+    cz 59
+    area "Parietal_Sup_L"
   ]
   node
   [
     id 59
     name "V60"
+    cx 25
+    cy -59
+    cz 62
+    area "Parietal_Sup_R"
   ]
   node
   [
     id 60
     name "V61"
+    cx -44
+    cy -46
+    cz 47
+    area "Parietal_Inf_L"
   ]
   node
   [
     id 61
     name "V62"
+    cx 45
+    cy -46
+    cz 50
+    area "Parietal_Inf_R"
   ]
   node
   [
     id 62
     name "V63"
+    cx -57
+    cy -34
+    cz 30
+    area "SupraMarginal_L"
   ]
   node
   [
     id 63
     name "V64"
+    cx 57
+    cy -32
+    cz 34
+    area "SupraMarginal_R"
   ]
   node
   [
     id 64
     name "V65"
+    cx -45
+    cy -61
+    cz 36
+    area "Angular_L"
   ]
   node
   [
     id 65
     name "V66"
+    cx 45
+    cy -60
+    cz 39
+    area "Angular_R"
   ]
   node
   [
     id 66
     name "V67"
+    cx -8
+    cy -56
+    cz 48
+    area "Precuneus_L"
   ]
   node
   [
     id 67
     name "V68"
+    cx 9
+    cy -56
+    cz 44
+    area "Precuneus_R"
   ]
   node
   [
     id 68
     name "V69"
+    cx -9
+    cy -25
+    cz 70
+    area "Paracentral_Lobule_L"
   ]
   node
   [
     id 69
     name "V70"
+    cx 6
+    cy -32
+    cz 68
+    area "Paracentral_Lobule_R"
   ]
   node
   [
     id 70
     name "V71"
+    cx -12
+    cy 11
+    cz 9
+    area "Caudate_L"
   ]
   node
   [
     id 71
     name "V72"
+    cx 14
+    cy 12
+    cz 9
+    area "Caudate_R"
   ]
   node
   [
     id 72
     name "V73"
+    cx -25
+    cy 4
+    cz 2
+    area "Putamen_L"
   ]
   node
   [
     id 73
     name "V74"
+    cx 27
+    cy 5
+    cz 2
+    area "Putamen_R"
   ]
   node
   [
     id 74
     name "V75"
+    cx -19
+    cy 0
+    cz 0
+    area "Pallidum_L"
   ]
   node
   [
     id 75
     name "V76"
+    cx 20
+    cy 0
+    cz 0
+    area "Pallidum_R"
   ]
   node
   [
     id 76
     name "V77"
+    cx -12
+    cy -18
+    cz 8
+    area "Thalamus_L"
   ]
   node
   [
     id 77
     name "V78"
+    cx 12
+    cy -18
+    cz 8
+    area "Thalamus_R"
   ]
   node
   [
     id 78
     name "V79"
+    cx -43
+    cy -19
+    cz 10
+    area "Heschl_L"
   ]
   node
   [
     id 79
     name "V80"
+    cx 45
+    cy -17
+    cz 10
+    area "Heschl_R"
   ]
   node
   [
     id 80
     name "V81"
+    cx -54
+    cy -21
+    cz 7
+    area "Temporal_Sup_L"
   ]
   node
   [
     id 81
     name "V82"
+    cx 57
+    cy -22
+    cz 7
+    area "Temporal_Sup_R"
   ]
   node
   [
     id 82
     name "V83"
+    cx -41
+    cy 15
+    cz -20
+    area "Temporal_Pole_Sup_L"
   ]
   node
   [
     id 83
     name "V84"
+    cx 47
+    cy 15
+    cz -17
+    area "Temporal_Pole_Sup_R"
   ]
   node
   [
     id 84
     name "V85"
+    cx -57
+    cy -34
+    cz -2
+    area "Temporal_Mid_L"
   ]
   node
   [
     id 85
     name "V86"
+    cx 56
+    cy -37
+    cz -1
+    area "Temporal_Mid_R"
   ]
   node
   [
     id 86
     name "V87"
+    cx -37
+    cy 15
+    cz -34
+    area "Temporal_Pole_Mid_L"
   ]
   node
   [
     id 87
     name "V88"
+    cx 43
+    cy 15
+    cz -32
+    area "Temporal_Pole_Mid_R"
   ]
   node
   [
     id 88
     name "V89"
+    cx -51
+    cy -28
+    cz -23
+    area "Temporal_Inf_L"
   ]
   node
   [
     id 89
     name "V90"
+    cx 53
+    cy -31
+    cz -22
+    area "Temporal_Inf_R"
   ]
   edge
   [
