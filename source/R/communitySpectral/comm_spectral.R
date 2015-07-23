@@ -9,6 +9,7 @@
 
 rm(list=ls())
 
+library(infotheo)
 library(kernlab)
 library(igraph)
 library(gplots)
