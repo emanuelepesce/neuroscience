@@ -14,7 +14,7 @@ library(kernlab)
 library(igraph)
 library(gplots)
 library(ade4)
-
+library(RColorBrewer)
 
 # Performs the specified community detection method saving result on a specified file
 # @param pathIn is the input path
@@ -109,7 +109,7 @@ makeHeatmap <- function(m1, m2, pathOut) {
   dev.off()
   
   sum_occ <- m1 + m2
-  jpeg(filename=paste(pathOut, "heat_sum.jpeg", sep=""), width = 1000, height = 1000)
+  jpeg(filename=paste(pathOut, "heat_Both.jpeg", sep=""), width = 1000, height = 1000)
   sumH <- heatmap.2(t(sum_occ), tracecol = F, main = "Community Sum")
   dev.off()
   
@@ -139,6 +139,14 @@ plotF <- function(m, k = 10, pathIn, pathOut, verbose = FALSE) {
   hcc <- cutree(hc, k = 10)
   hcc <- as.vector(hcc)
   
+  cl <- brewer.pal(10,name = "RdYlBu")
+  hccc <- hcc
+  for(i in 1:10){
+    hccc <- replace(hccc, hccc == i, cl[i])
+  }
+  hcc <- hccc
+  
+  
   jpeg(filename = pathOut, width = 1000, height = 1000)
   plot(g, vertex.color = hcc, vertex.size = 10, edge.arrow.mode = 0, layout = coords[,-3])
   dev.off()
@@ -151,6 +159,7 @@ plotF <- function(m, k = 10, pathIn, pathOut, verbose = FALSE) {
   plot.igraph(g, vertex.color = hcc, edge.arrow.mode = 0, layout=coords[,-2])
   zy <- cbind(coords[,3],coords[,2])
   plot.igraph(g, vertex.color = hcc, edge.arrow.mode = 0, layout=zy%*%M)
+  pie(rep(1,10), col=cl, main = "Colors")
   dev.off()
   
   return(hcc)
